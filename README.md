@@ -23,8 +23,8 @@ commonTestModel = new CommonTestModel(sendCommondManager);<br>
  commonTestModel.testLedOpen()<br>
  下面是一个联动逻辑<br>
 
-@OnClick(R.id.bt_led_start)
-void clickLedTest()
+    @OnClick(R.id.bt_led_start)
+    void clickLedTest()
     {
         LogUtil.d(TAG, "clickLedTest");
         commonTestModel.testLedOpen()
@@ -86,5 +86,4 @@ void clickLedTest()
                 });
 
     }
-
 
