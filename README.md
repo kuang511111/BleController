@@ -24,7 +24,7 @@ commonTestModel = new CommonTestModel(sendCommondManager);<br>
  下面是一个联动逻辑<br>
 
 @OnClick(R.id.bt_led_start)
-    void clickLedTest()
+void clickLedTest()
     {
         LogUtil.d(TAG, "clickLedTest");
         commonTestModel.testLedOpen()
