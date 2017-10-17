@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tips_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <!-- Login: Header -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp" >
+
+            <ImageButton
+                android:id="@+id/login_state_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_bg"
+                android:src="@drawable/icon_previous" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/login_state_title"
+                android:textColor="#404040"
+                style="@style/roboto_light"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <!-- Login: divider -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/divide_line" />
+
+
+        <RelativeLayout 
+            android:layout_marginTop="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <com.jrdcom.wearable.smartband2.ui.view.RoundedImageView
+                android:id="@+id/usr_icon"
+                android:scaleType="centerCrop"
+            	android:layout_width="108dp"
+            	android:layout_height="108dp"
+            	android:layout_centerHorizontal="true"
+            	android:src="@drawable/fitness" />
+        </RelativeLayout>
+        
+        <TextView 
+            android:id="@+id/login_info_usrname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/login_state_username"
+            style="@style/roboto_light"
+            android:textSize="18sp"
+             />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+	        android:layout_marginTop="30dp" >
+	        <Button
+	            android:id="@+id/txt_quit"
+	            android:layout_width="160dp"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:text="@string/login_state_logout"
+	            android:textColor="@drawable/text_color_pressed_selector"
+	            style="@style/roboto_light"
+	            android:textSize="14sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp" >
+	        <Button
+	            android:id="@+id/txt_change_password"
+	            android:layout_width="160dp"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:text="@string/login_state_change_password"
+	            android:textColor="@drawable/text_color_pressed_selector"
+	            style="@style/roboto_light"
+	            android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

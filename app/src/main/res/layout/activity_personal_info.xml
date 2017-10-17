@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    
+    
+     <android.support.v4.widget.DrawerLayout
+		android:id="@+id/flip_drawer_layout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		
+		<LinearLayout
+			android:id="@+id/my_frofile_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+    	<!-- My profile: Header -->
+		    <RelativeLayout
+		        android:id="@+id/goals_title"
+		        android:layout_width="match_parent"
+		        android:layout_height="42dp" >
+		
+		        <ImageButton
+		            android:id="@+id/main_menu_list"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="10dp"
+		            android:background="@drawable/menu" />
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="5dp"
+		          	android:layout_toRightOf="@+id/main_menu_list"
+		            android:text="@string/menu_list_my_profile"
+		            android:textColor="#656565"
+		            style="@style/roboto_light"
+		            android:textSize="20sp" />
+		    </RelativeLayout>
+	
+		    <!-- Settings: divider -->
+		    <ImageView
+		        android:layout_height="2dp"
+		        android:layout_width="match_parent"
+		        android:scaleType="fitXY"
+		        android:src="@drawable/divide_line"/>
+		
+		    <!-- Settings: Content: profile -->
+		    <LinearLayout
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+		        android:layout_margin="16dp"
+		        android:orientation="vertical">
+		        <!-- Settings profile: gender -->
+		        <RelativeLayout
+		            android:id="@+id/setting_gender_layout"
+		            android:layout_width="match_parent"
+		            android:layout_height="48dp"
+		            android:background="@drawable/list_bg_top"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp" >
+		
+		            <TextView
+		                android:id="@+id/setting_gender_key"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:gravity="center"
+		                android:textColor="#656565"
+		                android:text="@string/gender"
+		                style="@style/roboto_light"
+		                android:textSize="18sp" />
+		
+		            <include
+		                android:id="@+id/setting_gender_value"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_centerVertical="true"
+		                layout="@layout/layout_switch" />
+		        </RelativeLayout>
+		        <!-- Settings profile: birthday -->
+		        <RelativeLayout
+		            android:id="@+id/setting_birth_layout"
+		            android:layout_width="match_parent"
+		            android:layout_height="48dp"
+		            android:background="@drawable/list_bg_middle"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp" >
+		
+		            <TextView
+		                android:id="@+id/setting_birth_key"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:gravity="center"
+		                android:textColor="#656565"
+		                android:text="@string/birth"
+		                style="@style/roboto_light"
+		                android:textSize="18sp" />
+		
+		            <TextView
+		                android:id="@+id/setting_birth_value"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:layout_alignParentRight="true"
+		                android:gravity="center"
+		                android:textColor="@color/setting_person_value"
+		                android:textSize="16sp"
+		                style="@style/roboto_light"
+		                android:text="@string/please_choose" />
+		        </RelativeLayout>
+		
+		        <!-- Settings profile: height -->
+		        <RelativeLayout
+		            android:id="@+id/setting_height_layout"
+		            android:layout_width="match_parent"
+		            android:layout_height="48dp"
+		            android:background="@drawable/list_bg_middle"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp" >
+		
+		            <TextView
+		                android:id="@+id/setting_height_key"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:gravity="center"
+		                android:textColor="#656565"
+		                android:text="@string/height"
+		                style="@style/roboto_light"
+		                android:textSize="18sp" />
+		
+		            <TextView
+		                android:id="@+id/setting_height_value"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:layout_alignParentRight="true"
+		                android:gravity="center"
+		                android:textColor="@color/setting_person_value"
+		                android:textSize="16sp"
+		                style="@style/roboto_light"
+		                android:text="@string/please_choose"  />
+		        </RelativeLayout>
+		        <!-- Settings profile: weight -->
+		        <RelativeLayout
+		            android:id="@+id/setting_weight_layout"
+		            android:layout_width="match_parent"
+		            android:layout_height="48dp"
+		            android:background="@drawable/list_bg_bottom"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp" >
+		
+		            <TextView
+		                android:id="@+id/setting_weight_key"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:gravity="center"
+		                android:textColor="#656565"
+		                android:text="@string/weight"
+		                style="@style/roboto_light"
+		                android:textSize="18sp" />
+		
+		            <TextView
+		                android:id="@+id/setting_weight_value"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:layout_alignParentRight="true"
+		                android:gravity="center"
+		                android:textColor="@color/setting_person_value"
+		                style="@style/roboto_light"
+		                android:textSize="16sp" 
+		            	android:text="@string/please_choose"  />
+		        </RelativeLayout>
+		    </LinearLayout>
+	    </LinearLayout>
+    
+    	<!-- SmartBand2 Menu List Drawer -->
+		<include android:id="@+id/menu_list_drawer"
+			android:layout_width="234dp"
+			android:layout_height="match_parent"
+			android:layout_gravity="left"
+			layout="@layout/menu_list_drawer" />
+	</android.support.v4.widget.DrawerLayout>
+</LinearLayout>

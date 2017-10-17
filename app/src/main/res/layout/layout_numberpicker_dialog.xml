@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout of height picker-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- integer -->
+    <com.jrdcom.wearable.smartband2.ui.view.NumberPicker
+        android:id="@+id/numberPicker_integer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        />
+
+</LinearLayout>

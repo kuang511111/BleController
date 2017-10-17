@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/about_title" 
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        >
+       <ImageButton
+            android:id="@+id/about_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_bg"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_previous"/>
+        <TextView 
+            android:id="@+id/about_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/about_title"
+            android:gravity="center"
+            android:textColor="#404040"
+            android:textSize="18sp"
+            style="@style/roboto_light"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_below="@id/about_title"
+        android:src="@drawable/divide_line"/>
+ <!--   
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+ 
+        <ImageView
+            android:id="@+id/about_main_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_launcher" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_main_image"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/slogan" />
+             
+    </RelativeLayout>
+-->
+    <RelativeLayout 
+        android:id="@+id/about_setting_version"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginBottom="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+        
+        <TextView
+        	android:id="@+id/settings_version"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/about_version"
+        	android:textColor="#9b9a98"
+        	android:textSize="10sp"
+        	style="@style/roboto_light"
+        	/>
+        
+        <TextView
+            android:id="@+id/settings_version_name"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:textColor="#9b9a98"
+        	android:textSize="10sp" 
+        	android:layout_toRightOf="@id/settings_version"
+        	style="@style/roboto_light"
+        	/>
+    </RelativeLayout>
+
+</RelativeLayout>

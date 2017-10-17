@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/choose_smartband_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_smartband_color"  
+        android:textSize="25sp"/>
+    
+	<ScrollView
+	    android:id="@+id/smartband_color_choose_scrollView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1">
+	    
+	    <RadioGroup 
+	        android:id="@+id/smartband_color_radiogroup"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        
+	        <RadioButton 
+	            android:id="@+id/button_black"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="黑色"
+	            android:checked="true"
+	            android:textSize="25sp"/>
+	        
+	        <RadioButton 
+	            android:id="@+id/button_white"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="白色"
+	            android:textSize="25sp"/>
+	        
+		</RadioGroup>
+	</ScrollView>
+    
+    <Button android:id="@+id/send_smartband_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickSend"
+        android:text="Send"/>
+    
+    <TextView 
+        android:id="@+id/set_smartband_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/set_smartband_color" 
+        android:visibility="invisible" 
+        android:gravity="center"
+        android:textSize="25sp"/>
+
+    <include layout="@layout/result_buttons" />
+
+</LinearLayout>

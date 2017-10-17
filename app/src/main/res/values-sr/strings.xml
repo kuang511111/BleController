@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Wed Apr 02 14:30:18 CST 2014
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!---->
+	<string name="gender">"Pol"</string>
+	<!---->
+	<string name="male">"Muški"</string>
+	<!---->
+	<string name="female">"Ženski"</string>
+	<!---->
+	<string name="birth">"Rođendan"</string>
+	<!---->
+	<string name="height">"Visina"</string>
+	<!---->
+	<string name="weight">"Težina"</string>
+	<!---->
+	<string name="str_sync_waiting_notify">"Čekanje na ažuriranje BoomBand-a..."</string>
+	<!--Type:string Purpose:when user change the My reminders settings, it will update the configuration to BoomBand and then show this message below the My reminders to indicate configuration has been updated ScreenPath:Main screen->My reminders-->
+	<string name="str_sync_suc_notify">"Uspešno ažurirano!"</string>
+	<!---->
+	<string name="height_picker_dialog_title">"Postavite visinu"</string>
+	<!---->
+	<string name="weight_picker_dialog_title">"Postavite težinu"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of string ScreenPath:Filpactivity interface->click pen icon ->target set interface-->
+	<string name="step_picker_dialog_title">"Postavite cilj (korak)"</string>
+	<!---->
+	<string name="progress_title_finish">"Urađeno"</string>
+	<!---->
+	<string name="target">"Cilj:"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display step number int mian interface-->
+	<string name="unit">"korak"</string>
+	<!--Type:String Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display step number int mian interface-->
+	<string name="steps">"koraci"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display calories number int mian interface-->
+	<string name="calories">"kalorije"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display Km number int mian interface-->
+	<string name="distances">"km"</string>
+	<!-- no translation found for length_units -->
+	<skip />
+	<!--Type:string Purpose:wrist app the sports data details day icon ScreenPath:wrist app the sports data details day icon-->
+	<string name="today">"Danas"</string>
+	<!---->
+	<string name="yesterday">"Juče"</string>
+	<!---->
+	<string name="toast_setting_birth">"Molimo postavite datum rođenja"</string>
+	<!---->
+	<string name="toast_setting_height">"Molimo postavite visinu"</string>
+	<!---->
+	<string name="toast_setting_weight">"Molimo postavite težinu"</string>
+	<!---->
+	<string name="profile_finish">"Podešavanje završeno"</string>
+	<!---->
+	<string name="settings">"Podešavanja"</string>
+	<!---->
+	<string name="share">"Podeli"</string>
+	<!---->
+	<string name="str_set_bluetooth">"Podesite Bluetooth"</string>
+	<!---->
+	<string name="str_set_bluetooth_content">"Aktivacija Bluetooth-a potrebna za povezivanje BoomBand-a, nastaviti?"</string>
+	<!---->
+	<string name="str_set_bluetooth_open">"Uključi"</string>
+	<!---->
+	<string name="str_add_device">"Dodaj uređaj"</string>
+	<!---->
+	<string name="str_bluetooth_disconnect">"Pokušajte ponovo"</string>
+	<!---->
+	<string name="str_bluetooth_connecting">"Povezivanje..."</string>
+	<!---->
+	<string name="str_bluetooth_connected">"Povezano"</string>
+	<!---->
+	<string name="str_bluetooth_turnoff">"BT isključen"</string>
+	<!---->
+	<string name="str_sports">"Sportovi"</string>
+	<!---->
+	<string name="str_sleep">"Spavanje"</string>
+	<!--Type:string Purpose:in main screen, sleep data statistic, title of the total sleep time. ScreenPath:main screen->total sleep time-->
+	<string name="str_sleep_title">"Ukupno vreme spavanja"</string>
+	<!--Type:string Purpose:in main screen, sleep data statistic, title of the sleep condition. ScreenPath:main screen->total sleep time-->
+	<string name="str_sleep_condition">"Uslovi spavanja:<xliff:g id="sleep_condition_percent" example="80">%s</xliff:g>%%"</string>
+	<!---->
+	<string name="about_version">"Trenutna verzija"</string>
+	<!--Type:String Purpose:String display for user see what is this ScreenPath:setting option: help -> help interface option:About->About title-->
+	<string name="about_title">"O nama"</string>
+	<!---->
+	<string name="profile_tick1">"Da bi vam pružii bolju zdravstvenu pomoć"</string>
+	<!---->
+	<string name="profile_tick2">"Molimo postavite lične informacije"</string>
+	<!---->
+	<string name="please_choose">"Molimo izaberite"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display goto today in mian interface-->
+	<string name="toToday">"do Danas"</string>
+	<!---->
+	<string name="my_devices">"Moji uređaji"</string>
+	<!---->
+	<string name="add_new_device">"Dodaj novi uređaj"</string>
+	<!---->
+	<string name="setting_my_warn_noti_title">"BoomBand Upozorenje"</string>
+	<!---->
+	<string name="setting_my_warn_noti_desp1">"Cilj postignut"</string>
+	<!---->
+	<string name="setting_my_warn_noti_desp2">"%, borba!"</string>
+	<!---->
+	<string name="setting_my_warn_dialog_desp1">"Cilj postignut"</string>
+	<!---->
+	<string name="setting_my_warn_dialog_desp2">"Započni!"</string>
+	<!---->
+	<string name="setting_my_warn_nolonger">"Odbaci"</string>
+	<!---->
+	<string name="setting_my_clock_tips">"Dupla vibracija, bez svetala"</string>
+	<!--Type:String Purpose:String display for notification user ScreenPath:Filpactivity interface->notic icon->notification interface->set alarm-->
+	<string name="setting_my_clock_text">"Alarm(i)"</string>
+	<!---->
+	<string name="setting_my_clock_repeat">"Ponovi"</string>
+	<!---->
+	<string name="setting_my_clock_max_count">"Maksimum 8 alarma"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:setting option: help -> help interface option:know the Boomband->tips-->
+	<string name="str_silent_sleep_explain">"Kada BoomBand pređe u režim spavanja, vaš telefon će biti u nečujnom režimu."</string>
+	<!---->
+	<string name="everyday">"Svakog dana"</string>
+	<!---->
+	<string name="setting_anti_lost_tip">"dupla vibracija, pet svetala treperi zaredom"</string>
+	<!--Type:string Purpose:comments on Alert while left settings ScreenPath:Main screen->My reminders->Alert while left-->
+	<string name="setting_anti_lost_dialog_content">"Kada je BoomBand daleko od telefona, uključiće upozorenje protiv gubljenja (dupla vibracija tri puta, pet svetala treperi zaredom)"</string>
+	<!---->
+	<string name="setting_calling_alarm_tip">"Jedna vibracija, jedno svetlo treperi"</string>
+	<!--Type:string Purpose:first click the Main screen->My reminders->Call reminder will popup this dialog ScreenPath:Main screen->My reminders->Call reminder-->
+	<string name="setting_calling_alarm_dialog_content">"Dolazni pozivi od odabranih kontakata će zavibrirati BoomBand (duga vibracija)"</string>
+	<!---->
+	<string name="setting_calling_alarm_add_tip">"Lista podsetnika o pozivima"</string>
+	<!---->
+	<string name="setting_calling_alarm_add_limit_tip">"Maksimum 5 osoba"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:Filpactivity interface->display current boomband mode-->
+	<string name="str_notification_text_normal">"BoomBand je u režimu Spavanja"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:Notification settings interface:option description-->
+	<string name="str_notification_text_mute">"BoomBand će biti u režimu Spavanja dok je telefon u Nečujnom režimu"</string>
+	<!---->
+	<string name="str_notification_text_low_battery">"Nivo baterija BoomBand-a je niži od %s, molimo povežite ga na punjač"</string>
+	<!--Type:string Purpose:It will pop up a dialogue in the main screen when BoomBand is in low battery.  ScreenPath:Main screen->Alert dialog-->
+	<string name="str_low_battery_dialog_title">"Upozorenje za bateriju BoomBand-a"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:setting option: My devices -> boomband ->Device information interface-->
+	<string name="device_informtion_title">"Informacije o uređaju"</string>
+	<!---->
+	<string name="device_informtion_manufacture_name">"Proizvođač:"</string>
+	<!---->
+	<string name="device_informtion_model_number">"Model uređaja:"</string>
+	<!---->
+	<string name="device_informtion_hw_revision">"Verzija hardvera:"</string>
+	<!---->
+	<string name="device_informtion_sw_revision">"Verzija softvera:"</string>
+	<!---->
+	<string name="device_informtion_wait_read">"Čeka se veza..."</string>
+	<!---->
+	<string name="str_snapshot_waitting">"Molimo vas, sačekajte..."</string>
+	<!---->
+	<string name="str_vip_list_limit">"5 kontakata dodato"</string>
+	<!---->
+	<string name="str_choose_device_title">"Podešavanja Bluetooth-a"</string>
+	<!---->
+	<string name="str_choose_device_open_bt">"Molimo uključite Bluetooth radi povezivanja sa BoomBand-om."</string>
+	<!---->
+	<string name="str_choose_bt_open_bt">"Uključi Bluetooth radi povezivanja sa BoomBand-om?"</string>
+	<!---->
+	<string name="str_bind_bt">"Poveži BoomBand"</string>
+	<!---->
+	<string name="str_bind_wait">"Kasnije"</string>
+	<!---->
+	<string name="str_remove_devices">"Odjavite se"</string>
+	<!--Type:string Purpose:when user want to bind another BoomBand, it firstly should remove the bond device, when user do this, it will pop up a warning dialog ScreenPath:Main screen->Settings->My devices->Add new device-->
+	<string name="str_remove_devices_title">"Odjavite se sa uređaja"</string>
+	<!---->
+	<string name="str_remove_device_content">"Prekinuće se veza sa BoomBand-om"</string>
+	<!---->
+	<string name="str_connected_device_tips">"Povezali ste se sa BoomBand-om"</string>
+	<!---->
+	<string name="str_replace_device_tips">"Zameniti trenutno povezani BoomBand?"</string>
+	<!---->
+	<string name="str_no_vip_contacts">"Nema kontakata"</string>
+	<!---->
+	<string name="str_add_vip_contacts">"Dodaj kontakte"</string>
+	<!---->
+	<string name="str_added_vip_contact">"Kontakti dodati"</string>
+	<!--Type:string Purpose:wrist app the sports data details week icon ScreenPath:wrist app the sports data details week icon-->
+	<string name="str_chart_7_day">"7 dana"</string>
+	<!--Type:string Purpose:wrist app the sports data details month icon ScreenPath:wrist app the sports data details month icon-->
+	<string name="str_chart_31_day">"31 dana"</string>
+	<!--Type:string Purpose:wristapp enter sleep data summary remind string ScreenPath:wristapp enter sleep data summary remind string-->
+	<string name="str_chart_sleep_waste">"Vreme pre spavanja"</string>
+	<!--Type:string Purpose:wrist app enter sleep data summary detail remind string ScreenPath:wrist app enter sleep data summary detail remind string-->
+	<string name="str_chart_sleep_effi">"Efikasnost spavanja"</string>
+	<!--Type:string Purpose:wrist app enter sleep data summary detail the remind string ScreenPath:wrist app enter sleep data summary detail the remind string-->
+	<string name="str_chart_sleep_total_time">"Ukupno vreme spavanja"</string>
+	<!---->
+	<string name="str_chart_sleep_effi_pre">"Efikasnost spavanja:"</string>
+	<!--Type:string Purpose:wristapp enter sleep data summary remind string ScreenPath:wristapp enter sleep data summary remind string-->
+	<string name="str_chart_sleep_waste_pre">"Vreme pre spavanja:"</string>
+	<!---->
+	<string name="str_chart_sleep_total_pre">"Ukupno vreme spavanja:"</string>
+	<!---->
+	<string name="str_chart_sport_target">"Cilj:"</string>
+	<!---->
+	<string name="str_share_failed">"Deljene neuspešno"</string>
+	<!---->
+	<string name="add_device_charge_prev_step">"Prethodni korak"</string>
+	<!---->
+	<string name="add_device_charge_next_step">"Sledeći korak"</string>
+	<!---->
+	<string name="add_device_battery_prev_step">"Prethodni korak"</string>
+	<!--Type:string Purpose:wrist app connecting limitation reminder to 20% ScreenPath:wrist app connecting limitation reminder to 20%-->
+	<string name="add_device_battery_next_step">"Napunjeno do 60%"</string>
+	<!---->
+	<string name="add_device_connect_tip">"Traženje uređaja..."</string>
+	<!--Type:string Purpose:When user try to bind the BoomBand, at last click this button to experience. at the bottom of the bind success screen. ScreenPath:Welcome->Bind device->Bond-->
+	<string name="add_device_bind_success_done">"Započnite iskusvo"</string>
+	<!---->
+	<string name="add_device_connect_fail_tip_1">"Uređaj nije pronađen"</string>
+	<!---->
+	<string name="add_device_connect_fail_tip_2">"Pokušajte da približite uređaj telefonu, ali udaljite ga od drugih telefona i BoomBand-ova"</string>
+	<!--Type:String Purpose:Toast the tip when the device connect the wristband fail. ScreenPath:BoomBand APP -> setting -> new device -> Add new device -> next step -> next step -> search.-->
+	<string name="add_device_connect_fail_tip_3">"Molimo da uređaj držite dalje od drugih telefona ili BoomBand-ova"</string>
+	<!---->
+	<string name="add_device_connect_fail_retry">"Pokušajte ponovo"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_1">"Povezivanje nije uspelo nekoliko puta, verovatno zbog:"</string>
+	<!--Type:string Purpose:when user try to bind device, after bond failed, it will show some tips. user can follow those tips to make a successful binding. ScreenPath:Main screen->bind device->bind failed-->
+	<string name="add_device_bind_fail_tip_2">"1. BoomBand je predaleko od telefona"</string>
+	<!--Type:string Purpose:when user try to bind device, after bond failed, it will show some tips. user can follow those tips to make a successful binding. ScreenPath:Main screen->bind device->bind failed-->
+	<string name="add_device_bind_fail_tip_3">"Savet: pokušajte da približite BoomBand telefonu (udaljenost manja od 1 metra)"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_4">"2. Postarajte se da nema postojećih veza između drugih BoomBand-ova/telefona"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_5">"Savet: držite telefoni BoomBand udaljene od drugih uređaja"</string>
+	<!--Type:string Purpose:when user try to bind device, after bond failed, it will show some tips. user can follow those tips to make a successful binding. ScreenPath:Main screen->bind device->bind failed-->
+	<string name="add_device_bind_fail_tip_6">"3. Nivo baterije BoomBanda je niži od 60%"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_7">"Savet: povežite BoomBand na punjač"</string>
+	<!---->
+	<string name="add_device_bind_fail_retry">"Pokušajte ponovo"</string>
+	<!---->
+	<string name="add_device_need_bind_tip_1">"Vaš BoomBand je bio povezan na drugi telefon, ponovo povezati?"</string>
+	<!---->
+	<string name="add_device_need_bind_bind">"Poveži"</string>
+	<!--Type:string Purpose:when user try to bind the device, firstly it will indicate that the BoomBand battery level should great then 60% ScreenPath:Main screen->add device->Battery-->
+	<string name="guide_battery_tip_1">"Oiguravanje trajanja baterije, molimo vas da osigurate 20% napunjenosti baterije(2 svetla trepere)"</string>
+	<!---->
+	<string name="guide_bind_tip">"Nađite BoomBand i kucnite ga dvaput"</string>
+	<!---->
+	<string name="guide_bind_double_click">"Duplo kucnite"</string>
+	<!---->
+	<string name="guide_battery_charge_tip">"Molimo vas da uključite punjač"</string>
+	<!--Type:string Purpose:when user successfully connect the BoomBand, this screen will appear. user can click the Begin to experience to enter main screen ScreenPath:Main screen->bind device->bind ok-->
+	<string name="guide_connect_successful_tip">"Uspešno povezano!"</string>
+	<!--Type:string Purpose:when user start to bind the BoomBand, while succeed, this screen will pop up. user can start to experience ScreenPath:Main screen->bind device->bind ok-->
+	<string name="guide_connect_successful_tip_comments">"Nosite BoomBand i trčite"</string>
+	<!--Type:String Purpose:String display for notice user ScreenPath:Filpactivity interface->notic icon->notification interface-->
+	<string name="reminders_title">"Moji podsetnici"</string>
+	<!---->
+	<string name="reminders_shake_title">"BoomBand vibracioni podsetnik"</string>
+	<!--Type:String Purpose:string display for notification user ScreenPath:Filpactivity interface->notic icon->notification interface->alarm-->
+	<string name="reminders_shake_alarm">"Alarm"</string>
+	<!---->
+	<string name="reminders_shake_anti_lost">"Upozorenje protiv gubljenja"</string>
+	<!---->
+	<string name="reminders_shake_call_reminder">"Podsetnik o pozivima"</string>
+	<!---->
+	<string name="reminders_phone_client_title">"Telefonski podsetnik"</string>
+	<!--Type:String Purpose:Sting display for notification user, this is  Sleep mode sync now ScreenPath:Filpactivity interface->detail sleep interface->check data-->
+	<string name="reminders_phone_client_sync_reminder">"Podsetnik o sinhronizaciji sna"</string>
+	<!--Type:show a description string Purpose:show string for people when people begin to use the feature for reminder. ScreenPath:Wristband->alarm->-->
+	<string name="reminders_phone_client_task_reminders">"Podsetnik o zadacima"</string>
+	<!--Type:string Purpose:in Call reminder setting screen, a radio button item for user selection where or not vibrate when incoming call is ringing ScreenPath:Main screen->My reminders->Call reminder-->
+	<string name="call_remind_all_incoming_call">"Svi dolazni pozivi"</string>
+	<!---->
+	<string name="call_remind_only_in_the_list">"Samo u listi kontakata"</string>
+	<!--Type:string Purpose:in the main screen, there is diagram to show current statics: Awake, Turn over and Sleep ScreenPath:Main screen->diagram-->
+	<string name="sleep_status_no_sleep">"Budan"</string>
+	<!---->
+	<string name="sleep_status_turn_over">"Okretanje"</string>
+	<!---->
+	<string name="sleep_status_sleep">"Spavanje"</string>
+	<!---->
+	<string name="tip_content_1">"Snimajte Sportske podatke svaki dan"</string>
+	<!---->
+	<string name="tip_title_2">"BoomBand"</string>
+	<!--Type:string Purpose:string remind you that the boomband will track your sleep  ScreenPath:string remind you to track your sleep-->
+	<string name="tip_content_2">"Prati uslove spavanja"</string>
+	<!---->
+	<string name="tip_content_3">"Podseća vas bilo kada i bilo gde"</string>
+	<!---->
+	<string name="tip_title_4">"Kako da učinim Sportske podatke tačnim?"</string>
+	<!--Type:string Purpose:wrist app apk entry the help title reminder view ScreenPath:wrist app apk entry the help title reminder view-->
+	<string name="tip_content_4">"Molimo da nosite BoomBand na slabijoj ruci."</string>
+	<!---->
+	<string name="tip_title_5">"Kako da aktiviram režim Spavanja?"</string>
+	<!--Type:string Purpose:A tip show after the welcome screen when user first launch this application. ScreenPath:Welcome->tips-->
+	<string name="tip_content_5">"Molimo da brzo kucnete na BoomBand 6 puta."</string>
+	<!---->
+	<string name="version_found">"Ažuriranje verzije"</string>
+	<!---->
+	<string name="version_update">"Ažuriraj"</string>
+	<!--Type:String Purpose:The  notification bar massage about the new apk version
+download. ScreenPath:new apk download -> notification -> the message-->
+	<string name="download_description">"Ažuriranje verzije u toku"</string>
+	<!--Type:string Purpose:A dialog to show when newer version is available. user can choose yes to download & install the newer version ScreenPath:Main screen-->
+	<string name="version_messsage">"Nova verzija pronađena na mreži, ažurirati?"</string>
+	<!--Type:string Purpose:show an item in the main screen->settings, will between profile and my devices setting. A function used to control where or not enable double click BoomBand to unlock scren ScreenPath:main screen->settings-->
+	<string name="setting_double_click_unlock_screen_title">"Duplo kucnite za otključavanje ekrana"</string>
+	<!--Type:string Purpose:When user click the Sport/Sleep switcher in the main screen, it will pop up a dialog to tell user what its meaning ScreenPath:Main screen->click sport/sleep switcher-->
+	<string name="switcher_tip_content">"Dodirnite za prikaz statistike o podacima Za promenu režima, kucnite 6 puta na BoomBand dok ne zavibrira i ne upali se LED svetlo."</string>
+	<!--Type:string Purpose:When user click the Sport Sleep switcher in the main screen, it will pop up a dialog to tell user what its meaning ScreenPath:Main screen->click sport sleep switcher-->
+	<string name="switcher_tip_action">"Ne prikazuj ponovo"</string>
+	<!--Type:string Purpose:show current BoomBand status in the bottom of the main screen. when user switch the BoomBand status, the message will be updated ScreenPath:main screen-->
+	<string name="device_mode_indicate_sport">"Vaš uređaj je u režimu Sporta."</string>
+	<!--Type:string Purpose:show current BoomBand status in the bottom of the main screen. when user switch the BoomBand status, the message will be updated ScreenPath:main screen-->
+	<string name="device_mode_indicate_sleep">"Vaš uređaj je u režimu Spavanja."</string>
+	<!--Type:string Purpose:A button show between the statistic data and the step/calories/km, can use to switch sleep data statics and sport data statics ScreenPath:main screen-->
+	<string name="data_statistic_sport_data">"Sportski podaci"</string>
+	<!--Type:string Purpose:A button show between the statistic data and the step/calories/km, can use to switch sleep data statics and sport data statics ScreenPath:main screen-->
+	<string name="data_statistic_sleep_data">"Podaci u stanju pripravnosti"</string>
+	<!--Type:string Purpose:in the main screen title bar, show the bluetooth device status information, indicate the BoomBand is upgrading its firmware. ScreenPath:main screen title bar-->
+	<string name="str_bluetooth_upgrading">"Nadogradnja firmvera..."</string>
+	<!-- no translation found for dfu_upgrade_firmware -->
+	<skip />
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_go_to_dfu">"Prebaci na DFU režim"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_can_not_found_device">"Uređaj nije pronađen!"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_connect_device">"Povezivanje sa uređajem..."</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_device_connected">"Uređaj povezan"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_device_service_found">"DFU usluga pronađena"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_device_disconnect">"Prekid veze sa uređajem"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_start_transfer_firmware">"Nadogradnja firmvera..."</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="duf_upgrade_transfer_complete">"Nadogradnja završena"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_success">"Uspešno nadograđeno!"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_reset_device">"Resetovanje uređaja..."</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_failed">"Nadogradnja nije uspela, pokušajte ponovo"</string>
+	<!-- no translation found for apk_new_version_exist_onlocal -->
+	<skip />
+	<!-- no translation found for apk_versoin_already_newest -->
+	<skip />
+	<!-- no translation found for verion_update_setting_item -->
+	<skip />
+	<!-- no translation found for version_update_msg_title -->
+	<skip />
+	<!-- no translation found for download_network_not_available -->
+	<skip />
+	<!-- no translation found for version_check_network_err -->
+	<skip />
+	<!-- no translation found for alarm_repeat -->
+	<skip />
+	<!-- no translation found for every_day -->
+	<skip />
+	<!-- no translation found for help_option_title -->
+	<skip />
+	<!-- no translation found for tip_4_title -->
+	<skip />
+	<!-- no translation found for tip_4_sub_1_title -->
+	<skip />
+	<!-- no translation found for tip_4_sub_1_content -->
+	<skip />
+	<!-- no translation found for tip_4_sub_2_title -->
+	<skip />
+	<!-- no translation found for tip_4_sub_2_content -->
+	<skip />
+	<!-- no translation found for tip_5_title -->
+	<skip />
+	<!-- no translation found for tip_5_content -->
+	<skip />
+	<!-- no translation found for tip_7_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_1_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_1_content -->
+	<skip />
+	<!-- no translation found for tip_7_sub_2_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_2_content -->
+	<skip />
+	<!-- no translation found for tip_7_sub_3_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_3_content -->
+	<skip />
+	<!-- no translation found for tip_8_title -->
+	<skip />
+	<!-- no translation found for tip_8_content -->
+	<skip />
+	<!-- no translation found for tip_9_title -->
+	<skip />
+	<!-- no translation found for tip_9_content -->
+	<skip />
+	<!-- no translation found for help_option_tips -->
+	<skip />
+	<!-- no translation found for help_option_questions -->
+	<skip />
+	<!-- no translation found for help_option_application -->
+	<skip />
+	<!-- no translation found for help_option_about -->
+	<skip />
+</resources>

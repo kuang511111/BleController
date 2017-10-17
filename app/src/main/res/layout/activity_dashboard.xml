@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <android.support.v4.widget.DrawerLayout
+            android:id="@+id/flip_drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:id="@+id/layout_flip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+            <RelativeLayout
+                    android:paddingTop="0dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/dashboard_bg"
+                    android:layout_height="42dp">
+
+                <!-- Boom Band settings button -->
+                <RelativeLayout
+                        android:id="@+id/main"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        >
+                    <ImageButton
+                            android:id="@+id/main_menu_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/menu" />
+
+
+                   <!-- <ImageButton
+                            android:id="@+id/tip_rom_need_update_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/tips_firmware_update_notification"
+                            android:visibility="invisible"/>-->
+                </RelativeLayout>
+                <com.jrdcom.wearable.smartband2.ui.view.RoundedImageView
+                        android:id="@+id/main_head_photo"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/main"
+                        android:clickable="false"
+                        android:src="@drawable/user_pic" /> <!--android:onClick="onClickPersonIcon"  -->
+
+
+                <TextView
+                        android:id="@+id/connect_status_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickPersonName"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@id/main_head_photo"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:textColor="#929497"
+                        style="@style/roboto_light"
+                        android:textSize="16sp" />
+
+                <!-- Boom Band connection status, include icon & text -->
+               <ImageView
+                        android:id="@+id/connect_status_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickConnect"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/unconect" />
+
+             <!--   <TextView
+                        android:id="@+id/connect_status_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@id/connect_status_icon"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:textColor="#828282"
+                        style="@style/roboto_light"
+                        android:textSize="14sp" />-->
+
+                <!-- Boom Band firmware upgrade information -->
+               <!-- <TextView
+                        android:id="@+id/text_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@id/connect_status_text"
+                        android:textColor="#828282"
+                        android:textSize="11sp"
+                        style="@style/roboto_light"
+                        android:visibility="gone" />-->
+
+
+
+                <!-- Boom Band battery status -->
+            <ImageView
+                        android:id="@+id/share_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickShare"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/connect_status_icon"
+                        android:background="@drawable/share" />
+            </RelativeLayout>
+
+            <ImageView
+                    android:layout_height="1dp"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/divide_line"/>
+
+            <FrameLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    >
+                <com.jrdcom.wearable.smartband2.ui.view.ViewPager
+                        android:id="@+id/dashboard_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+             <!--   <RelativeLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent">
+
+                    <ImageView android:id="@+id/sport_sleep_mode_status"
+                               android:layout_height="wrap_content"
+                               android:layout_width="wrap_content"
+                               android:layout_marginTop="48dp"
+                               android:src="@drawable/switch_sport"
+                               android:layout_centerHorizontal="true"/>
+                    <ImageView
+                            android:id="@+id/sport_mode_ani"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="48dp"
+                            android:src="@drawable/sport_animation"
+                            android:layout_centerHorizontal="true"/>
+                    <ImageView
+                            android:id="@+id/sleep_mode_ani"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="48dp"
+                            android:src="@drawable/sleep_animation"
+                            android:layout_centerHorizontal="true"/>
+                    <TextView android:id="@+id/sport_sleep_mode_text"
+                              android:layout_height="wrap_content"
+                              android:layout_width="wrap_content"
+                              android:layout_marginBottom="8dp"
+                              android:layout_alignParentBottom="true"
+                              android:layout_centerHorizontal="true"
+                              android:gravity="center"
+                              android:drawableLeft="@drawable/info_icon"
+                              android:text="@string/device_mode_indicate_sport"
+                              style="@style/roboto_light"
+                              android:textColor="#3ec276"/>
+                    <ImageView android:id="@+id/share"
+                               android:layout_height="wrap_content"
+                               android:layout_width="wrap_content"
+                               android:src="@drawable/btn_share"
+                               android:layout_alignParentRight="true"
+                               android:layout_alignParentBottom="true"/>
+                </RelativeLayout>-->
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- SmartBand2 Menu List Drawer -->
+        <include android:id="@+id/menu_list_drawer"
+            android:layout_width="234dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            layout="@layout/menu_list_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</FrameLayout>

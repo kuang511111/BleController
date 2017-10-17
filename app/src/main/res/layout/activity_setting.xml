@@ -1,0 +1,328 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <android.support.v4.widget.DrawerLayout
+		android:id="@+id/flip_drawer_layout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		
+		<LinearLayout
+			android:id="@+id/settings_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+    		<!-- Settings: Header -->
+			<RelativeLayout
+				android:id="@+id/goals_title"
+				android:layout_width="match_parent"
+				android:layout_height="42dp" >
+			
+				<ImageButton
+					android:id="@+id/main_menu_list"
+					android:layout_width="36dp"
+					android:layout_height="36dp"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="10dp"
+					android:background="@drawable/menu" />
+			
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="5dp"
+					android:layout_toRightOf="@+id/main_menu_list"
+					android:text="@string/settings"
+					android:textColor="#656565"
+					style="@style/roboto_light"
+					android:textSize="20sp" />
+			</RelativeLayout>
+
+		    <!-- Settings: divider -->
+		    <ImageView
+		        android:layout_height="2dp"
+		        android:layout_width="match_parent"
+		        android:scaleType="fitXY"
+		        android:src="@drawable/divide_line"/>
+    
+
+		    <!-- My reminder -->
+		    <LinearLayout
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+		        android:layout_margin="16dp"
+		        android:orientation="vertical"
+		        android:visibility="gone">
+		        <RelativeLayout android:id="@+id/setting_warn_layout"
+		            android:layout_width="match_parent"
+		            android:layout_height="52dp"
+		            android:layout_marginTop="20dp"
+		            android:background="@drawable/list_bg_single"
+		            android:paddingLeft="16dp"
+		            android:paddingRight="6dp">
+		            <TextView
+		                android:id="@+id/setting_warn_key"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:gravity="center"
+		                android:text="@string/reminders_title"
+		                style="@style/roboto_light"
+		                android:textSize="16sp" />
+		
+		            <ImageView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_centerInParent="true"
+		                android:background="@drawable/icon_next_nomal" />
+		        </RelativeLayout>
+		    </LinearLayout>
+
+		    <!-- My device & about -->
+		    <LinearLayout
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+		        android:layout_margin="16dp"
+		        android:orientation="vertical">
+		        
+		 		<!-- My Devices -->
+		        <RelativeLayout
+		            android:id="@+id/bluetooth_device_layout"
+		            android:layout_width="match_parent"
+		            android:layout_height="48dp"
+		            android:background="@drawable/list_bg_top"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp">
+		
+		            <TextView
+		                android:id="@+id/my_device_key"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:gravity="center"
+		                android:text="@string/my_devices"
+		                android:textColor="#656565"
+		                style="@style/roboto_light"
+		                android:textSize="18sp" />
+		            
+		             <ImageView android:id="@+id/tip_rom_update_mydevice"
+		                android:layout_width="13dp"
+		                android:layout_height="15dp"
+		                android:layout_centerInParent="true"
+		                android:layout_toLeftOf="@id/right_arrow"
+		                android:layout_marginRight="3dp"
+		                android:background="@drawable/tips_firmware_update_notification"
+		                android:visibility="gone"/>
+		             
+		              <ImageView
+		                android:id="@+id/right_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_centerInParent="true"
+		                android:background="@drawable/icon_next_nomal" />
+		        </RelativeLayout>
+        
+		        <!-- SmartBand2 settings -->
+		        <RelativeLayout
+		            android:id="@+id/smartband_settings_layout"
+		            android:layout_width="match_parent"
+		            android:layout_height="48dp"
+		            android:background="@drawable/list_bg_middle"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp" >
+		
+		            <TextView
+		                android:id="@+id/smartband_settings_key"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:gravity="center"
+				        style="@style/roboto_light"
+				        android:textColor="#656565"
+		                android:text="@string/settings_smartband_settings"
+		                android:textSize="18sp" />
+		
+		              <ImageView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_centerInParent="true"
+		                android:background="@drawable/icon_next_nomal" />
+		        </RelativeLayout>
+		        
+                <!-- Notifications -->
+
+                <RelativeLayout
+                    android:id="@+id/notifications_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/list_bg_middle"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/notifications_key"
+                        style="@style/roboto_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/settings_notifications"
+                        android:textColor="#656565"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/icon_next_nomal" />
+                </RelativeLayout>
+
+                <!-- Reminder -->
+
+                <RelativeLayout
+                    android:id="@+id/settings_reminder_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/list_bg_middle"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/settings_reminder_key"
+                        style="@style/roboto_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/settings_reminders"
+                        android:textColor="#656565"
+                        android:textSize="18sp" />
+		
+		              <ImageView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_centerInParent="true"
+		                android:background="@drawable/icon_next_nomal" />
+		        </RelativeLayout>
+		        
+		        
+		        <!-- Version check -->
+		        <RelativeLayout
+		            android:id="@+id/version_check_layout"
+		            android:layout_width="match_parent"
+		            android:layout_height="48dp"
+		            android:background="@drawable/list_bg_middle"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp" >
+		
+		            <TextView
+		                android:id="@+id/verion_check_key"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:gravity="center"
+				        style="@style/roboto_light"
+				        android:textColor="#656565"
+		                android:text="@string/verion_update_setting_item"
+		                android:textSize="18sp" />
+		
+		              <ImageView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_centerInParent="true"
+		                android:background="@drawable/icon_next_nomal" />
+		        </RelativeLayout>
+        
+		        <!-- Help -->
+		        <RelativeLayout
+		            android:id="@+id/setting_about_layout"
+		            android:layout_width="match_parent"
+		            android:layout_height="48dp"
+		            android:background="@drawable/list_bg_bottom"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp" >
+		
+		            <TextView
+		                android:id="@+id/setting_about_key"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:gravity="center"
+		                android:text="@string/help_option_title"
+		                android:textColor="#656565"
+		                style="@style/roboto_light"
+		                android:textSize="18sp" />
+		
+		            <ImageView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_centerInParent="true"
+		                android:background="@drawable/icon_next_nomal" />
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/setting_login_tcloud"
+		            android:layout_width="match_parent"
+		            android:layout_height="48dp"
+		            android:background="@drawable/list_bg_bottom"
+		            android:visibility="gone"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp" >
+		
+		            <TextView
+		                android:id="@+id/login_tcloud"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:gravity="center"
+		                android:textColor="#656565"
+		                android:text="@string/login_tcloud"
+		                style="@style/roboto_light"
+		                android:textSize="18sp" />
+		
+		            <ImageView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_centerInParent="true"
+		                android:background="@drawable/icon_next_nomal" />
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/setting_tcloud_sync_data"
+		            android:layout_width="match_parent"
+		            android:layout_height="48dp"
+		            android:background="@drawable/list_bg_bottom"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp" >
+		
+		            <TextView
+		                android:id="@+id/tcloud_sync_data"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:gravity="center"
+		                android:textColor="#656565"
+		                android:text="@string/login_sync_data_setting"
+		                style="@style/roboto_light"
+		                android:textSize="18sp" />
+		
+		            <ImageView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_centerInParent="true"
+		                android:background="@drawable/icon_next_nomal" />
+		        </RelativeLayout>
+        </LinearLayout>
+        
+     </LinearLayout>
+    
+    	<!-- SmartBand2 Menu List Drawer -->
+		<include android:id="@+id/menu_list_drawer"
+			android:layout_width="234dp"
+			android:layout_height="match_parent"
+			android:layout_gravity="left"
+			layout="@layout/menu_list_drawer" />
+	</android.support.v4.widget.DrawerLayout>
+</LinearLayout>

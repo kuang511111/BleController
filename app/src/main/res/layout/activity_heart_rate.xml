@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical">
+    <!-- Header -->
+    <LinearLayout
+        android:layout_height="42dp"
+        android:layout_width="match_parent">
+        <ImageButton
+            android:id="@+id/back"
+            android:onClick="backPressed"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_bg"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_previous"/>
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:paddingLeft="14dp"
+            android:gravity="center_vertical"
+            android:text="@string/heart_rate_title"
+            android:textColor="#404040"
+            style="@style/roboto_light"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <!-- Divider -->
+    <ImageView
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+        <TextView
+                android:id="@+id/heart_rate_avg_text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textColor="#6e6e6e"
+                android:textSize="20sp"/>
+        <TextView
+                android:id="@+id/heart_rate_avg_value"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textColor="#ec7711"
+                android:textSize="30sp"/>
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="@string/heart_rate_unit"
+                android:textColor="#333333"
+                android:textSize="16sp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+        <TextView
+                android:id="@+id/heart_rate_max_text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textColor="#6e6e6e"
+                android:textSize="20sp"/>
+        <TextView
+                android:id="@+id/heart_rate_max_value"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textColor="#ec7711"
+                android:textSize="30sp"/>
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingLeft="5dp"
+                android:gravity="center"
+                android:text="@string/heart_rate_unit"
+                android:textColor="#333333"
+                android:textSize="16sp"/>
+    </LinearLayout>
+
+
+
+    <com.jrdcom.wearable.smartband2.ui.view.HeartRateChartPanel
+            android:id="@+id/heart_rate_chart"
+            android:background="@null"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="69dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+    </com.jrdcom.wearable.smartband2.ui.view.HeartRateChartPanel>
+
+</LinearLayout>

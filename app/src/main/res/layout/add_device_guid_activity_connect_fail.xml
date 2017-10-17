@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/add_device_connect_fail_tip_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/choose_device_button_color"
+        android:textSize="22sp"
+        style="@style/roboto_light"
+        android:text="@string/add_device_connect_fail_tip_1"
+        />
+
+    <TextView
+        android:id="@+id/add_device_connect_fail_tip_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/choose_device_button_color"
+        android:textSize="20sp"
+        android:layout_below="@id/add_device_connect_fail_tip_1"
+        android:text="@string/add_device_connect_fail_tip_2"
+        style="@style/roboto_light"
+        />
+
+    <TextView
+        android:id="@+id/add_device_connect_fail_tip_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/choose_device_button_color"
+        android:textSize="20sp"
+        android:layout_below="@id/add_device_connect_fail_tip_2"
+        android:text="@string/add_device_connect_fail_tip_3"
+        style="@style/roboto_light"
+        />
+
+
+    <Button
+        android:id="@+id/btn_add_device_connect_fail_retry"
+        android:layout_width="178dp"
+        android:layout_height="44dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/btn_add_device_highlight"
+        android:textColor="@color/add_device_guid_button_color"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:text="@string/add_device_connect_fail_retry"
+        style="@style/roboto_light"
+        />
+</RelativeLayout>

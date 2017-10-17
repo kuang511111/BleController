@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <!-- Settings: Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <ImageButton
+            android:id="@+id/language_on_smartband2_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_bg"
+            android:src="@drawable/icon_previous" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/smartband_settings_language_set"
+            android:textColor="#404040"
+            style="@style/roboto_light"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!-- divider Line -->
+    <ImageView
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line"/>
+    
+   <ListView
+     android:id="@+id/language_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   </ListView>
+</LinearLayout>
+

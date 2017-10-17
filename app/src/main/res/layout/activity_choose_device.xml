@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        style="@style/roboto_light"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/has_handring"
+            android:layout_width="178dp"
+            android:layout_height="44dp"
+            android:background="@drawable/btn_add_device_highlight"
+            android:textSize="14sp"
+            android:textColor="@color/choose_device_button_color"
+            android:text="@string/str_bind_bt" />
+
+        <Button
+            android:id="@+id/has_no_handring"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="14sp"
+            android:textColor="@color/choose_device_button_color"
+            android:layout_toRightOf="@id/has_handring"
+            android:background="@drawable/btn_add_device_normal"
+            android:text="@string/str_bind_wait" />
+    </RelativeLayout>
+
+</RelativeLayout>

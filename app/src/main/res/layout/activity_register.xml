@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Register: Header -->
+
+    <RelativeLayout
+        android:id="@+id/head_title"
+        android:layout_width="match_parent"
+        android:layout_height="42.0dip" >
+
+        <ImageButton
+            android:id="@+id/register_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/icon_bg"
+            android:src="@drawable/icon_previous" />
+
+        <TextView
+            style="@style/roboto_light"
+            android:layout_toRightOf="@id/register_back"
+            android:layout_marginLeft="10.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/login_register"
+            android:textColor="#969696"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!-- Register: divider -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/head_title"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line" />
+
+    <TextView
+        style="@style/roboto_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72.0dip"
+        android:singleLine="true"
+        android:text="@string/login_register_method"
+        android:textColor="#969696"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="114.0dip"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/username_ed"
+            style="@style/roboto_light"
+            android:layout_width="216.0dip"
+            android:layout_height="wrap_content"
+            android:longClickable="false"
+            android:background="@drawable/creatacount_frame_bg"
+            android:ems="20"
+            android:gravity="center"
+            android:hint="@string/login_input_nickname_set_hint"
+            android:inputType="none"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip"
+            android:textColor="#aaaaaa"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/email_ed"
+            style="@style/roboto_light"
+            android:layout_width="216.0dip"
+            android:layout_height="wrap_content"
+            android:longClickable="false"
+            android:background="@drawable/creatacount_frame_bg"
+            android:ems="20"
+            android:gravity="center"
+            android:hint="@string/login_input_email_hint"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip"
+            android:textColor="#aaaaaa"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/password_ed"
+            style="@style/roboto_light"
+            android:layout_width="216.0dip"
+            android:layout_height="wrap_content"
+            android:longClickable="false"
+            android:background="@drawable/creatacount_frame_bg"
+            android:ems="20"
+            android:gravity="center"
+            android:hint="@string/login_input_password_hint"
+            android:inputType="textPassword"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip"
+            android:textColor="#aaaaaa"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/confirm_password_ed"
+            style="@style/roboto_light"
+            android:layout_width="216.0dip"
+            android:layout_height="wrap_content"
+            android:longClickable="false"
+            android:background="@drawable/creatacount_frame_bg"
+            android:ems="20"
+            android:gravity="center"
+            android:hint="@string/login_input_confirm_password_hint"
+            android:inputType="textPassword"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip"
+            android:textColor="#aaaaaa"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="256.0dip"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/image_view_refresh"
+                style="@style/roboto_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_signin_captcha_bg_selector"
+                android:text="@string/login_captcha_refresh"
+                android:textColor="#aaaaaa"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/captcha_image_view"
+                android:layout_width="65.0dp"
+                android:layout_height="40.0dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/image_view_refresh"
+                android:background="@android:color/white" />
+
+            <EditText
+                android:id="@+id/image_code_ed"
+                style="@style/roboto_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/captcha_image_view"
+                android:longClickable="false"
+                android:background="@drawable/signin_frame_capcha"
+                android:ems="20"
+                android:gravity="center"
+                android:hint="@string/login_input_captcha_set_hint"
+                android:inputType="none"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:textColor="#aaaaaa"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_refer"
+        style="@style/roboto_light"
+        android:layout_width="273.0dip"
+        android:layout_height="60.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="135.0dip"
+        android:background="@drawable/btn_createaccount_bg_selector"
+        android:text="@string/login_submit"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

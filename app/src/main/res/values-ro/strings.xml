@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Wed Apr 02 14:30:18 CST 2014
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!---->
+	<string name="gender">"Sex"</string>
+	<!---->
+	<string name="male">"Bărbat"</string>
+	<!---->
+	<string name="female">"Femeie"</string>
+	<!---->
+	<string name="birth">"Zi de naştere"</string>
+	<!---->
+	<string name="height">"Înălţime"</string>
+	<!---->
+	<string name="weight">"Greutate"</string>
+	<!---->
+	<string name="str_sync_waiting_notify">"Se așteaptă actualizarea pe BoomBand..."</string>
+	<!--Type:string Purpose:when user change the My reminders settings, it will update the configuration to BoomBand and then show this message below the My reminders to indicate configuration has been updated ScreenPath:Main screen->My reminders-->
+	<string name="str_sync_suc_notify">"Actualizare reușită!"</string>
+	<!---->
+	<string name="height_picker_dialog_title">"Setați înălțimea"</string>
+	<!---->
+	<string name="weight_picker_dialog_title">"Setați greutatea"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of string ScreenPath:Filpactivity interface->click pen icon ->target set interface-->
+	<string name="step_picker_dialog_title">"Setați ținta (pași)"</string>
+	<!---->
+	<string name="progress_title_finish">"Terminat"</string>
+	<!---->
+	<string name="target">"Țintă"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display step number int mian interface-->
+	<string name="unit">"pas"</string>
+	<!--Type:String Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display step number int mian interface-->
+	<string name="steps">"pași"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display calories number int mian interface-->
+	<string name="calories">"calorii"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display Km number int mian interface-->
+	<string name="distances">"km"</string>
+	<!-- no translation found for length_units -->
+	<skip />
+	<!--Type:string Purpose:wrist app the sports data details day icon ScreenPath:wrist app the sports data details day icon-->
+	<string name="today">"Astăzi"</string>
+	<!---->
+	<string name="yesterday">"Ieri"</string>
+	<!---->
+	<string name="toast_setting_birth">"Setați data nașterii"</string>
+	<!---->
+	<string name="toast_setting_height">"Setați înălțimea"</string>
+	<!---->
+	<string name="toast_setting_weight">"Setați greutatea"</string>
+	<!---->
+	<string name="profile_finish">"Setare finalizată"</string>
+	<!---->
+	<string name="settings">"Setări"</string>
+	<!---->
+	<string name="share">"Partajați"</string>
+	<!---->
+	<string name="str_set_bluetooth">"Configurare Bluetooth"</string>
+	<!---->
+	<string name="str_set_bluetooth_content">"Pentru conexiunea BoomBand este necesară activarea Bluetooth. Continuați?"</string>
+	<!---->
+	<string name="str_set_bluetooth_open">"Activare"</string>
+	<!---->
+	<string name="str_add_device">"Adăugaţi dispozitiv"</string>
+	<!---->
+	<string name="str_bluetooth_disconnect">"Încercaţi din nou"</string>
+	<!---->
+	<string name="str_bluetooth_connecting">"Se conectează..."</string>
+	<!---->
+	<string name="str_bluetooth_connected">"Conectat"</string>
+	<!---->
+	<string name="str_bluetooth_turnoff">"Bluetooth dezact."</string>
+	<!---->
+	<string name="str_sports">"Sport"</string>
+	<!---->
+	<string name="str_sleep">"Repaus"</string>
+	<!--Type:string Purpose:in main screen, sleep data statistic, title of the total sleep time. ScreenPath:main screen->total sleep time-->
+	<string name="str_sleep_title">"Timp total de repaus"</string>
+	<!--Type:string Purpose:in main screen, sleep data statistic, title of the sleep condition. ScreenPath:main screen->total sleep time-->
+	<string name="str_sleep_condition">"Condiții de repaus:<xliff:g id="sleep_condition_percent" example="80">%s</xliff:g>%%"</string>
+	<!---->
+	<string name="about_version">"Versiunea actuală"</string>
+	<!--Type:String Purpose:String display for user see what is this ScreenPath:setting option: help -> help interface option:About->About title-->
+	<string name="about_title">"Despre"</string>
+	<!---->
+	<string name="profile_tick1">"Pentru a vă furniza un ajutor mai bun pe probleme de sănătate"</string>
+	<!---->
+	<string name="profile_tick2">"Configurați informațiile personale"</string>
+	<!---->
+	<string name="please_choose">"Alegeți"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display goto today in mian interface-->
+	<string name="toToday">"până Azi"</string>
+	<!---->
+	<string name="my_devices">"Dispozitivele mele"</string>
+	<!---->
+	<string name="add_new_device">"Adăugare dispozitiv nou"</string>
+	<!---->
+	<string name="setting_my_warn_noti_title">"Avertisment BoomBand"</string>
+	<!---->
+	<string name="setting_my_warn_noti_desp1">"Țintă atinsă"</string>
+	<!---->
+	<string name="setting_my_warn_noti_desp2">"%, nu renunța!"</string>
+	<!---->
+	<string name="setting_my_warn_dialog_desp1">"Țintă atinsă"</string>
+	<!---->
+	<string name="setting_my_warn_dialog_desp2">"Dă-i drumul!"</string>
+	<!---->
+	<string name="setting_my_warn_nolonger">"Respinge"</string>
+	<!---->
+	<string name="setting_my_clock_tips">"Vibrație dublă, fără lumini"</string>
+	<!--Type:String Purpose:String display for notification user ScreenPath:Filpactivity interface->notic icon->notification interface->set alarm-->
+	<string name="setting_my_clock_text">"alarmă(e)"</string>
+	<!---->
+	<string name="setting_my_clock_repeat">"Repetare"</string>
+	<!---->
+	<string name="setting_my_clock_max_count">"Maximum opt alarme"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:setting option: help -> help interface option:know the Boomband->tips-->
+	<string name="str_silent_sleep_explain">"Când dispozitivul BoomBand trece în modul de repaus, telefonul va fi în mod silențios."</string>
+	<!---->
+	<string name="everyday">"În fiecare zi"</string>
+	<!---->
+	<string name="setting_anti_lost_tip">"Vibrație dublă și vor pâlpâi succesiv cinci lumini"</string>
+	<!--Type:string Purpose:comments on Alert while left settings ScreenPath:Main screen->My reminders->Alert while left-->
+	<string name="setting_anti_lost_dialog_content">"Când dispozitivul BoomBand este departe de telefon, acesta va declanșa alerta în caz de pierdere (vibrație dublă de trei ori și vor pâlpâi succesiv cinci lumini)."</string>
+	<!---->
+	<string name="setting_calling_alarm_tip">"O vibrație, un pâlpâit"</string>
+	<!--Type:string Purpose:first click the Main screen->My reminders->Call reminder will popup this dialog ScreenPath:Main screen->My reminders->Call reminder-->
+	<string name="setting_calling_alarm_dialog_content">"Dispozitivul BoomBand va vibra (vibrație lungă) în cazul apelurilor primite de la persoanele selectate"</string>
+	<!---->
+	<string name="setting_calling_alarm_add_tip">"Listă memento apeluri"</string>
+	<!---->
+	<string name="setting_calling_alarm_add_limit_tip">"Maximum 5 persoane"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:Filpactivity interface->display current boomband mode-->
+	<string name="str_notification_text_normal">"Dispozitivul BoomBand este în stare de repaus"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:Notification settings interface:option description-->
+	<string name="str_notification_text_mute">"Dispozitivul BoomBand va fi în modul de repaus cât timp telefonul este în modul silențios"</string>
+	<!---->
+	<string name="str_notification_text_low_battery">"Nivelul bateriei dispozitivului BoomBand este sub %s. Conectați-l la încărcător."</string>
+	<!--Type:string Purpose:It will pop up a dialogue in the main screen when BoomBand is in low battery.  ScreenPath:Main screen->Alert dialog-->
+	<string name="str_low_battery_dialog_title">"Avertisment baterie descărcată BoomBand"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:setting option: My devices -> boomband ->Device information interface-->
+	<string name="device_informtion_title">"Informaţii dispozitiv"</string>
+	<!---->
+	<string name="device_informtion_manufacture_name">"Producător:"</string>
+	<!---->
+	<string name="device_informtion_model_number">"Model dispozitiv:"</string>
+	<!---->
+	<string name="device_informtion_hw_revision">"Versiunea hardware:"</string>
+	<!---->
+	<string name="device_informtion_sw_revision">"Versiunea software:"</string>
+	<!---->
+	<string name="device_informtion_wait_read">"Se aşteaptă realizarea conexiunii..."</string>
+	<!---->
+	<string name="str_snapshot_waitting">"Aşteptaţi..."</string>
+	<!---->
+	<string name="str_vip_list_limit">"Au fost adăugate 5 contacte"</string>
+	<!---->
+	<string name="str_choose_device_title">"Configurare Bluetooth"</string>
+	<!---->
+	<string name="str_choose_device_open_bt">"Activați funcția Bluetooth pentru împerecherea cu dispozitivul BoomBand."</string>
+	<!---->
+	<string name="str_choose_bt_open_bt">"Activați funcția Bluetooth pentru conectarea la BoomBand?"</string>
+	<!---->
+	<string name="str_bind_bt">"Conectare BoomBand"</string>
+	<!---->
+	<string name="str_bind_wait">"Mai târziu"</string>
+	<!---->
+	<string name="str_remove_devices">"Deconectare"</string>
+	<!--Type:string Purpose:when user want to bind another BoomBand, it firstly should remove the bond device, when user do this, it will pop up a warning dialog ScreenPath:Main screen->Settings->My devices->Add new device-->
+	<string name="str_remove_devices_title">"Deconectare de la dispozitiv"</string>
+	<!---->
+	<string name="str_remove_device_content">"Se va deconecta de la BoomBand"</string>
+	<!---->
+	<string name="str_connected_device_tips">"V-ați conectat la BoomBand"</string>
+	<!---->
+	<string name="str_replace_device_tips">"Înlocuiți dispozitivul BoomBand conectat în prezent?"</string>
+	<!---->
+	<string name="str_no_vip_contacts">"Nu există contacte"</string>
+	<!---->
+	<string name="str_add_vip_contacts">"Adăugare contacte"</string>
+	<!---->
+	<string name="str_added_vip_contact">"Contacte adăugate"</string>
+	<!--Type:string Purpose:wrist app the sports data details week icon ScreenPath:wrist app the sports data details week icon-->
+	<string name="str_chart_7_day">"7 zile"</string>
+	<!--Type:string Purpose:wrist app the sports data details month icon ScreenPath:wrist app the sports data details month icon-->
+	<string name="str_chart_31_day">"31 de zile"</string>
+	<!--Type:string Purpose:wristapp enter sleep data summary remind string ScreenPath:wristapp enter sleep data summary remind string-->
+	<string name="str_chart_sleep_waste">"Timp pre-repaus"</string>
+	<!--Type:string Purpose:wrist app enter sleep data summary detail remind string ScreenPath:wrist app enter sleep data summary detail remind string-->
+	<string name="str_chart_sleep_effi">"Eficiență repaus"</string>
+	<!--Type:string Purpose:wrist app enter sleep data summary detail the remind string ScreenPath:wrist app enter sleep data summary detail the remind string-->
+	<string name="str_chart_sleep_total_time">"Timp total de repaus"</string>
+	<!---->
+	<string name="str_chart_sleep_effi_pre">"Eficiență repaus:"</string>
+	<!--Type:string Purpose:wristapp enter sleep data summary remind string ScreenPath:wristapp enter sleep data summary remind string-->
+	<string name="str_chart_sleep_waste_pre">"Timp pre-repaus:"</string>
+	<!---->
+	<string name="str_chart_sleep_total_pre">"Timp total de repaus:"</string>
+	<!---->
+	<string name="str_chart_sport_target">"Țintă:"</string>
+	<!---->
+	<string name="str_share_failed">"Partajare nereușită"</string>
+	<!---->
+	<string name="add_device_charge_prev_step">"Pasul anterior"</string>
+	<!---->
+	<string name="add_device_charge_next_step">"Pasul următor"</string>
+	<!---->
+	<string name="add_device_battery_prev_step">"Pasul anterior"</string>
+	<!--Type:string Purpose:wrist app connecting limitation reminder to 20% ScreenPath:wrist app connecting limitation reminder to 20%-->
+	<string name="add_device_battery_next_step">"Încărcat 60%"</string>
+	<!---->
+	<string name="add_device_connect_tip">"Se caută dispozitiv..."</string>
+	<!--Type:string Purpose:When user try to bind the BoomBand, at last click this button to experience. at the bottom of the bind success screen. ScreenPath:Welcome->Bind device->Bond-->
+	<string name="add_device_bind_success_done">"Începeți experiența"</string>
+	<!---->
+	<string name="add_device_connect_fail_tip_1">"Dispozitivul nu a fost găsit"</string>
+	<!---->
+	<string name="add_device_connect_fail_tip_2">"Încercați să apropiați dispozitivul de telefon, dar la distanță de alte telefoane sau dispozitive BoomBand"</string>
+	<!--Type:String Purpose:Toast the tip when the device connect the wristband fail. ScreenPath:BoomBand APP -> setting -> new device -> Add new device -> next step -> next step -> search.-->
+	<string name="add_device_connect_fail_tip_3">"Păstrați-l la distanță de alte telefoane sau dispozitive BoomBand"</string>
+	<!---->
+	<string name="add_device_connect_fail_retry">"Încercaţi din nou"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_1">"Conexiune nereușită de mai multe ori, posibil din următoarele cauze:"</string>
+	<!--Type:string Purpose:when user try to bind device, after bond failed, it will show some tips. user can follow those tips to make a successful binding. ScreenPath:Main screen->bind device->bind failed-->
+	<string name="add_device_bind_fail_tip_2">"1. Dispozitivul BoomBand este prea departe de telefon"</string>
+	<!--Type:string Purpose:when user try to bind device, after bond failed, it will show some tips. user can follow those tips to make a successful binding. ScreenPath:Main screen->bind device->bind failed-->
+	<string name="add_device_bind_fail_tip_3">"Sfat: încercați să apropiați dispozitivul BoomBand de telefon (la un metru)"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_4">"2. Asigurați-vă că nu există conexiuni între alte dispozitive BoomBand/telefoane"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_5">"Sfat: păstrați telefonul și dispozitivul BoomBand la distanță de alte dispozitive"</string>
+	<!--Type:string Purpose:when user try to bind device, after bond failed, it will show some tips. user can follow those tips to make a successful binding. ScreenPath:Main screen->bind device->bind failed-->
+	<string name="add_device_bind_fail_tip_6">"3. Nivelul bateriei BoomBand este sub 60%"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_7">"Sfat: conectați dispozitivul BoomBand la încărcător"</string>
+	<!---->
+	<string name="add_device_bind_fail_retry">"Încercaţi din nou"</string>
+	<!---->
+	<string name="add_device_need_bind_tip_1">"Dispozitivul BoomBand a fost conectat la un alt telefon. Reconectați?"</string>
+	<!---->
+	<string name="add_device_need_bind_bind">"Conectaţi"</string>
+	<!--Type:string Purpose:when user try to bind the device, firstly it will indicate that the BoomBand battery level should great then 60% ScreenPath:Main screen->add device->Battery-->
+	<string name="guide_battery_tip_1">"Se asigură durata de viaţă a bateriei, asigurați o încărcare de 20% a bateriei(pâlpâie 2 lumini)"</string>
+	<!---->
+	<string name="guide_bind_tip">"Găsiți dispozitivul BoomBand și atingeți-l de două ori"</string>
+	<!---->
+	<string name="guide_bind_double_click">"Atingeţi de două ori"</string>
+	<!---->
+	<string name="guide_battery_charge_tip">"Conectaţi încărcătorul"</string>
+	<!--Type:string Purpose:when user successfully connect the BoomBand, this screen will appear. user can click the Begin to experience to enter main screen ScreenPath:Main screen->bind device->bind ok-->
+	<string name="guide_connect_successful_tip">"Conectare reușită!"</string>
+	<!--Type:string Purpose:when user start to bind the BoomBand, while succeed, this screen will pop up. user can start to experience ScreenPath:Main screen->bind device->bind ok-->
+	<string name="guide_connect_successful_tip_comments">"Purtați BoomBand și începeți să alergați"</string>
+	<!--Type:String Purpose:String display for notice user ScreenPath:Filpactivity interface->notic icon->notification interface-->
+	<string name="reminders_title">"Mementourile mele"</string>
+	<!---->
+	<string name="reminders_shake_title">"Mementouri vibrație BoomBand"</string>
+	<!--Type:String Purpose:string display for notification user ScreenPath:Filpactivity interface->notic icon->notification interface->alarm-->
+	<string name="reminders_shake_alarm">"Alarmă"</string>
+	<!---->
+	<string name="reminders_shake_anti_lost">"Alertă în caz de pierdere"</string>
+	<!---->
+	<string name="reminders_shake_call_reminder">"Memento apel"</string>
+	<!---->
+	<string name="reminders_phone_client_title">"Mementouri telefon"</string>
+	<!--Type:String Purpose:Sting display for notification user, this is  Sleep mode sync now ScreenPath:Filpactivity interface->detail sleep interface->check data-->
+	<string name="reminders_phone_client_sync_reminder">"Memento sincronizare repaus"</string>
+	<!--Type:show a description string Purpose:show string for people when people begin to use the feature for reminder. ScreenPath:Wristband->alarm->-->
+	<string name="reminders_phone_client_task_reminders">"Memento sarcină"</string>
+	<!--Type:string Purpose:in Call reminder setting screen, a radio button item for user selection where or not vibrate when incoming call is ringing ScreenPath:Main screen->My reminders->Call reminder-->
+	<string name="call_remind_all_incoming_call">"Toate apelurile primite"</string>
+	<!---->
+	<string name="call_remind_only_in_the_list">"„Numai în agendă”"</string>
+	<!--Type:string Purpose:in the main screen, there is diagram to show current statics: Awake, Turn over and Sleep ScreenPath:Main screen->diagram-->
+	<string name="sleep_status_no_sleep">"Activ"</string>
+	<!---->
+	<string name="sleep_status_turn_over">"Întoarceţi"</string>
+	<!---->
+	<string name="sleep_status_sleep">"Repaus"</string>
+	<!---->
+	<string name="tip_content_1">"Înregistrați în fiecare zi date despre activitățile sportive"</string>
+	<!---->
+	<string name="tip_title_2">"BoomBand"</string>
+	<!--Type:string Purpose:string remind you that the boomband will track your sleep  ScreenPath:string remind you to track your sleep-->
+	<string name="tip_content_2">"Urmăriți condițiile de repaus"</string>
+	<!---->
+	<string name="tip_content_3">"Reamintire oricând și oriunde"</string>
+	<!---->
+	<string name="tip_title_4">"Cum devin exact datele privind activitatea sportivă?"</string>
+	<!--Type:string Purpose:wrist app apk entry the help title reminder view ScreenPath:wrist app apk entry the help title reminder view-->
+	<string name="tip_content_4">"Purtați dispozitivul BoomBand pe mâna mai slabă."</string>
+	<!---->
+	<string name="tip_title_5">"Cum se activează modul de repaus?"</string>
+	<!--Type:string Purpose:A tip show after the welcome screen when user first launch this application. ScreenPath:Welcome->tips-->
+	<string name="tip_content_5">"Loviți rapid dispozitivul BoomBand de șase ori."</string>
+	<!---->
+	<string name="version_found">"Actualizare versiune"</string>
+	<!---->
+	<string name="version_update">"Actualizare"</string>
+	<!--Type:String Purpose:The  notification bar massage about the new apk version
+download. ScreenPath:new apk download -> notification -> the message-->
+	<string name="download_description">"Actualizarea versiunii este în curs de derulare"</string>
+	<!--Type:string Purpose:A dialog to show when newer version is available. user can choose yes to download & install the newer version ScreenPath:Main screen-->
+	<string name="version_messsage">"S-a găsit o versiune nouă pe web. Actualizați?"</string>
+	<!--Type:string Purpose:show an item in the main screen->settings, will between profile and my devices setting. A function used to control where or not enable double click BoomBand to unlock scren ScreenPath:main screen->settings-->
+	<string name="setting_double_click_unlock_screen_title">"Atingeți de două ori pentru a debloca ecranul"</string>
+	<!--Type:string Purpose:When user click the Sport/Sleep switcher in the main screen, it will pop up a dialog to tell user what its meaning ScreenPath:Main screen->click sport/sleep switcher-->
+	<string name="switcher_tip_content">"Atingeți pentru a afișa numai statistici privind datele. Pentru a modifica modurile, loviți dispozitivul BoomBand de șase ori, până când vibrează o dată, iar ledurile pâlpâie."</string>
+	<!--Type:string Purpose:When user click the Sport Sleep switcher in the main screen, it will pop up a dialog to tell user what its meaning ScreenPath:Main screen->click sport sleep switcher-->
+	<string name="switcher_tip_action">"Nu mai afișați acest mesaj în viitor"</string>
+	<!--Type:string Purpose:show current BoomBand status in the bottom of the main screen. when user switch the BoomBand status, the message will be updated ScreenPath:main screen-->
+	<string name="device_mode_indicate_sport">"Dispozitivul dvs. este în mod sport."</string>
+	<!--Type:string Purpose:show current BoomBand status in the bottom of the main screen. when user switch the BoomBand status, the message will be updated ScreenPath:main screen-->
+	<string name="device_mode_indicate_sleep">"Dispozitivul dvs. este în stare de repaus"</string>
+	<!--Type:string Purpose:A button show between the statistic data and the step/calories/km, can use to switch sleep data statics and sport data statics ScreenPath:main screen-->
+	<string name="data_statistic_sport_data">"Date sport"</string>
+	<!--Type:string Purpose:A button show between the statistic data and the step/calories/km, can use to switch sleep data statics and sport data statics ScreenPath:main screen-->
+	<string name="data_statistic_sleep_data">"Date privind starea de repaus"</string>
+	<!--Type:string Purpose:in the main screen title bar, show the bluetooth device status information, indicate the BoomBand is upgrading its firmware. ScreenPath:main screen title bar-->
+	<string name="str_bluetooth_upgrading">"Se actualizează firmware..."</string>
+	<!-- no translation found for dfu_upgrade_firmware -->
+	<skip />
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_go_to_dfu">"Comutare la modul DFU"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_can_not_found_device">"Dispozitivul nu a fost găsit!"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_connect_device">"Se conectează la dispozitiv..."</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_device_connected">"Dispozitiv conectat"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_device_service_found">"S-a găsit un serviciu de actualizare firmware dispozitiv (DFU)"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_device_disconnect">"Dispozitiv deconectat"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_start_transfer_firmware">"Se actualizează firmware..."</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="duf_upgrade_transfer_complete">"Actualizare finalizată"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_success">"Actualizare reușită!"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_reset_device">"Se resetează dispozitivul..."</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_failed">"Actualizare nereușită. Încercați din nou."</string>
+	<!-- no translation found for apk_new_version_exist_onlocal -->
+	<skip />
+	<!-- no translation found for apk_versoin_already_newest -->
+	<skip />
+	<!-- no translation found for verion_update_setting_item -->
+	<skip />
+	<!-- no translation found for version_update_msg_title -->
+	<skip />
+	<!-- no translation found for download_network_not_available -->
+	<skip />
+	<!-- no translation found for version_check_network_err -->
+	<skip />
+	<!-- no translation found for alarm_repeat -->
+	<skip />
+	<!-- no translation found for every_day -->
+	<skip />
+	<!-- no translation found for help_option_title -->
+	<skip />
+	<!-- no translation found for tip_4_title -->
+	<skip />
+	<!-- no translation found for tip_4_sub_1_title -->
+	<skip />
+	<!-- no translation found for tip_4_sub_1_content -->
+	<skip />
+	<!-- no translation found for tip_4_sub_2_title -->
+	<skip />
+	<!-- no translation found for tip_4_sub_2_content -->
+	<skip />
+	<!-- no translation found for tip_5_title -->
+	<skip />
+	<!-- no translation found for tip_5_content -->
+	<skip />
+	<!-- no translation found for tip_7_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_1_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_1_content -->
+	<skip />
+	<!-- no translation found for tip_7_sub_2_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_2_content -->
+	<skip />
+	<!-- no translation found for tip_7_sub_3_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_3_content -->
+	<skip />
+	<!-- no translation found for tip_8_title -->
+	<skip />
+	<!-- no translation found for tip_8_content -->
+	<skip />
+	<!-- no translation found for tip_9_title -->
+	<skip />
+	<!-- no translation found for tip_9_content -->
+	<skip />
+	<!-- no translation found for help_option_tips -->
+	<skip />
+	<!-- no translation found for help_option_questions -->
+	<skip />
+	<!-- no translation found for help_option_application -->
+	<skip />
+	<!--Type:show a description string Purpose:Help interface option:About ScreenPath:setting option: help -> help interface option:About-->
+	<string name="help_option_about">"Despre"</string>
+</resources>

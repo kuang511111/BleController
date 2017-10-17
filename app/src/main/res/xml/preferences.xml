@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<EditTextPreference-->
+    <!--android:key="@string/key_test_bench"-->
+    <!--android:summary="@string/pref_test_bench_sum"-->
+    <!--android:title="@string/pref_test_bench_title" />-->
+    <EditTextPreference
+        android:defaultValue="-80"
+        android:key="@string/key_rssi"
+        android:summary="@string/pref_min_rssi_sum"
+        android:title="@string/pref_min_rssi_title"/>
+    <EditTextPreference
+        android:defaultValue="@string/device_name"
+        android:key="@string/key_device_name"
+        android:summary="@string/pref_device_name_sum"
+        android:title="@string/pref_device_name_title"/>
+    <EditTextPreference
+        android:defaultValue="@string/pref_rom_version_value"
+        android:key="@string/key_rom_version"
+        android:summary="@string/pref_rom_version_sum"
+        android:title="@string/pref_rom_version_title"/>
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_set_pcba_value"
+        android:key="@string/key_set_pcba"
+        android:summary="@string/pref_set_pcba_sum"
+        android:title="@string/pref_set_pcba_title"/>
+
+    <ListPreference
+        android:dialogTitle="Please select a Max connections"
+        android:entries="@array/preset_max_connect_list"
+        android:entryValues="@array/preset_max_connect_value_list"
+        android:key="@string/key_max_connect_value"
+        android:summary="@string/pref_max_connect_value_sum"
+        android:title="@string/pref_max_connect_value_title"/>
+
+    <!--<EditTextPreference-->
+    <!--android:defaultValue="@string/pref_test_model_value"-->
+    <!--android:key="@string/key_test_model"-->
+    <!--android:numeric="integer"-->
+    <!--android:summary="@string/pref_test_model_sum"-->
+    <!--android:title="@string/pref_test_model_title" />-->
+
+    <!--<CheckBoxPreference-->
+    <!--android:defaultValue="false"-->
+    <!--android:key="@string/key_enable_set_cu"-->
+    <!--android:summary="@string/pref_enable_set_cu"-->
+    <!--android:title="@string/pref_enable_set_cu_title" />-->
+
+
+    <!--<EditTextPreference-->
+    <!--android:defaultValue="@string/pref_test_set_cu_value"-->
+    <!--android:key="@string/key_test_set_cu"-->
+    <!--android:summary="@string/pref_test_set_cu_sum"-->
+    <!--android:title="@string/pref_test_set_cu_title" />-->
+
+    <!--<CheckBoxPreference-->
+    <!--android:defaultValue="false"-->
+    <!--android:key="@string/key_enable_set_rom_version"-->
+    <!--android:summary="@string/pref_enable_set_rom_version"-->
+    <!--android:title="@string/pref_enable_set_rom_version_title" />-->
+
+
+    <!--<EditTextPreference-->
+    <!--android:defaultValue="@string/pref_test_set_rom_value"-->
+    <!--android:key="@string/key_test_set_rom"-->
+    <!--android:summary="@string/pref_test_set_rom_sum"-->
+    <!--android:title="@string/pref_test_set_rom_title" />-->
+
+    <!--<CheckBoxPreference-->
+    <!--android:defaultValue="true"-->
+    <!--android:key="@string/key_resetbt"-->
+    <!--android:summary="@string/pref_resetbt_sum"-->
+    <!--android:title="@string/pref_resetbt_title" />-->
+
+    <!--<EditTextPreference-->
+    <!--android:defaultValue="15"-->
+    <!--android:dependency="@string/key_resetbt"-->
+    <!--android:key="@string/key_reset_bt_time"-->
+    <!--android:summary="@string/pref_reset_bt_time_sum"-->
+    <!--android:title="@string/pref_reset_bt_time_title" />-->
+
+    <!--<EditTextPreference-->
+    <!--android:defaultValue="-80"-->
+    <!--android:key="@string/key_valid_rssi_value"-->
+    <!--android:summary="@string/pref_valid_rssi_value_sum"-->
+    <!--android:title="@string/pref_valid_rssi_value_title" />-->
+
+    <!--<EditTextPreference-->
+    <!--android:defaultValue="smartbant2_cu"-->
+    <!--android:key="@string/key_cu_ref_value"-->
+    <!--android:summary="@string/pref_cu_ref_value_sum"-->
+    <!--android:title="@string/pref_cu_ref_value_title" />-->
+
+</PreferenceScreen>

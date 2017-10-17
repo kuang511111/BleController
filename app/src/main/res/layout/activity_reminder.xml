@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- My reminder head -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+        <ImageButton
+            android:id="@+id/my_warn_setting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_bg"
+            android:src="@drawable/icon_previous" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/reminders_title"
+            android:textColor="#404040"
+            style="@style/roboto_light"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!-- My reminder divider -->
+    <ImageView
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line"/>
+
+    <!-- My reminder sync information -->
+    <RelativeLayout
+        android:id="@+id/reminder_sync_waiting_area"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_sync_waiting"
+        android:visibility="gone" >
+        <TextView android:id="@+id/reminder_sync_waiting_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/str_sync_waiting_notify"
+            style="@style/roboto_light"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/reminder_sync_waiting_text"
+            android:background="@drawable/ic_sync_notify_help" />
+    </RelativeLayout>
+
+    <!-- My reminder section - bracelet shake notification -->
+    <TextView
+        android:id="@+id/my_bracelet_setting_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/reminders_shake_title"
+        style="@style/roboto_light"
+        android:textSize="16sp" />
+    <!-- Alarm -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/list_bg_top"
+        android:fontFamily="sans-serif-light"
+        android:clickable="true">
+
+        <LinearLayout android:id="@+id/reminder_clock_alarm_setting_area"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/reminders_shake_alarm"
+                    style="@style/roboto_light"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/setting_my_clock_tips"
+                    style="@style/roboto_light"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+            <TextView android:id="@+id/reminder_clock_alarm_status"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                style="@style/roboto_light"
+                android:layout_margin="8dp"/>
+            <ImageView android:id="@+id/reminder_clock_alarm_setting"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_next_nomal"
+                style="@style/roboto_light"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Anti lost -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/list_bg_middle"
+        android:clickable="true">
+
+        <LinearLayout android:id="@+id/reminder_anti_lost_area"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/reminders_shake_anti_lost"
+                    style="@style/roboto_light"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/setting_anti_lost_tip"
+                    style="@style/roboto_light"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+            <Switch android:id="@+id/reminder_anti_lost_switch"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Incoming call -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/list_bg_bottom"
+        android:clickable="true">
+
+        <LinearLayout android:id="@+id/reminder_incoming_call_area"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/reminders_shake_call_reminder"
+                    style="@style/roboto_light"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/setting_calling_alarm_tip"
+                    style="@style/roboto_light"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+            <Switch android:id="@+id/reminder_incoming_call_switch"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- My reminder section - phone client reminders -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp"
+        style="@style/roboto_light"
+        android:text="@string/reminders_phone_client_title"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/list_bg_top">
+
+        <LinearLayout android:id="@+id/reminder_client_sync_sleep_area"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:clickable="true">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/reminders_phone_client_sync_reminder"
+                    style="@style/roboto_light"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/str_silent_sleep_explain"
+                    style="@style/roboto_light"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+            <Switch android:id="@+id/reminder_client_sync_sleep_switch"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/list_bg_bottom">
+
+        <LinearLayout android:id="@+id/reminder_client_task_remind_area"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:clickable="true">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/reminders_phone_client_task_reminders"
+                    style="@style/roboto_light"
+                    android:textSize="14sp"/>
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/setting_calling_alarm_tip"
+                    android:textSize="10sp"
+                    style="@style/roboto_light"
+                    android:visibility="gone"/>
+                <TextView android:id="@+id/reminder_client_task_remind_time"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    style="@style/roboto_light"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+            <Switch android:id="@+id/reminder_client_task_remind_switch"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

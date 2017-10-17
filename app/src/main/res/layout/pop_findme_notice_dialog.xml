@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="28.0dip"
+    android:layout_marginRight="28.0dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="318.0dip"
+        android:gravity="center"
+        android:background="@drawable/findme_bg" >
+
+        <TextView
+            style="@style/roboto_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="30.0dip"
+            android:text="@string/find_me_info"
+            android:textColor="#404040"
+            android:textSize="22.0dip" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_sure"
+        style="@style/roboto_light"
+        android:layout_width="match_parent"
+        android:layout_height="60.0dip"
+        android:layout_marginTop="22.0dip"
+        android:text="@string/find_me_title"
+        android:textSize="22.0dip"
+        android:background="@drawable/btn_findme_bg_selector" />
+
+</LinearLayout>

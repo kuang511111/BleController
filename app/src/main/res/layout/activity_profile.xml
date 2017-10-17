@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:id="@+id/profile_title" 
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="14dp"
+        >
+        <ImageView 
+            android:id="@+id/profile_person_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/user_pic"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <!-- Divider -->
+    <ImageView android:id="@+id/profile_divider"
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line"
+        android:layout_below="@id/profile_title"/>
+    
+    <RelativeLayout
+        android:id="@+id/profile_tick"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/profile_divider">
+         <TextView 
+   			android:id="@+id/profile_tick1"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/profile_tick1"
+        	android:gravity="center"
+        	android:textSize="12sp"
+        	style="@style/roboto_light"
+        	android:textColor="@color/profile_font"/>
+         <TextView 
+   			android:id="@+id/profile_tick2"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/profile_tick2"
+        	android:layout_below="@id/profile_tick1"
+        	android:gravity="center"
+        	android:textSize="12sp"
+        	style="@style/roboto_light"
+        	android:textColor="@color/profile_font"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_gender_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@id/profile_tick"
+        android:background="@drawable/list_bg_top"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/profile_gender_key"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/gender"
+            style="@style/roboto_light"
+            android:textSize="16sp" />
+
+        <include
+            android:id="@+id/profile_gender_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-light"
+            layout="@layout/layout_switch" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_birth_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@id/profile_gender_layout"
+        android:background="@drawable/list_bg_middle"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" 
+        android:layout_marginLeft="10dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/profile_birth_key"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/birth"
+            style="@style/roboto_light"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/profile_birth_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/setting_person_value"
+            android:textSize="16sp"
+            style="@style/roboto_light"
+            android:text="@string/please_choose" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_height_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@id/profile_birth_layout"
+        android:background="@drawable/list_bg_middle"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+          >
+
+        <TextView
+            android:id="@+id/profile_height_key"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/height"
+            style="@style/roboto_light"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/profile_height_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/setting_person_value"
+            android:textSize="16sp"
+            style="@style/roboto_light"
+            android:text="@string/please_choose" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_weight_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@id/profile_height_layout"
+        android:background="@drawable/list_bg_bottom"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"  >
+
+        <TextView
+            android:id="@+id/profile_weight_key"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/weight"
+            style="@style/roboto_light"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/profile_weight_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/setting_person_value"
+            android:textSize="16sp"
+            style="@style/roboto_light"
+            android:text="@string/please_choose" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/profile_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_add_device_highlight"
+        android:text="@string/profile_finish"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:layout_marginBottom="40dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_height="48dp"
+        android:layout_width="match_parent">
+        <ImageButton android:id="@+id/back_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_bg"
+            android:src="@drawable/icon_previous"/>
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="@string/reminders_shake_call_reminder"
+            android:textColor="#404040"
+            style="@style/roboto_light"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <!-- Divider -->
+    <ImageView
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line"/>
+
+    <RadioGroup android:id="@+id/incoming_call_remind_group"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <!-- All incoming call -->
+        <RadioButton android:id="@+id/all_incoming_call"
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:layout_marginTop="16dp"
+                     android:text="@string/call_remind_all_incoming_call"
+                     style="@style/roboto_light"
+                     android:textSize="14sp"/>
+
+        <!-- Only in the list -->
+        <RadioButton android:id="@+id/only_in_the_list_incoming_call"
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:layout_marginTop="16dp"
+                     android:text="@string/call_remind_only_in_the_list"
+                     style="@style/roboto_light"
+                     android:textSize="14sp"/>
+    </RadioGroup>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="48dp"
+        android:text="@string/setting_calling_alarm_add_limit_tip"
+        android:textColor="@color/list_text_color_gray"
+        style="@style/roboto_light"
+        android:textSize="10sp"/>
+
+    <LinearLayout android:id="@+id/only_in_the_list_area"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="40dp">
+        <!-- Contact list content -->
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <ScrollView android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout android:id="@+id/calling_alarm_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:showDividers="middle"
+                        android:divider="?android:dividerHorizontal"
+                        android:animateLayoutChanges="true"
+                        android:minHeight="200dp"
+                        android:background="@drawable/list_bg_single"/>
+                </ScrollView>
+                <RelativeLayout android:id="@+id/calling_alarm_list_empty"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/str_no_vip_contacts"
+                        style="@style/roboto_light"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <!-- Add contact button -->
+        <Button android:id="@+id/add_calling_alarm_contact"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom"
+                android:text="@string/str_add_vip_contacts"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/btn_add_device_highlight"
+                style="@style/roboto_light"
+                android:textColor="@color/add_device_guid_button_color"/>
+    </LinearLayout>
+</LinearLayout>

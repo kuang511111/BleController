@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Settings: Header -->
+
+    <RelativeLayout
+        android:id="@+id/indme_remindmode_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <ImageButton
+            android:id="@+id/findme_remindmode_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_bg"
+            android:src="@drawable/icon_previous" />
+
+        <TextView
+            style="@style/roboto_light"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/reminders_find_me_reminder"
+            android:textColor="#404040"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!-- divider Line -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line" />
+
+    <TextView
+        style="@style/roboto_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginTop="18.0dip"
+        android:text="@string/findme_remind_mode_notice"
+        android:textSize="14sp" />
+
+    <!-- divider Line -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginTop="4.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line" />
+
+    <!-- checkbox: Remind by vibration -->
+
+    <LinearLayout
+        android:id="@+id/findme_remind_layout_vibration"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/roboto_light"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/findme_remind_by_vibration"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/vibration_select_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/checkbox_off" />
+    </LinearLayout>
+
+    <!-- divider Line -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line" />
+
+    <!-- checkbox: Remind by ringing -->
+
+    <LinearLayout
+        android:id="@+id/findme_remind_layout_ringing"
+        android:layout_width="match_parent"
+        android:layout_height="48.0dip"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/roboto_light"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/findme_remind_by_ringing"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/ringing_select_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/checkbox_off" />
+    </LinearLayout>
+
+    <!-- divider Line -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:background="@color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line" />
+
+    <!-- checkbox: Remind by ringing with vibration -->
+
+    <LinearLayout
+        android:id="@+id/findme_remind_layout_ringing_with_vibration"
+        android:layout_width="match_parent"
+        android:layout_height="48.0dip"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/roboto_light"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/findme_remind_by_ringing_with_vibration"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/ringing_with_vibration_select_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/checkbox_off" />
+    </LinearLayout>
+
+    <!-- divider Line -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line" />
+
+</LinearLayout>

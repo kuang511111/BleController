@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Wed Apr 02 14:30:18 CST 2014
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!---->
+	<string name="gender">"Jantina"</string>
+	<!---->
+	<string name="male">"Lelaki"</string>
+	<!---->
+	<string name="female">"Perempuan"</string>
+	<!---->
+	<string name="birth">"Hari Lahir"</string>
+	<!---->
+	<string name="height">"Ketinggian"</string>
+	<!---->
+	<string name="weight">"Berat"</string>
+	<!---->
+	<string name="str_sync_waiting_notify">"Menunggu update kepada BoomBand ..."</string>
+	<!--Type:string Purpose:when user change the My reminders settings, it will update the configuration to BoomBand and then show this message below the My reminders to indicate configuration has been updated ScreenPath:Main screen->My reminders-->
+	<string name="str_sync_suc_notify">"Berjaya dikemaskini!"</string>
+	<!---->
+	<string name="height_picker_dialog_title">"Tetapkan ketinggian"</string>
+	<!---->
+	<string name="weight_picker_dialog_title">"Tetapkan berat badan"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of string ScreenPath:Filpactivity interface->click pen icon ->target set interface-->
+	<string name="step_picker_dialog_title">"Set target (langkah)"</string>
+	<!---->
+	<string name="progress_title_finish">"Selesai"</string>
+	<!---->
+	<string name="target">"Sasaran"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display step number int mian interface-->
+	<string name="unit">"Langkah"</string>
+	<!--Type:String Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display step number int mian interface-->
+	<string name="steps">"langkah-langkah yang"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display calories number int mian interface-->
+	<string name="calories">"kalori"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display Km number int mian interface-->
+	<string name="distances">"km"</string>
+	<!-- no translation found for length_units -->
+	<skip />
+	<!--Type:string Purpose:wrist app the sports data details day icon ScreenPath:wrist app the sports data details day icon-->
+	<string name="today">"Hari ini"</string>
+	<!---->
+	<string name="yesterday">"Semalam"</string>
+	<!---->
+	<string name="toast_setting_birth">"Sila tetapkan tarikh lahir"</string>
+	<!---->
+	<string name="toast_setting_height">"Sila menetapkan ketinggian"</string>
+	<!---->
+	<string name="toast_setting_weight">"Sila menetapkan berat badan"</string>
+	<!---->
+	<string name="profile_finish">"Menetapkan siap"</string>
+	<!---->
+	<string name="settings">"Tetapan"</string>
+	<!---->
+	<string name="share">"Kongsi"</string>
+	<!---->
+	<string name="str_set_bluetooth">"Tetapkan Bluetooth"</string>
+	<!---->
+	<string name="str_set_bluetooth_content">"Pengaktifan Bluetooth diperlukan untuk sambungan BoomBand, terus?"</string>
+	<!---->
+	<string name="str_set_bluetooth_open">"Menghidupkan"</string>
+	<!---->
+	<string name="str_add_device">"Tambah peranti"</string>
+	<!---->
+	<string name="str_bluetooth_disconnect">"Cuba lagi"</string>
+	<!---->
+	<string name="str_bluetooth_connecting">"Menyambung ..."</string>
+	<!---->
+	<string name="str_bluetooth_connected">"Berkaitan"</string>
+	<!---->
+	<string name="str_bluetooth_turnoff">"Bluetooth ditutup"</string>
+	<!---->
+	<string name="str_sports">"Sukan"</string>
+	<!---->
+	<string name="str_sleep">"Tidur"</string>
+	<!--Type:string Purpose:in main screen, sleep data statistic, title of the total sleep time. ScreenPath:main screen->total sleep time-->
+	<string name="str_sleep_title">"Jumlah masa tidur"</string>
+	<!--Type:string Purpose:in main screen, sleep data statistic, title of the sleep condition. ScreenPath:main screen->total sleep time-->
+	<string name="str_sleep_condition">"leep conditions:<xliff:g id="sleep_condition_percent" example="80">%s</xliff:g>%%"</string>
+	<!---->
+	<string name="about_version">"Versi terkini"</string>
+	<!--Type:String Purpose:String display for user see what is this ScreenPath:setting option: help -> help interface option:About->About title-->
+	<string name="about_title">"Mengenai"</string>
+	<!---->
+	<string name="profile_tick1">"Untuk menyediakan anda dengan bantuan kesihatan yang lebih baik"</string>
+	<!---->
+	<string name="profile_tick2">"Sila menetapkan maklumat peribadi anda"</string>
+	<!---->
+	<string name="please_choose">"Sila pilih"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display goto today in mian interface-->
+	<string name="toToday">"untuk hari ini"</string>
+	<!---->
+	<string name="my_devices">"Peranti saya"</string>
+	<!---->
+	<string name="add_new_device">"Tambah peranti baru"</string>
+	<!---->
+	<string name="setting_my_warn_noti_title">"Amaran BoomBand"</string>
+	<!---->
+	<string name="setting_my_warn_noti_desp1">"Sasaran dicapai"</string>
+	<!---->
+	<string name="setting_my_warn_noti_desp2">"%, Berjuang!"</string>
+	<!---->
+	<string name="setting_my_warn_dialog_desp1">"Sasaran dicapai"</string>
+	<!---->
+	<string name="setting_my_warn_dialog_desp2">"Lawan!"</string>
+	<!---->
+	<string name="setting_my_warn_nolonger">"Hilangkan"</string>
+	<!---->
+	<string name="setting_my_clock_tips">"Getaran dua kali, tidak ada lampu"</string>
+	<!--Type:String Purpose:String display for notification user ScreenPath:Filpactivity interface->notic icon->notification interface->set alarm-->
+	<string name="setting_my_clock_text">"Penggera"</string>
+	<!---->
+	<string name="setting_my_clock_repeat">"Ulang"</string>
+	<!---->
+	<string name="setting_my_clock_max_count">"Lapan penggera maksimum"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:setting option: help -> help interface option:know the Boomband->tips-->
+	<string name="str_silent_sleep_explain">"Apabila BoomBand perubahan ke mod tidur, telefon anda akan berada di dalam mod senyap."</string>
+	<!---->
+	<string name="everyday">"Setiap hari"</string>
+	<!---->
+	<string name="setting_anti_lost_tip">"Getaran Double, lima lampu berkelip seterusnya"</string>
+	<!--Type:string Purpose:comments on Alert while left settings ScreenPath:Main screen->My reminders->Alert while left-->
+	<string name="setting_anti_lost_dialog_content">"Apabila BoomBand adalah jauh dari telefon, ia akan mencetuskan amaran anti kerugian (getaran dua tiga kali, lima lampu berkelip seterusnya)."</string>
+	<!---->
+	<string name="setting_calling_alarm_tip">"Getaran Single, satu cahaya yang berkelip"</string>
+	<!--Type:string Purpose:first click the Main screen->My reminders->Call reminder will popup this dialog ScreenPath:Main screen->My reminders->Call reminder-->
+	<string name="setting_calling_alarm_dialog_content">"Panggilan masuk dari kenalan dipilih akan bergetar yang BoomBand (getaran panjang)"</string>
+	<!---->
+	<string name="setting_calling_alarm_add_tip">"Senarai panggilan peringatan"</string>
+	<!---->
+	<string name="setting_calling_alarm_add_limit_tip">"5 orang maksimum"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:Filpactivity interface->display current boomband mode-->
+	<string name="str_notification_text_normal">"Yang BoomBand dalam mod tidur"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:Notification settings interface:option description-->
+	<string name="str_notification_text_mute">"Yang BoomBand akan berada dalam mod tidur semasa telefon dalam mod senyap"</string>
+	<!---->
+	<string name="str_notification_text_low_battery">"Tahap bateri BoomBand adalah lebih rendah daripada %s, sila menyambung kepada pengecas"</string>
+	<!--Type:string Purpose:It will pop up a dialogue in the main screen when BoomBand is in low battery.  ScreenPath:Main screen->Alert dialog-->
+	<string name="str_low_battery_dialog_title">"BoomBand amaran bateri rendah"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:setting option: My devices -> boomband ->Device information interface-->
+	<string name="device_informtion_title">"Maklumat peranti"</string>
+	<!---->
+	<string name="device_informtion_manufacture_name">"Pengeluar:"</string>
+	<!---->
+	<string name="device_informtion_model_number">"Peranti model:"</string>
+	<!---->
+	<string name="device_informtion_hw_revision">"Perkakasan versi:"</string>
+	<!---->
+	<string name="device_informtion_sw_revision">"Versi perisian:"</string>
+	<!---->
+	<string name="device_informtion_wait_read">"Menunggu sambungan ..."</string>
+	<!---->
+	<string name="str_snapshot_waitting">"Sila tunggu ..."</string>
+	<!---->
+	<string name="str_vip_list_limit">"5 kenalan ditambah"</string>
+	<!---->
+	<string name="str_choose_device_title">"Tetapkan Bluetooth"</string>
+	<!---->
+	<string name="str_choose_device_open_bt">"Sila menghidupkan Bluetooth berpasangan dengan BoomBand."</string>
+	<!---->
+	<string name="str_choose_bt_open_bt">"Menghidupkan Bluetooth untuk menyambung kepada BoomBand?"</string>
+	<!---->
+	<string name="str_bind_bt">"Bind BoomBand"</string>
+	<!---->
+	<string name="str_bind_wait">"Kemudian"</string>
+	<!---->
+	<string name="str_remove_devices">"Log keluar"</string>
+	<!--Type:string Purpose:when user want to bind another BoomBand, it firstly should remove the bond device, when user do this, it will pop up a warning dialog ScreenPath:Main screen->Settings->My devices->Add new device-->
+	<string name="str_remove_devices_title">"Log keluar dari peranti"</string>
+	<!---->
+	<string name="str_remove_device_content">"Akan mencabut dari BoomBand"</string>
+	<!---->
+	<string name="str_connected_device_tips">"Anda telah disambungkan ke BoomBand"</string>
+	<!---->
+	<string name="str_replace_device_tips">"Gantikan BoomBand sedang disambungkan?"</string>
+	<!---->
+	<string name="str_no_vip_contacts">"Tidak ada kenalan"</string>
+	<!---->
+	<string name="str_add_vip_contacts">"Tambah kenalan"</string>
+	<!---->
+	<string name="str_added_vip_contact">"Kenalan ditambah"</string>
+	<!--Type:string Purpose:wrist app the sports data details week icon ScreenPath:wrist app the sports data details week icon-->
+	<string name="str_chart_7_day">"7 hari"</string>
+	<!--Type:string Purpose:wrist app the sports data details month icon ScreenPath:wrist app the sports data details month icon-->
+	<string name="str_chart_31_day">"31 hari"</string>
+	<!--Type:string Purpose:wristapp enter sleep data summary remind string ScreenPath:wristapp enter sleep data summary remind string-->
+	<string name="str_chart_sleep_waste">"Memakan masa tidur"</string>
+	<!--Type:string Purpose:wrist app enter sleep data summary detail remind string ScreenPath:wrist app enter sleep data summary detail remind string-->
+	<string name="str_chart_sleep_effi">"Kecekapan tidur"</string>
+	<!--Type:string Purpose:wrist app enter sleep data summary detail the remind string ScreenPath:wrist app enter sleep data summary detail the remind string-->
+	<string name="str_chart_sleep_total_time">"Jumlah masa tidur:"</string>
+	<!---->
+	<string name="str_chart_sleep_effi_pre">"Kecekapan tidur:"</string>
+	<!--Type:string Purpose:wristapp enter sleep data summary remind string ScreenPath:wristapp enter sleep data summary remind string-->
+	<string name="str_chart_sleep_waste_pre">"Memakan masa tidur:"</string>
+	<!---->
+	<string name="str_chart_sleep_total_pre">"Jumlah masa tidur:"</string>
+	<!---->
+	<string name="str_chart_sport_target">"Sasaran:"</string>
+	<!---->
+	<string name="str_share_failed">"Berkongsi gagal"</string>
+	<!---->
+	<string name="add_device_charge_prev_step">"Langkah sebelumnya"</string>
+	<!---->
+	<string name="add_device_charge_next_step">"Langkah seterusnya"</string>
+	<!---->
+	<string name="add_device_battery_prev_step">"Langkah sebelumnya"</string>
+	<!--Type:string Purpose:wrist app connecting limitation reminder to 20% ScreenPath:wrist app connecting limitation reminder to 20%-->
+	<string name="add_device_battery_next_step">"Dicaj kepada 60%"</string>
+	<!---->
+	<string name="add_device_connect_tip">"Mencari peranti ..."</string>
+	<!--Type:string Purpose:When user try to bind the BoomBand, at last click this button to experience. at the bottom of the bind success screen. ScreenPath:Welcome->Bind device->Bond-->
+	<string name="add_device_bind_success_done">"Mulakan pengalaman"</string>
+	<!---->
+	<string name="add_device_connect_fail_tip_1">"Peranti tidak dijumpai"</string>
+	<!---->
+	<string name="add_device_connect_fail_tip_2">"Sila cuba untuk membawa peranti dekat dengan telefon, tetapi jauh dari telefon atau BoomBands lain"</string>
+	<!--Type:String Purpose:Toast the tip when the device connect the wristband fail. ScreenPath:BoomBand APP -> setting -> new device -> Add new device -> next step -> next step -> search.-->
+	<string name="add_device_connect_fail_tip_3">"Sila menjauhkan diri dari telefon atau BoomBands lain"</string>
+	<!---->
+	<string name="add_device_connect_fail_retry">"Cuba lagi"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_1">"Sambungan gagal beberapa kali, kerana:"</string>
+	<!--Type:string Purpose:when user try to bind device, after bond failed, it will show some tips. user can follow those tips to make a successful binding. ScreenPath:Main screen->bind device->bind failed-->
+	<string name="add_device_bind_fail_tip_2">"1. BoomBand terlalu jauh dari telefon"</string>
+	<!--Type:string Purpose:when user try to bind device, after bond failed, it will show some tips. user can follow those tips to make a successful binding. ScreenPath:Main screen->bind device->bind failed-->
+	<string name="add_device_bind_fail_tip_3">"Tip: cuba untuk membawa BoomBand lebih dekat dengan telefon (dalam masa satu meter)"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_4">"2. Pastikan tidak ada sambungan sedia ada antara BoomBands lain / telefon"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_5">"Tip: menyimpan telefon dan BoomBand dari peranti lain"</string>
+	<!--Type:string Purpose:when user try to bind device, after bond failed, it will show some tips. user can follow those tips to make a successful binding. ScreenPath:Main screen->bind device->bind failed-->
+	<string name="add_device_bind_fail_tip_6">"3. BoomBand paras bateri lebih rendah daripada 60%"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_7">"Tip: menyambung BoomBand kepada pengecas"</string>
+	<!---->
+	<string name="add_device_bind_fail_retry">"Cuba lagi"</string>
+	<!---->
+	<string name="add_device_need_bind_tip_1">"BoomBand anda telah disambungkan kepada telefon lain, menyambung semula?"</string>
+	<!---->
+	<string name="add_device_need_bind_bind">"Menyambung"</string>
+	<!--Type:string Purpose:when user try to bind the device, firstly it will indicate that the BoomBand battery level should great then 60% ScreenPath:Main screen->add device->Battery-->
+	<string name="guide_battery_tip_1">"Memastikan hayat bateri, sila pastikan caj bateri 20%(2 lampu berkelip)"</string>
+	<!---->
+	<string name="guide_bind_tip">"Cari BoomBand dan ketuk dua kali"</string>
+	<!---->
+	<string name="guide_bind_double_click">"Ketuk dua kali"</string>
+	<!---->
+	<string name="guide_battery_charge_tip">"Sila sambungkan pengecas"</string>
+	<!--Type:string Purpose:when user successfully connect the BoomBand, this screen will appear. user can click the Begin to experience to enter main screen ScreenPath:Main screen->bind device->bind ok-->
+	<string name="guide_connect_successful_tip">"Berjaya disambungkan!"</string>
+	<!--Type:string Purpose:when user start to bind the BoomBand, while succeed, this screen will pop up. user can start to experience ScreenPath:Main screen->bind device->bind ok-->
+	<string name="guide_connect_successful_tip_comments">"Memakai BoomBand dan mendapatkan berjalan"</string>
+	<!--Type:String Purpose:String display for notice user ScreenPath:Filpactivity interface->notic icon->notification interface-->
+	<string name="reminders_title">"Peringatan saya"</string>
+	<!---->
+	<string name="reminders_shake_title">"BoomBand peringatan getaran"</string>
+	<!--Type:String Purpose:string display for notification user ScreenPath:Filpactivity interface->notic icon->notification interface->alarm-->
+	<string name="reminders_shake_alarm">"Penggera"</string>
+	<!---->
+	<string name="reminders_shake_anti_lost">"Anti-kehilangan amaran"</string>
+	<!---->
+	<string name="reminders_shake_call_reminder">"Peringatan panggilan"</string>
+	<!---->
+	<string name="reminders_phone_client_title">"Peringatan telefon"</string>
+	<!--Type:String Purpose:Sting display for notification user, this is  Sleep mode sync now ScreenPath:Filpactivity interface->detail sleep interface->check data-->
+	<string name="reminders_phone_client_sync_reminder">"Tidur peringatan sync"</string>
+	<!--Type:show a description string Purpose:show string for people when people begin to use the feature for reminder. ScreenPath:Wristband->alarm->-->
+	<string name="reminders_phone_client_task_reminders">"Peringatan petugas"</string>
+	<!--Type:string Purpose:in Call reminder setting screen, a radio button item for user selection where or not vibrate when incoming call is ringing ScreenPath:Main screen->My reminders->Call reminder-->
+	<string name="call_remind_all_incoming_call">"Semua panggilan masuk"</string>
+	<!---->
+	<string name="call_remind_only_in_the_list">"Hanya di dalam senarai kenalan"</string>
+	<!--Type:string Purpose:in the main screen, there is diagram to show current statics: Awake, Turn over and Sleep ScreenPath:Main screen->diagram-->
+	<string name="sleep_status_no_sleep">"Bangun"</string>
+	<!---->
+	<string name="sleep_status_turn_over">"Balikkan"</string>
+	<!---->
+	<string name="sleep_status_sleep">"Tidur"</string>
+	<!---->
+	<string name="tip_content_1">"Rekod data sukan setiap hari"</string>
+	<!---->
+	<string name="tip_title_2">"BoomBand"</string>
+	<!--Type:string Purpose:string remind you that the boomband will track your sleep  ScreenPath:string remind you to track your sleep-->
+	<string name="tip_content_2">"Keadaan trek tidur"</string>
+	<!---->
+	<string name="tip_content_3">"Mengingatkan anda bila-bila masa dan di mana sahaja"</string>
+	<!---->
+	<string name="tip_title_4">"Bagaimana untuk membuat data sukan tepat?"</string>
+	<!--Type:string Purpose:wrist app apk entry the help title reminder view ScreenPath:wrist app apk entry the help title reminder view-->
+	<string name="tip_content_4">"Sila memakai BoomBand di tangan anda lemah."</string>
+	<!---->
+	<string name="tip_title_5">"Bagaimana untuk mengaktifkan mod Tidur?"</string>
+	<!--Type:string Purpose:A tip show after the welcome screen when user first launch this application. ScreenPath:Welcome->tips-->
+	<string name="tip_content_5">"Sila cepat mengetuk BoomBand yang 6 kali."</string>
+	<!---->
+	<string name="version_found">"Versi kemas kini"</string>
+	<!---->
+	<string name="version_update">"Update"</string>
+	<!--Type:String Purpose:The  notification bar massage about the new apk version
+download. ScreenPath:new apk download -> notification -> the message-->
+	<string name="download_description">"Update versi dalam kemajuan"</string>
+	<!--Type:string Purpose:A dialog to show when newer version is available. user can choose yes to download & install the newer version ScreenPath:Main screen-->
+	<string name="version_messsage">"Versi baru yang terdapat di Web, mengemaskini?"</string>
+	<!--Type:string Purpose:show an item in the main screen->settings, will between profile and my devices setting. A function used to control where or not enable double click BoomBand to unlock scren ScreenPath:main screen->settings-->
+	<string name="setting_double_click_unlock_screen_title">"Ketuk dua kali untuk membuka kunci skrin"</string>
+	<!--Type:string Purpose:When user click the Sport/Sleep switcher in the main screen, it will pop up a dialog to tell user what its meaning ScreenPath:Main screen->click sport/sleep switcher-->
+	<string name="switcher_tip_content">"Sentuh untuk menunjukkan statistik data sahaja. Untuk menukar mod, sila mengetuk BoomBand anda 6 kali sehingga ia bergetar sekali dan kilat lampu LED."</string>
+	<!--Type:string Purpose:When user click the Sport Sleep switcher in the main screen, it will pop up a dialog to tell user what its meaning ScreenPath:Main screen->click sport sleep switcher-->
+	<string name="switcher_tip_action">"Jangan tunjukkan ini lagi"</string>
+	<!--Type:string Purpose:show current BoomBand status in the bottom of the main screen. when user switch the BoomBand status, the message will be updated ScreenPath:main screen-->
+	<string name="device_mode_indicate_sport">"Peranti anda adalah dalam mod Sukan."</string>
+	<!--Type:string Purpose:show current BoomBand status in the bottom of the main screen. when user switch the BoomBand status, the message will be updated ScreenPath:main screen-->
+	<string name="device_mode_indicate_sleep">"Peranti anda adalah dalam mod tidur."</string>
+	<!--Type:string Purpose:A button show between the statistic data and the step/calories/km, can use to switch sleep data statics and sport data statics ScreenPath:main screen-->
+	<string name="data_statistic_sport_data">"Data sukan"</string>
+	<!--Type:string Purpose:A button show between the statistic data and the step/calories/km, can use to switch sleep data statics and sport data statics ScreenPath:main screen-->
+	<string name="data_statistic_sleep_data">"Data tidur"</string>
+	<!--Type:string Purpose:in the main screen title bar, show the bluetooth device status information, indicate the BoomBand is upgrading its firmware. ScreenPath:main screen title bar-->
+	<string name="str_bluetooth_upgrading">"Menaik taraf firmware ..."</string>
+	<!-- no translation found for dfu_upgrade_firmware -->
+	<skip />
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_go_to_dfu">"Beralih ke mod DFU"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_can_not_found_device">"Peranti tidak dijumpai!"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_connect_device">"Menyambung ke peranti ..."</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_device_connected">"Peranti bersambung"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_device_service_found">"Perkhidmatan DFU didapati"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_device_disconnect">"Peranti diputuskan"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_start_transfer_firmware">"Menaik taraf firmware ..."</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="duf_upgrade_transfer_complete">"Menaik taraf selesai"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_success">"Ditingkatkan!"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_reset_device">"Menetapkan semula peranti ..."</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_failed">"Menaik taraf gagal, sila cuba lagi"</string>
+	<!-- no translation found for apk_new_version_exist_onlocal -->
+	<skip />
+	<!-- no translation found for apk_versoin_already_newest -->
+	<skip />
+	<!-- no translation found for verion_update_setting_item -->
+	<skip />
+	<!-- no translation found for version_update_msg_title -->
+	<skip />
+	<!-- no translation found for download_network_not_available -->
+	<skip />
+	<!-- no translation found for version_check_network_err -->
+	<skip />
+	<!-- no translation found for alarm_repeat -->
+	<skip />
+	<!-- no translation found for every_day -->
+	<skip />
+	<!-- no translation found for help_option_title -->
+	<skip />
+	<!-- no translation found for tip_4_title -->
+	<skip />
+	<!-- no translation found for tip_4_sub_1_title -->
+	<skip />
+	<!-- no translation found for tip_4_sub_1_content -->
+	<skip />
+	<!-- no translation found for tip_4_sub_2_title -->
+	<skip />
+	<!-- no translation found for tip_4_sub_2_content -->
+	<skip />
+	<!-- no translation found for tip_5_title -->
+	<skip />
+	<!-- no translation found for tip_5_content -->
+	<skip />
+	<!-- no translation found for tip_7_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_1_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_1_content -->
+	<skip />
+	<!-- no translation found for tip_7_sub_2_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_2_content -->
+	<skip />
+	<!-- no translation found for tip_7_sub_3_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_3_content -->
+	<skip />
+	<!-- no translation found for tip_8_title -->
+	<skip />
+	<!-- no translation found for tip_8_content -->
+	<skip />
+	<!-- no translation found for tip_9_title -->
+	<skip />
+	<!-- no translation found for tip_9_content -->
+	<skip />
+	<!-- no translation found for help_option_tips -->
+	<skip />
+	<!-- no translation found for help_option_questions -->
+	<skip />
+	<!-- no translation found for help_option_application -->
+	<skip />
+	<!--Type:show a description string Purpose:Help interface option:About ScreenPath:setting option: help -> help interface option:About-->
+	<string name="help_option_about">"Mengenai"</string>
+</resources>

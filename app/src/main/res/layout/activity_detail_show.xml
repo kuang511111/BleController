@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_open_bluetooth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jrdcom.wearable.gowatch.factorytest.activity.DetailShowActivity">
+
+    <LinearLayout
+        android:id="@+id/item_bt_name"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_bt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="6"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="BT Name:"/>
+
+        <TextView
+            android:id="@+id/content_bt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="4"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text=""/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"/>
+
+    <LinearLayout
+        android:id="@+id/item_bt_mac"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_bt_mac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="6"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="BT Address:"/>
+
+        <TextView
+            android:id="@+id/content_bt_mac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="4"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text=""/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"/>
+
+    <LinearLayout
+        android:id="@+id/item_device_version"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_device_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="6"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Device Version:"/>
+
+        <TextView
+            android:id="@+id/content_device_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="4"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text=""/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"/>
+
+    <LinearLayout
+        android:id="@+id/item_device_cu"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_device_cu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="6"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Device Curef:"/>
+
+        <TextView
+            android:id="@+id/content_device_cu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="4"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"/>
+
+    <LinearLayout
+        android:id="@+id/item_device_serial"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_device_serial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="6"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Serial Num:"/>
+
+        <TextView
+            android:id="@+id/content_device_serial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="4"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"/>
+
+    <LinearLayout
+        android:id="@+id/item_device_pcba"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_device_pcba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="6"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="PCBA Version:"/>
+
+        <TextView
+            android:id="@+id/content_device_pcba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="4"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"/>
+
+    <LinearLayout
+        android:id="@+id/item_bt_test"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_bt_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="6"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="BT Test:"/>
+
+        <TextView
+            android:id="@+id/content_bt_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="4"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"/>
+
+    <LinearLayout
+        android:id="@+id/item_gsensor_test"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_gsensor_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="6"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="G Sensor Test:"/>
+
+        <TextView
+            android:id="@+id/content_gsensor_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="4"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"/>
+
+    <LinearLayout
+        android:id="@+id/item_write_flag"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_write_flag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="6"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Write Flag:"/>
+
+        <TextView
+            android:id="@+id/content_write_flag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="4"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/test_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Wed Apr 02 14:30:18 CST 2014
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!---->
+	<string name="gender">"性別"</string>
+	<!---->
+	<string name="male">"男性"</string>
+	<!---->
+	<string name="female">"女性"</string>
+	<!---->
+	<string name="birth">"生日"</string>
+	<!---->
+	<string name="height">"身高"</string>
+	<!---->
+	<string name="weight">"體重"</string>
+	<!---->
+	<string name="str_sync_waiting_notify">"請等候更新至 BoomBand…"</string>
+	<!--Type:string Purpose:when user change the My reminders settings, it will update the configuration to BoomBand and then show this message below the My reminders to indicate configuration has been updated ScreenPath:Main screen->My reminders-->
+	<string name="str_sync_suc_notify">"已成功更新！"</string>
+	<!---->
+	<string name="height_picker_dialog_title">"設定身高"</string>
+	<!---->
+	<string name="weight_picker_dialog_title">"設定體重"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of string ScreenPath:Filpactivity interface->click pen icon ->target set interface-->
+	<string name="step_picker_dialog_title">"設定目標（步數）"</string>
+	<!---->
+	<string name="progress_title_finish">"完成"</string>
+	<!---->
+	<string name="target">"目標"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display step number int mian interface-->
+	<string name="unit">"步數"</string>
+	<!--Type:String Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display step number int mian interface-->
+	<string name="steps">"步數"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display calories number int mian interface-->
+	<string name="calories">"卡路里"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display Km number int mian interface-->
+	<string name="distances">"公里"</string>
+	<!-- no translation found for length_units -->
+	<skip />
+	<!--Type:string Purpose:wrist app the sports data details day icon ScreenPath:wrist app the sports data details day icon-->
+	<string name="today">"今天"</string>
+	<!---->
+	<string name="yesterday">"昨天"</string>
+	<!---->
+	<string name="toast_setting_birth">"請設定出生日期"</string>
+	<!---->
+	<string name="toast_setting_height">"請設定身高"</string>
+	<!---->
+	<string name="toast_setting_weight">"請設定體重"</string>
+	<!---->
+	<string name="profile_finish">"設定已完成"</string>
+	<!---->
+	<string name="settings">"設定"</string>
+	<!---->
+	<string name="share">"分享"</string>
+	<!---->
+	<string name="str_set_bluetooth">"設定藍牙"</string>
+	<!---->
+	<string name="str_set_bluetooth_content">"啟動藍牙需要 BoomBand 連線，是否繼續？"</string>
+	<!---->
+	<string name="str_set_bluetooth_open">"開啟"</string>
+	<!---->
+	<string name="str_add_device">"新增裝置"</string>
+	<!---->
+	<string name="str_bluetooth_disconnect">"重試"</string>
+	<!---->
+	<string name="str_bluetooth_connecting">"連線中..."</string>
+	<!---->
+	<string name="str_bluetooth_connected">"已連線"</string>
+	<!---->
+	<string name="str_bluetooth_turnoff">"藍牙關閉"</string>
+	<!---->
+	<string name="str_sports">"運動"</string>
+	<!---->
+	<string name="str_sleep">"睡眠"</string>
+	<!--Type:string Purpose:in main screen, sleep data statistic, title of the total sleep time. ScreenPath:main screen->total sleep time-->
+	<string name="str_sleep_title">"總睡眠時間"</string>
+	<!--Type:string Purpose:in main screen, sleep data statistic, title of the sleep condition. ScreenPath:main screen->total sleep time-->
+	<string name="str_sleep_condition">"睡眠狀況：<xliff:g id="sleep_condition_percent" example="80">%s</xliff:g>%%"</string>
+	<!---->
+	<string name="about_version">"當前版本"</string>
+	<!--Type:String Purpose:String display for user see what is this ScreenPath:setting option: help -> help interface option:About->About title-->
+	<string name="about_title">"相關資訊"</string>
+	<!---->
+	<string name="profile_tick1">"以提供更好的健康幫助"</string>
+	<!---->
+	<string name="profile_tick2">"請設定您的個人資料"</string>
+	<!---->
+	<string name="please_choose">"請選擇"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display goto today in mian interface-->
+	<string name="toToday">"至今天"</string>
+	<!---->
+	<string name="my_devices">"我的裝置"</string>
+	<!---->
+	<string name="add_new_device">"新增裝置"</string>
+	<!---->
+	<string name="setting_my_warn_noti_title">"BoomBand 警告"</string>
+	<!---->
+	<string name="setting_my_warn_noti_desp1">"已實現目標"</string>
+	<!---->
+	<string name="setting_my_warn_noti_desp2">"%，努力！"</string>
+	<!---->
+	<string name="setting_my_warn_dialog_desp1">"已實現目標"</string>
+	<!---->
+	<string name="setting_my_warn_dialog_desp2">"完成目標！"</string>
+	<!---->
+	<string name="setting_my_warn_nolonger">"關閉"</string>
+	<!---->
+	<string name="setting_my_clock_tips">"雙振動，沒有燈"</string>
+	<!--Type:String Purpose:String display for notification user ScreenPath:Filpactivity interface->notic icon->notification interface->set alarm-->
+	<string name="setting_my_clock_text">"鬧鐘"</string>
+	<!---->
+	<string name="setting_my_clock_repeat">"重覆"</string>
+	<!---->
+	<string name="setting_my_clock_max_count">"最多 8 次鬧鐘"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:setting option: help -> help interface option:know the Boomband->tips-->
+	<string name="str_silent_sleep_explain">"BoomBand 變為睡眠模式時，手機會進入靜音模式。"</string>
+	<!---->
+	<string name="everyday">"每日"</string>
+	<!---->
+	<string name="setting_anti_lost_tip">"雙振動、5 個燈輪流閃爍"</string>
+	<!--Type:string Purpose:comments on Alert while left settings ScreenPath:Main screen->My reminders->Alert while left-->
+	<string name="setting_anti_lost_dialog_content">"BoomBand 遠離手機時會觸發防丟失警示（3 次雙振動、5 個燈輪流閃爍）。"</string>
+	<!---->
+	<string name="setting_calling_alarm_tip">"單次振動、一個燈閃爍"</string>
+	<!--Type:string Purpose:first click the Main screen->My reminders->Call reminder will popup this dialog ScreenPath:Main screen->My reminders->Call reminder-->
+	<string name="setting_calling_alarm_dialog_content">"選定聯絡人的來電會使 BoomBand 振動（長時間振動）"</string>
+	<!---->
+	<string name="setting_calling_alarm_add_tip">"通話提示器清單"</string>
+	<!---->
+	<string name="setting_calling_alarm_add_limit_tip">"最多為 5 人"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:Filpactivity interface->display current boomband mode-->
+	<string name="str_notification_text_normal">"BoomBand 處於睡眠模式。"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:Notification settings interface:option description-->
+	<string name="str_notification_text_mute">"手機處於靜音模式時 BoomBand 會進入睡眠模式"</string>
+	<!---->
+	<string name="str_notification_text_low_battery">"BoomBand 電池水平已低於 %s，請連接至充電器"</string>
+	<!--Type:string Purpose:It will pop up a dialogue in the main screen when BoomBand is in low battery.  ScreenPath:Main screen->Alert dialog-->
+	<string name="str_low_battery_dialog_title">"BoomBand 低電量警告"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:setting option: My devices -> boomband ->Device information interface-->
+	<string name="device_informtion_title">"裝置資訊"</string>
+	<!---->
+	<string name="device_informtion_manufacture_name">"製造商："</string>
+	<!---->
+	<string name="device_informtion_model_number">"裝置模式："</string>
+	<!---->
+	<string name="device_informtion_hw_revision">"硬件版本："</string>
+	<!---->
+	<string name="device_informtion_sw_revision">"軟件版本："</string>
+	<!---->
+	<string name="device_informtion_wait_read">"正在等待連線…"</string>
+	<!---->
+	<string name="str_snapshot_waitting">"請稍候..."</string>
+	<!---->
+	<string name="str_vip_list_limit">"已新增 5 個聯絡人"</string>
+	<!---->
+	<string name="str_choose_device_title">"設定藍牙"</string>
+	<!---->
+	<string name="str_choose_device_open_bt">"請打開藍牙以連線至 BoomBand。"</string>
+	<!---->
+	<string name="str_choose_bt_open_bt">"打開藍牙並連線至 BoomBand？"</string>
+	<!---->
+	<string name="str_bind_bt">"繫結 BoomBand"</string>
+	<!---->
+	<string name="str_bind_wait">"稍後更新"</string>
+	<!---->
+	<string name="str_remove_devices">"登出"</string>
+	<!--Type:string Purpose:when user want to bind another BoomBand, it firstly should remove the bond device, when user do this, it will pop up a warning dialog ScreenPath:Main screen->Settings->My devices->Add new device-->
+	<string name="str_remove_devices_title">"登出裝置"</string>
+	<!---->
+	<string name="str_remove_device_content">"會斷開與 BoomBand 的連線"</string>
+	<!---->
+	<string name="str_connected_device_tips">"您已連線至 BoomBand"</string>
+	<!---->
+	<string name="str_replace_device_tips">"更換目前連線的 BoomBand？"</string>
+	<!---->
+	<string name="str_no_vip_contacts">"沒有聯絡人"</string>
+	<!---->
+	<string name="str_add_vip_contacts">"新增聯絡人"</string>
+	<!---->
+	<string name="str_added_vip_contact">"已新增聯絡人"</string>
+	<!--Type:string Purpose:wrist app the sports data details week icon ScreenPath:wrist app the sports data details week icon-->
+	<string name="str_chart_7_day">"7 天"</string>
+	<!--Type:string Purpose:wrist app the sports data details month icon ScreenPath:wrist app the sports data details month icon-->
+	<string name="str_chart_31_day">"31 天"</string>
+	<!--Type:string Purpose:wristapp enter sleep data summary remind string ScreenPath:wristapp enter sleep data summary remind string-->
+	<string name="str_chart_sleep_waste">"睡前時間"</string>
+	<!--Type:string Purpose:wrist app enter sleep data summary detail remind string ScreenPath:wrist app enter sleep data summary detail remind string-->
+	<string name="str_chart_sleep_effi">"睡眠效率"</string>
+	<!--Type:string Purpose:wrist app enter sleep data summary detail the remind string ScreenPath:wrist app enter sleep data summary detail the remind string-->
+	<string name="str_chart_sleep_total_time">"總睡眠時間"</string>
+	<!---->
+	<string name="str_chart_sleep_effi_pre">"睡眠效率："</string>
+	<!--Type:string Purpose:wristapp enter sleep data summary remind string ScreenPath:wristapp enter sleep data summary remind string-->
+	<string name="str_chart_sleep_waste_pre">"睡前時間："</string>
+	<!---->
+	<string name="str_chart_sleep_total_pre">"總睡眠時間："</string>
+	<!---->
+	<string name="str_chart_sport_target">"目標："</string>
+	<!---->
+	<string name="str_share_failed">"分享失敗"</string>
+	<!---->
+	<string name="add_device_charge_prev_step">"上一步"</string>
+	<!---->
+	<string name="add_device_charge_next_step">"下一步"</string>
+	<!---->
+	<string name="add_device_battery_prev_step">"上一步"</string>
+	<!--Type:string Purpose:wrist app connecting limitation reminder to 20% ScreenPath:wrist app connecting limitation reminder to 20%-->
+	<string name="add_device_battery_next_step">"已充滿 60% 的電量"</string>
+	<!---->
+	<string name="add_device_connect_tip">"正在搜尋裝置…"</string>
+	<!--Type:string Purpose:When user try to bind the BoomBand, at last click this button to experience. at the bottom of the bind success screen. ScreenPath:Welcome->Bind device->Bond-->
+	<string name="add_device_bind_success_done">"開始體驗"</string>
+	<!---->
+	<string name="add_device_connect_fail_tip_1">"找不到裝置"</string>
+	<!---->
+	<string name="add_device_connect_fail_tip_2">"請將裝置靠近手機，但遠離其他手機或 BoomBand"</string>
+	<!--Type:String Purpose:Toast the tip when the device connect the wristband fail. ScreenPath:BoomBand APP -> setting -> new device -> Add new device -> next step -> next step -> search.-->
+	<string name="add_device_connect_fail_tip_3">"請遠離其他手機或 BoomBand"</string>
+	<!---->
+	<string name="add_device_connect_fail_retry">"重試"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_1">"數次連線均失敗，可能原因："</string>
+	<!--Type:string Purpose:when user try to bind device, after bond failed, it will show some tips. user can follow those tips to make a successful binding. ScreenPath:Main screen->bind device->bind failed-->
+	<string name="add_device_bind_fail_tip_2">"1.BoomBand 離手機過遠"</string>
+	<!--Type:string Purpose:when user try to bind device, after bond failed, it will show some tips. user can follow those tips to make a successful binding. ScreenPath:Main screen->bind device->bind failed-->
+	<string name="add_device_bind_fail_tip_3">"提示：嘗試將 BoomBand 靠近手機（1 米以內）"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_4">"2.確保沒有其他 BoomBand/手機連線。"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_5">"提示：保持手機和 BoomBand 遠離其他裝置"</string>
+	<!--Type:string Purpose:when user try to bind device, after bond failed, it will show some tips. user can follow those tips to make a successful binding. ScreenPath:Main screen->bind device->bind failed-->
+	<string name="add_device_bind_fail_tip_6">"3.BoomBand 電池電量低於 60%"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_7">"提示：將 BoomBand 連接至充電器"</string>
+	<!---->
+	<string name="add_device_bind_fail_retry">"重試"</string>
+	<!---->
+	<string name="add_device_need_bind_tip_1">"您的 BoomBand 已連線至其他手機，是否重新連線？"</string>
+	<!---->
+	<string name="add_device_need_bind_bind">"連線"</string>
+	<!--Type:string Purpose:when user try to bind the device, firstly it will indicate that the BoomBand battery level should great then 60% ScreenPath:Main screen->add device->Battery-->
+	<string name="guide_battery_tip_1">"確保電池使用時間，請確保電池具備 20% 的電量（2 個燈閃爍）"</string>
+	<!---->
+	<string name="guide_bind_tip">"找到 BoomBand 並輕按兩下。"</string>
+	<!---->
+	<string name="guide_bind_double_click">"輕按兩下"</string>
+	<!---->
+	<string name="guide_battery_charge_tip">"請連接充電器。"</string>
+	<!--Type:string Purpose:when user successfully connect the BoomBand, this screen will appear. user can click the Begin to experience to enter main screen ScreenPath:Main screen->bind device->bind ok-->
+	<string name="guide_connect_successful_tip">"已成功連線！"</string>
+	<!--Type:string Purpose:when user start to bind the BoomBand, while succeed, this screen will pop up. user can start to experience ScreenPath:Main screen->bind device->bind ok-->
+	<string name="guide_connect_successful_tip_comments">"戴上 BoomBand，開始跑步"</string>
+	<!--Type:String Purpose:String display for notice user ScreenPath:Filpactivity interface->notic icon->notification interface-->
+	<string name="reminders_title">"我的提示器"</string>
+	<!---->
+	<string name="reminders_shake_title">"BoomBand 振動提示器"</string>
+	<!--Type:String Purpose:string display for notification user ScreenPath:Filpactivity interface->notic icon->notification interface->alarm-->
+	<string name="reminders_shake_alarm">"鬧鐘"</string>
+	<!---->
+	<string name="reminders_shake_anti_lost">"防丟失警示"</string>
+	<!---->
+	<string name="reminders_shake_call_reminder">"通話提示器"</string>
+	<!---->
+	<string name="reminders_phone_client_title">"電話提示器"</string>
+	<!--Type:String Purpose:Sting display for notification user, this is  Sleep mode sync now ScreenPath:Filpactivity interface->detail sleep interface->check data-->
+	<string name="reminders_phone_client_sync_reminder">"睡眠同步提示器"</string>
+	<!--Type:show a description string Purpose:show string for people when people begin to use the feature for reminder. ScreenPath:Wristband->alarm->-->
+	<string name="reminders_phone_client_task_reminders">"任務提示器"</string>
+	<!--Type:string Purpose:in Call reminder setting screen, a radio button item for user selection where or not vibrate when incoming call is ringing ScreenPath:Main screen->My reminders->Call reminder-->
+	<string name="call_remind_all_incoming_call">"所有來電"</string>
+	<!---->
+	<string name="call_remind_only_in_the_list">"「僅於聯絡人清單」"</string>
+	<!--Type:string Purpose:in the main screen, there is diagram to show current statics: Awake, Turn over and Sleep ScreenPath:Main screen->diagram-->
+	<string name="sleep_status_no_sleep">"清醒"</string>
+	<!---->
+	<string name="sleep_status_turn_over">"翻轉"</string>
+	<!---->
+	<string name="sleep_status_sleep">"睡眠"</string>
+	<!---->
+	<string name="tip_content_1">"每天記錄運動資料"</string>
+	<!---->
+	<string name="tip_title_2">"BoomBand"</string>
+	<!--Type:string Purpose:string remind you that the boomband will track your sleep  ScreenPath:string remind you to track your sleep-->
+	<string name="tip_content_2">"跟進睡眠狀況"</string>
+	<!---->
+	<string name="tip_content_3">"隨時隨地進行提示"</string>
+	<!---->
+	<string name="tip_title_4">"如何保持運動資料的準確性？"</string>
+	<!--Type:string Purpose:wrist app apk entry the help title reminder view ScreenPath:wrist app apk entry the help title reminder view-->
+	<string name="tip_content_4">"請將 BoomBand 佩戴在非慣用的手上。"</string>
+	<!---->
+	<string name="tip_title_5">"如何啟動睡眠模式？"</string>
+	<!--Type:string Purpose:A tip show after the welcome screen when user first launch this application. ScreenPath:Welcome->tips-->
+	<string name="tip_content_5">"請快速輕敲 BoomBand 6次。"</string>
+	<!---->
+	<string name="version_found">"版本更新"</string>
+	<!---->
+	<string name="version_update">"更新"</string>
+	<!--Type:String Purpose:The  notification bar massage about the new apk version
+download. ScreenPath:new apk download -> notification -> the message-->
+	<string name="download_description">"正在更新版本"</string>
+	<!--Type:string Purpose:A dialog to show when newer version is available. user can choose yes to download & install the newer version ScreenPath:Main screen-->
+	<string name="version_messsage">"在網絡發現新的版本，是否更新？"</string>
+	<!--Type:string Purpose:show an item in the main screen->settings, will between profile and my devices setting. A function used to control where or not enable double click BoomBand to unlock scren ScreenPath:main screen->settings-->
+	<string name="setting_double_click_unlock_screen_title">"輕按兩下解鎖屏幕"</string>
+	<!--Type:string Purpose:When user click the Sport/Sleep switcher in the main screen, it will pop up a dialog to tell user what its meaning ScreenPath:Main screen->click sport/sleep switcher-->
+	<string name="switcher_tip_content">"輕觸僅顯示資料統計。如需更換模式，請輕敲 BoomBand 6 次，直至 BoomBand 振動且 LED 燈閃爍。"</string>
+	<!--Type:string Purpose:When user click the Sport Sleep switcher in the main screen, it will pop up a dialog to tell user what its meaning ScreenPath:Main screen->click sport sleep switcher-->
+	<string name="switcher_tip_action">"不再顯示此項"</string>
+	<!--Type:string Purpose:show current BoomBand status in the bottom of the main screen. when user switch the BoomBand status, the message will be updated ScreenPath:main screen-->
+	<string name="device_mode_indicate_sport">"您的裝置處於運動模式。"</string>
+	<!--Type:string Purpose:show current BoomBand status in the bottom of the main screen. when user switch the BoomBand status, the message will be updated ScreenPath:main screen-->
+	<string name="device_mode_indicate_sleep">"您的裝置處於睡眠模式。"</string>
+	<!--Type:string Purpose:A button show between the statistic data and the step/calories/km, can use to switch sleep data statics and sport data statics ScreenPath:main screen-->
+	<string name="data_statistic_sport_data">"運動資料"</string>
+	<!--Type:string Purpose:A button show between the statistic data and the step/calories/km, can use to switch sleep data statics and sport data statics ScreenPath:main screen-->
+	<string name="data_statistic_sleep_data">"睡眠資料"</string>
+	<!--Type:string Purpose:in the main screen title bar, show the bluetooth device status information, indicate the BoomBand is upgrading its firmware. ScreenPath:main screen title bar-->
+	<string name="str_bluetooth_upgrading">"固件正在更新…"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_firmware">"更新固件"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_go_to_dfu">"切換成 DFU 模式"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_can_not_found_device">"找不到裝置！"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_connect_device">"正在連線至裝置…"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_device_connected">"裝置已連線"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_device_service_found">"找到 DFU 服務"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_device_disconnect">"裝置中斷連線"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_start_transfer_firmware">"正在更新固件…"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="duf_upgrade_transfer_complete">"更新已完成"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_success">"已成功更新！"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_reset_device">"正在重新設定裝置…"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_failed">"更新失敗，請重試"</string>
+	<!-- no translation found for apk_new_version_exist_onlocal -->
+	<skip />
+	<!-- no translation found for apk_versoin_already_newest -->
+	<skip />
+	<!-- no translation found for verion_update_setting_item -->
+	<skip />
+	<!-- no translation found for version_update_msg_title -->
+	<skip />
+	<!-- no translation found for download_network_not_available -->
+	<skip />
+	<!-- no translation found for version_check_network_err -->
+	<skip />
+	<!-- no translation found for alarm_repeat -->
+	<skip />
+	<!-- no translation found for every_day -->
+	<skip />
+	<!-- no translation found for help_option_title -->
+	<skip />
+	<!-- no translation found for tip_4_title -->
+	<skip />
+	<!-- no translation found for tip_4_sub_1_title -->
+	<skip />
+	<!-- no translation found for tip_4_sub_1_content -->
+	<skip />
+	<!-- no translation found for tip_4_sub_2_title -->
+	<skip />
+	<!-- no translation found for tip_4_sub_2_content -->
+	<skip />
+	<!-- no translation found for tip_5_title -->
+	<skip />
+	<!-- no translation found for tip_5_content -->
+	<skip />
+	<!-- no translation found for tip_7_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_1_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_1_content -->
+	<skip />
+	<!-- no translation found for tip_7_sub_2_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_2_content -->
+	<skip />
+	<!-- no translation found for tip_7_sub_3_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_3_content -->
+	<skip />
+	<!-- no translation found for tip_8_title -->
+	<skip />
+	<!-- no translation found for tip_8_content -->
+	<skip />
+	<!-- no translation found for tip_9_title -->
+	<skip />
+	<!-- no translation found for tip_9_content -->
+	<skip />
+	<!-- no translation found for help_option_tips -->
+	<skip />
+	<!-- no translation found for help_option_questions -->
+	<skip />
+	<!-- no translation found for help_option_application -->
+	<skip />
+	<!--Type:show a description string Purpose:Help interface option:About ScreenPath:setting option: help -> help interface option:About-->
+	<string name="help_option_about">"相關資訊"</string>
+</resources>

@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+		this file is built by arct v:froyo_2011-03-23, Wed Apr 02 14:30:18 CST 2014
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="gender">"Gender"</string>
+    <string name="male">"Male"</string>
+    <string name="female">"Female"</string>
+    <string name="birth">"Birthday"</string>
+    <string name="height">"Height"</string>
+    <string name="weight">"Weight"</string>
+    <string name="str_sync_waiting_notify">"Waiting for update to the Wave..."</string>
+    <string name="str_sync_suc_notify">"Successfully updated!"</string>
+    <string name="height_picker_dialog_title">"Set height"</string>
+    <string name="weight_picker_dialog_title">"Set weight"</string>
+    <string name="step_picker_dialog_title">"Set target (steps)"</string>
+    <string name="progress_title_finish">"Done"</string>
+    <string name="target">"Target"</string>
+    <string name="unit">"step"</string>
+    <string name="steps">"Steps"</string>
+    <string name="calories">"Calories"</string>
+    <string name="distances">"Distance"</string>
+    <string name="length_units">"km"</string>
+    <string name="length_units_m">"m"</string>
+    <string name="today">"Today"</string>
+    <string name="yesterday">"Yesterday"</string>
+    <string name="toast_setting_birth">"Please set birth date"</string>
+    <string name="toast_setting_height">"Please set height"</string>
+    <string name="toast_setting_weight">"Please set weight"</string>
+    <string name="profile_finish">"Setting finished"</string>
+    <string name="settings">"Settings"</string>
+    <string name="share">"Share"</string>
+    <string name="str_set_bluetooth">"Set Bluetooth"</string>
+    <string name="Bluetooth_Enabled">"Bluetooth Enabled"</string>
+    <string name="Bluetooth_Disabled">"Bluetooth Disabled"</string>
+    <string name="str_set_bluetooth_content">"Bluetooth activation required for Wave connection, continue?"</string>
+    <string name="str_set_bluetooth_open">"Turn on"</string>
+    <string name="str_add_device">"Add device"</string>
+    <string name="str_bluetooth_disconnect">"Retry"</string>
+    <string name="str_bluetooth_connecting">"Connecting..."</string>
+    <string name="str_bluetooth_connected">"Connected"</string>
+    <string name="str_bluetooth_turnoff">"Bluetooth off"</string>
+    <string name="str_sports">"Activity"</string>
+    <string name="str_sleep">"Sleep"</string>
+    <string name="str_sleep_title">"Total time"</string>
+    <string name="str_sleep_condition">"Conditions:<xliff:g example="80" id="sleep_condition_percent">%s</xliff:g>%%"
+    </string>
+    <string name="about_version">"Current version"</string>
+    <string name="about_title">"About"</string>
+    <string name="profile_tick1">"To give you the most accurate readings, please complete your personal info"</string>
+    <string name="profile_tick2">"Please set your personal info"</string>
+    <string name="please_choose">"Please choose"</string>
+    <string name="toToday">"To today"</string>
+    <string name="my_devices">"My devices"</string>
+    <string name="add_new_device">"Add new device"</string>
+    <string name="setting_my_warn_noti_title">"Wave warning"</string>
+    <string name="setting_my_warn_noti_desp1">"Target achieved"</string>
+    <string name="setting_my_warn_noti_desp2">"%, fighting!"</string>
+    <string name="setting_my_warn_dialog_desp1">"Target achieved"</string>
+    <string name="setting_my_warn_dialog_desp2">"Go for it!"</string>
+    <string name="setting_my_warn_nolonger">"Dismiss"</string>
+    <string name="setting_my_clock_tips">"Double vibration, no lights"</string>
+    <string name="setting_my_clock_text">"Wave alarm(s)"</string>
+    <string name="setting_my_clock_repeat">"Repeat"</string>
+    <string name="setting_my_clock_max_count">"Eight alarm maximum"</string>
+    <string name="str_silent_sleep_explain">"Set your phone to silent mode when you change your Wave to sleep mode."
+    </string>
+    <string name="everyday">"Every day"</string>
+    <string name="setting_anti_lost_tip">"Three double vibrations + five lights blinking in turn"</string>
+    <string name="setting_anti_lost_dialog_content">"When the Wave is far away from the phone, it will trigger the
+        anti-loss alert (three double vibrations, five lights blinking in turn)."
+    </string>
+    <string name="str_notification_text_normal">"The Wave is in sleep mode"</string>
+    <string name="str_notification_text_mute">"The Wave will be in sleep mode while phone in silent mode"</string>
+    <string name="str_notification_text_low_battery">"The Wave battery level is lower than %s, please connect to the
+        charger"
+    </string>
+    <string name="str_low_battery_dialog_title">"Wave low battery warning"</string>
+    <string name="device_informtion_title">"Device information"</string>
+    <string name="device_informtion_manufacture_name">"Manufacturer:"</string>
+    <string name="device_informtion_model_number">"Device model:"</string>
+    <string name="device_informtion_hw_revision">"Hardware version:"</string>
+    <string name="device_informtion_sw_revision">"Software version:"</string>
+    <string name="device_informtion_wait_read">"Waiting for connection..."</string>
+    <string name="device_bind_available_devices">"Available devices"</string>
+    <string name="str_snapshot_waitting">"Please wait..."</string>
+    <string name="str_choose_device_title">"Set Bluetooth"</string>
+    <string name="str_choose_device_open_bt">"Please turn on Bluetooth to pair with the Wave."</string>
+    <string name="str_choose_bt_open_bt">"Turn on Bluetooth to connect to the Wave?"</string>
+    <string name="str_bind_bt">"Bind Wave"</string>
+    <string name="str_bind_wait">"Later"</string>
+    <string name="str_remove_devices">"Log out"</string>
+    <string name="str_remove_devices_title">"Log out of device"</string>
+    <string name="str_remove_device_content">"Will disconnect from the Wave"</string>
+    <string name="str_connected_device_tips">"You have connected to the Wave"</string>
+    <string name="str_replace_device_tips">"Replace the currently connected Wave?"</string>
+
+    <string name="str_chart_7_day">"Week"</string>
+    <string name="str_chart_31_day">"Month"</string>
+    <string name="str_chart_sleep_waste">"Pre-sleep time"</string>
+    <string name="str_chart_sleep_effi">"Efficiency"</string>
+    <string name="str_chart_sleep_total_time">"Total time"</string>
+    <string name="str_chart_sleep_effi_pre">"Efficiency:"</string>
+    <string name="str_chart_sleep_waste_pre">"Pre-sleep time:"</string>
+    <string name="str_chart_sleep_total_pre">"Total time:"</string>
+    <string name="str_chart_sport_target">"Target:"</string>
+    <string name="str_share_failed">"Sharing failed"</string>
+    <string name="add_device_charge_prev_step">"Previous step"</string>
+    <string name="add_device_charge_next_step">"Next step"</string>
+    <string name="add_device_battery_prev_step">"Previous step"</string>
+    <string name="add_device_battery_next_step">"Charged to 20%"</string>
+    <string name="add_device_connect_tip">"Searching for device..."</string>
+    <string name="add_device_bind_success_done">"Begin the experience"</string>
+    <string name="add_device_connect_fail_tip_1">"Device not found"</string>
+    <string name="add_device_connect_fail_tip_2">"Please try to bring the device closer to the phone, but away from
+        other phones or Waves"
+    </string>
+    <string name="add_device_connect_fail_tip_3">"Please keep away from other phones or Waves"</string>
+    <string name="add_device_connect_fail_retry">"Retry"</string>
+    <string name="add_device_bind_fail_tip_1">"Connection failed several times, possibly due to:"</string>
+    <string name="add_device_bind_fail_tip_2">"1. Wave is too far away from the phone"</string>
+    <string name="add_device_bind_fail_tip_3">"Tip: try to bring the Wave closer to the phone (within one metre)"
+    </string>
+    <string name="add_device_bind_fail_tip_4">"2. Make sure there are no existing connections between other
+        Waves/phones"
+    </string>
+    <string name="add_device_bind_fail_tip_5">"Tip: keep the phone and Wave away from other devices"</string>
+    <string name="add_device_bind_fail_tip_6">"3. Wave battery level is lower than 60%"</string>
+    <string name="add_device_bind_fail_tip_7">"Tip: connect the Wave to the charger"</string>
+    <string name="add_device_bind_fail_retry">"Retry"</string>
+    <string name="add_device_need_bind_tip_1">"Your Wave has been connected to another phone, reconnect?"</string>
+    <string name="add_device_need_bind_bind">"Connect"</string>
+    <string name="guide_battery_tip_1">"Ensuring battery life, please make sure your Wave is at least 20% charged."
+    </string>
+    <string name="guide_battery_tip_2"/>
+    <string name="guide_battery_tip_comments"/>
+    <string name="guide_bind_tip">"Find the Wave and tap it twice"</string>
+    <string name="guide_bind_double_click">"Double tap"</string>
+    <string name="guide_battery_charge_tip">"Please connect your Wave to the charger"</string>
+    <string name="guide_connect_successful_tip">"Successfully connected!"</string>
+    <string name="guide_connect_successful_tip_comments">"Wear your Wave and start running"</string>
+    <string name="reminders_title">"Notification settings"</string>
+    <string name="reminders_shake_title">"Wave vibration reminders"</string>
+    <string name="reminders_shake_alarm">"Wave alarm"</string>
+    <string name="reminders_shake_anti_lost">"Anti-loss alert"</string>
+    <!-- Incoming call changed by yashuang.mu@tcl.com begin -->
+    <string name="reminders_shake_call_reminder">"Call reminder"</string>
+    <string name="call_remind_all_incoming_call">"All incoming calls"</string>
+    <string name="call_remind_only_in_the_list">"Only in the contacts list"</string>
+    <string name="setting_calling_alarm_tip">"Single vibration, one light blinking"</string>
+    <string name="setting_calling_alarm_dialog_content">"Incoming calls from the chosen contacts will be muted or
+        rejected in the Wave"
+    </string>
+    <string name="setting_calling_alarm_add_limit_tip">"5 person maximum"</string>
+    <string name="str_vip_list_limit">"5 contacts added"</string>
+    <string name="str_no_vip_contacts">"No contacts"</string>
+    <string name="str_add_vip_contacts">"Add contacts"</string>
+    <string name="str_added_vip_contact">"Contacts added"</string>
+    <!-- Incoming call changed by yashuang.mu@tcl.com end -->
+
+    <!-- Control Media Player changed by yashuang.mu@tcl.com  begin -->
+    <string name="smartband_settings_control_music_get_infor_fail">"Unknown"</string>
+    <!-- Control Media Player changed by yashuang.mu@tcl.com  end -->
+    <!-- Control Notifications changed by yashuang.mu@tcl.com  begin -->
+    <string name="setting_notifications_Listener_dialog_content">"Please set the accessibility for receive notifications
+        on your Smartband"
+    </string>
+    <string name="setting_notifications_Listener_dialog_nexttime">"Next time"</string>
+    <string name="setting_notifications_Listener_dialog_ok">"OK"</string>
+    <!-- Control Nofifications changed by yashuang.mu@tcl.com  end -->
+
+    <string name="reminders_phone_client_title">"Phone reminders"</string>
+    <string name="reminders_phone_client_sync_reminder">"Sleep mode sync"</string>
+    <string name="reminders_phone_client_task_reminders">"Workout summary"</string>
+    <string name="sleep_status_no_sleep">"Awake"</string>
+    <string name="sleep_status_turn_over">"Turn over"</string>
+    <string name="sleep_status_sleep">"Sleep"</string>
+    <string name="tip_content_1">"Record your activity every day"</string>
+    <string name="tip_title_2">"Wave"</string>
+    <string name="tip_content_2">"Track your sleeping pattern"</string>
+    <string name="tip_content_3">"Be reminded anytime, anywhere"</string>
+    <string name="tip_title_4">"Get an accurate summary"</string>
+    <string name="tip_content_4">"Please wear the Wave on your weak hand."</string>
+    <string name="tip_title_5">"Activate the sleep mode"</string>
+    <string name="tip_content_5">"Quickly tap the Wave six times in a row."</string>
+    <string name="version_found">"Version update"</string>
+    <string name="version_update">"Update"</string>
+    <string name="download_description">"New version download in progress"</string>
+    <string name="version_messsage">"New version found, please download."</string>
+    <string name="setting_double_click_unlock_screen_title">"Double tap to unlock screen"</string>
+    <string name="switcher_tip_content">"Touch to show summary only. To change modes, please tap your Wave six times
+        until it vibrates once and the lights flash."
+    </string>
+    <string name="switcher_tip_action">"Don\'t show this again"</string>
+    <string name="device_mode_indicate_sport">"Your device is in active mode."</string>
+    <string name="device_mode_indicate_sleep">"Your device is in sleep mode."</string>
+    <string name="data_statistic_sport_data">"Active summary"</string>
+    <string name="data_statistic_sleep_data">"Sleep summary"</string>
+    <string name="str_bluetooth_upgrading">"Firmware upgrading..."</string>
+    <string name="dfu_upgrade_firmware">"Upgrade firmware"</string>
+    <string name="dfu_upgrade_go_to_dfu">"Switch to Firmware upgrade mode"</string>
+    <string name="dfu_upgrade_can_not_found_device">"Device not found!"</string>
+    <string name="dfu_upgrade_connect_device">"Connecting to device..."</string>
+    <string name="dfu_upgrade_device_connected">"Device connected"</string>
+    <string name="dfu_upgrade_device_service_found">"DFU service found"</string>
+    <string name="dfu_upgrade_device_disconnect">"Device disconnected"</string>
+    <string name="dfu_upgrade_start_transfer_firmware">"Upgrading firmware..."</string>
+    <string name="duf_upgrade_transfer_complete">"Upgrade completed"</string>
+    <string name="dfu_upgrade_success">"Successfully upgraded!"</string>
+    <string name="dfu_upgrade_reset_device">"Resetting device..."</string>
+    <string name="dfu_upgrade_failed">"Upgrade failed, please retry"</string>
+    <string name="apk_new_version_exist_onlocal">"New version has existed in local storage, please install it
+        manually."
+    </string>
+    <string name="apk_versoin_already_newest">"Local version is latest."</string>
+    <string name="verion_update_setting_item">"Version check"</string>
+    <string name="version_update_msg_title">"Version update"</string>
+    <string name="download_network_not_available">"Network not available"</string>
+    <string name="version_check_network_err">"Network error!"</string>
+    <string name="alarm_repeat">@string/setting_my_clock_repeat</string>
+    <string name="every_day">@string/everyday</string>
+    <string name="help_option_title">"Help"</string>
+    <string name="tip_4_title">"Switch between active and sleep mode"</string>
+    <string name="tip_4_sub_1_title">"Method 1:"</string>
+    <string name="tip_4_sub_1_content">"Quickly tap the Wave six times in a row."</string>
+    <string name="tip_4_sub_2_title">"Method 2:"</string>
+    <string name="tip_4_sub_2_content">"Press button on your phone directly."</string>
+    <string name="tip_5_title">"Check the summary between active and sleep mode"</string>
+    <string name="tip_5_content">"Press the button to switch"</string>
+    <string name="tip_7_title">"Wave signals"</string>
+    <string name="tip_7_sub_1_title">"Wave alarm reminder"</string>
+    <string name="tip_7_sub_1_content">"Six double vibrations"</string>
+    <string name="tip_7_sub_2_title">"Call reminder"</string>
+    <string name="tip_7_sub_2_content">"Six single vibrations + one light blinking"</string>
+    <string name="tip_7_sub_3_title">"Anti-loss alert"</string>
+    <string name="tip_7_sub_3_content">"Six double vibrations + five lights blinking in turn"</string>
+    <string name="tip_8_title">"Restore factory settings"</string>
+    <string name="tip_8_content">"When charging the Wave, gently poke a sharp object in the reset hole. You will see the
+        lights blinking. All data will be removed."
+    </string>
+    <string name="tip_9_title">"Charge the Wave"</string>
+    <string name="tip_9_content">"Insert the Wave core in the charger. Please make sure that the icons on the charger
+        match those on the Wave core."
+    </string>
+    <string name="help_option_tips">"Know the Wave"</string>
+    <string name="help_option_questions">"Frequently Asked Questions"</string>
+    <string name="help_option_application">"Compatible devices"</string>
+    <string name="help_option_about">"About"</string>
+    <string name="repeat_click_back_key_exit_app">"Press the back key again to exit the application!"</string>
+    <!-- add by zhutao begin -->
+    <string name="settings_smartband_settings">"Wave settings"</string>
+    <string name="settings_notifications">"Notification"</string>
+    <string name="settings_reminders">"Reminder"</string>
+    <string name="settings_nfc_menu">"NFC"</string>
+    <string name="settings_nfc_tip">"Unlock phone and launch Wave Life"</string>
+    <string name="nfc_settings_unlock_phone">"Unlock phone"</string>
+    <string name="nfc_settings_launch_smartband2">"Launch Wave Life"</string>
+    <string name="nfc_settings_title">"Nfc Setting"</string>
+    <string name="reminders_sedentar_reminder">"Standup reminder"</string>
+    <string name="reminders_sedentar_reminder_tips">"Vibrate if you are not activity in one hour under active mode"
+    </string>
+    <string name="reminders_find_me_reminder">"Fine Me reminder"</string>
+    <string name="reminders_find_me_reminder_tips">"Vibrate if you receive "find me" singnal "</string>
+    <string name="reminders_sos_reminder">"SOS reminder"</string>
+    <string name="reminders_sos_reminder_tips">"Make a SOS call when in Emengercy Situation"</string>
+    <string name="reminders_calender_notification_reminder">"Calender"</string>
+    <string name="menu_list_my_profile">"My profile"</string>
+    <string name="menu_list_dashboard">"Dashboard"</string>
+    <string name="menu_list_recent">"Timeline"</string>
+    <string name="menu_list_charts_and_trends">"Charts&amp;Trends"</string>
+    <string name="menu_list_goals">"Goals"</string>
+    <string name="menu_list_login_out">"Login out"</string>
+    <string name="setting_reminder_item">"Reminder"</string>
+    <string name="string_my_goals">"My Goals Per Day"</string>
+    <string name="string_goals_steps">"Steps"</string>
+    <string name="string_goals_calories">"Calories"</string>
+    <string name="string_goals_sleep">"Sleep"</string>
+    <string name="string_goals_duration">"Duration"</string>
+    <string name="string_goals_distance">"Distance"</string>
+    <string name="string_goals_set_steps_tips">"Set your daily steps goal."</string>
+    <string name="string_goals_set_calories_tips">"Set your daily calories goal."</string>
+    <string name="string_goals_set_distance_tips">"Set your daily distance goal."</string>
+    <string name="string_goals_set_duration_tips">"Set your daily duration goal."</string>
+    <string name="string_goals_set_sleep_tips">"Set your daily sleep goal."</string>
+    <string name="string_goals_set_save_title">"Save"</string>
+    <string name="string_goals_set_remove_goal">"Set Default Goal"</string>
+    <string name="string_goals_set_tip1">"A good start"</string>
+    <string name="string_goals_set_tip2">"Recommended"</string>
+    <string name="string_idle_menu">"Idle"</string>
+    <string name="string_sport_menu">"Sport"</string>
+    <string name="string_sleep_menu">"Sleep"</string>
+    <string name="string_compass_menu">"Compass"</string>
+    <string name="string_heart_menu">"Heart"</string>
+    <string name="string_music_menu">"Music"</string>
+    <string name="string_camera_menu">"Camera"</string>
+    <string name="string_settings_menu">"Settings"</string>
+    <string name="string_stopwatch_menu">"Stopwatch"</string>
+    <string name="tag_discovery_title">"Tag Discovery"</string>
+    <string name="dialog_text_nfc_off">"You must turn on NFC to scan tags."</string>
+    <string name="tag_discovery_tip1">"Ready to discovery tags."</string>
+    <string name="tag_discovery_tip2">"Reading will begin when you tap an NFC compatible item with the back of your
+        device."
+    </string>
+    <string name="smartband_settings_sequence">"Sequence"</string>
+    <string name="smartband_settings_sequence_tips">"Modify the sequence of menu on Wave Life"</string>
+    <string name="smartband_settings_control_music">"Control music"</string>
+    <string name="smartband_settings_control_camera">"Control camera"</string>
+    <string name="smartband_settings_control_camera_need_unlock">"Please unlock the phone."</string>
+    <string name="smartband_settings_blocking_mode">"Blocking mode"</string>
+    <string name="smartband_settings_blocking_mode_tips">"Blocking your Wave Life. No disturb on it"</string>
+    <string name="smartband_settings_factory_reset">"Factory reset"</string>
+    <string name="smartband_nfc_pair_title">"NFC Pair"</string>
+    <string name="smartband_nfc_pair_confirm">"A new devices triyng to pair with Wave Life! Previous data will be
+        lost"
+    </string>
+    <string name="smartband_nfc_pair_connect_guide_tip">"Pairing with Wave Life! Please wait..."</string>
+    <string name="smartband_nfc_pair_failed_tip">"NFC Pair Failed!"</string>
+    <!-- add by zhutao end -->
+
+    <!-- add by sundingmao for login module  -->
+    <string name="login_state_title">"Login state"</string>
+    <string name="login_state_username">"Hi,<xliff:g example="examplename" id="username">%s</xliff:g>"
+    </string>
+    <string name="login_state_logout">"Log out"</string>
+    <string name="login_state_change_password">"Change password"</string>
+    <string name="login_title">"Sign In"</string>
+    <string name="login_forget_password">"Forget password"</string>
+    <string name="login_change_password">"Change password"</string>
+    <string name="login_email">"E-mail account:"</string>
+    <string name="login_captcha_refresh">"Refresh"</string>
+    <string name="login_by_google">"Google login"</string>
+    <string name="login_by_facebook">"Facebook login"</string>
+    <string name="login_by_twitter">"Twitter login"</string>
+    <string name="login_by_qq">"QQ login"</string>
+    <string name="login_by_sinaweb">"Sinaweb login"</string>
+    <string name="login_by_webchat">"Webchat login"</string>
+    <string name="login_register">"Create Account"</string>
+    <string name="login_create_new_account">"Create new account"</string>
+    <string name="login_submit">"Create An Account"</string>
+    <string name="login_submit_next">"Send Reset Email"</string>
+    <string name="login_reset_password">"Reset password"</string>
+    <string name="login_camera">"Camera"</string>
+    <string name="login_from_gallery">"From gallery"</string>
+    <string name="login_tcloud">"Login Tcloud"</string>
+    <string name="login_sync_data_setting">"Sync data setting"</string>
+    <string name="login_sync_data_tcloud">"Automatic Sync data"</string>
+    <string name="login_sync_data_info">"Sync data to cloud,of course this operating need contect network"</string>
+    <string name="login_sync_data_wifi">"Only with wifi"</string>
+    <string name="login_sync_data_wifi_info">"Sync data to cloud only with wifi opened"</string>
+    <string name="login_sync_data_frequency">"Frequency"</string>
+    <string name="login_sync_data_frequency_info">"30 min"</string>
+    <string name="login_webview_error_info">"Request server time out,please refresh or try again later"</string>
+    <string name="login_wait_content">"Getting the user data, please wait..."</string>
+    <string name="login_register_method">"You need to create an account first"</string>
+    <string name="login_register_password_set">"Please check your new e-mail from your registered mail"</string>
+    <string name="login_input_email_hint">"Email Address"</string>
+    <string name="login_input_password_hint">"Input Password"</string>
+    <string name="login_input_confirm_password_hint">"Confirm Password"</string>
+    <string name="login_register_nickname_set">"Set nickname"</string>
+    <string name="login_input_nickname_set_hint">"Nick Name"</string>
+    <string name="login_register_captcha_set">"Input captcha"</string>
+    <string name="login_input_captcha_set_hint">"Input Captcha"</string>
+    <string name="login_login_account">"Sign in if you already have an account"</string>
+    <string name="login_login_forgotpassword">"Send reset email if you forgot password"</string>
+    <string name="login_login_third">"Use other application to log in:"</string>
+    <string name="login_login_password">"Login password"</string>
+    <string name="login_resetpassword_captcha_hint">"Get the captcha from your email"</string>
+    <string name="login_reset_password_set">"Reset password"</string>
+    <string name="login_reset_old_password_hint">"Please input old password"</string>
+    <string name="login_reset_new_password_hint">"Please input new password"</string>
+    <string name="login_logo_login">"Sign In"</string>
+    <string name="login_logo_register">"Sign Up"</string>
+    <string name="login_register_method_email">"Email Register"</string>
+    <string name="login_login_method_email">"Email Login"</string>
+    <string name="find_me_title">"Find you"</string>
+    <string name="find_me_info">"I' m here"</string>
+    <string name="sos_call_title">"Sos Call"</string>
+    <string name="setting_calling_contact">"Set Sos calling contact"</string>
+    <string name="sos_list_limit">"Sos contact added"</string>
+    <string name="charts_trends_title">"Charts and Trends"</string>
+    <string name="str_chart_day">"Day"</string>
+    <string name="str_sport_type_walk">"Walking"</string>
+    <string name="str_sport_type_run">"Running"</string>
+    <string name="str_sport_type_cycle">"Cycling"</string>
+    <string name="str_sport_type_sit">"Sitting"</string>
+    <string name="str_sport_type_drive">"Driving"</string>
+    <string name="str_sport_type_climb">"Climbing"</string>
+    <string name="str_health_type_heart_rate">"Heart Rate"</string>
+    <string name="str_sport_type_unknow">"Unknow"</string>
+    <string name="sigin_as_vistor">"As a Visitor"</string>
+    <string name="findme_remind_mode_notice">"When my phone receive find me signal"</string>
+    <string name="findme_remind_by_vibration">"Vibration"</string>
+    <string name="findme_remind_by_ringing">"Ringing"</string>
+    <string name="findme_remind_by_ringing_with_vibration">"Ringing with Vibration"</string>
+    <!-- add by sundingmao end  -->
+
+    <!-- add by xuliang for mini test begin -->
+    <string name="app_factorytest_name">MB12M Test Tool</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tester_name">MB12M Factory Test</string>
+    <string name="tester_version">MB12M v2.0</string>
+    <string name="test_model_mmi">MMI Test</string>
+    <string name="test_model_packing">Packing Test</string>
+    <string name="test_auto">Auto</string>
+    <string name="test_manual">Manual</string>
+    <string name="label_test_list">Menu</string>
+    <string name="dialog_cu_ref_content">Please set the Cu reference firstly</string>
+    <string name="dialog_config_setting">Please config setting firstly</string>
+    <string name="dialog_cu_ref_ok">OK</string>
+    <!-- Name of Test case. Sync with TestConfig.TEST_CLASSES -->
+    <string-array name="test_menu">
+        <item>Pcba Version</item>
+        <item>Bluetooth</item>
+        <item>Rom Version</item>
+        <item>G-seneor</item>
+        <item>LED</item>
+        <item>VIB</item>
+        <item>Charger</item>
+        <item>Write Flag</item>
+        <item>Set Curef</item>
+        <item>Set Rom Version</item>
+        <item>Anti Activation</item>
+        <item>= Open the report =</item>
+    </string-array>
+
+    <string-array name="packing_test_menu">
+        <item>Pcba Version</item>
+        <item>Bluetooth</item>
+        <item>Rom Version</item>
+        <item>G-seneor</item>
+        <item>LED</item>
+        <item>VIB</item>
+        <item>Electricity</item>
+        <item>Charger</item>
+        <item>Write Flag</item>
+        <item>Set Curef</item>
+        <item>Set Rom Version</item>
+        <item>Anti Activation</item>
+    </string-array>
+
+    <string name="code_pass">No Error</string>
+    <string name="code_bt_disc">Bluetooth Test</string>    <!-- Discovery -->
+    <string name="code_bt_conn">Bluetooth Connection</string>
+    <string name="code_bt_bond">Bluetooth Bond</string>
+    <string name="code_bt_prot">Bluetooth Protocol</string>
+    <string name="code_sn_rd">Serial Number Read</string>
+    <string name="code_sn_wr">Serial Number Write</string>
+    <string name="code_rom">Rom Revision</string>
+    <string name="code_pt_flag">Pt Flag</string>
+    <string name="code_sensor">GSensor</string>
+    <string name="code_charge">Volume</string>
+    <string name="code_led">LED</string>
+    <string name="code_vibrate">Vibrate</string>
+    <string name="code_flag">Write Flag</string>
+    <string name="code_nfc">NFC</string>
+    <string name="code_write_nfc">Write NFC</string>
+    <string name="code_check_nfc">Check NFC</string>
+    <!--<string name="code_write_curef">Write CU Ref</string>  -->
+    <string name="test_fail">Test Fail</string>
+    <string name="test_pass">Test PASS</string>
+    <string name="result_pass">PASS</string>
+    <string name="result_fail">FAIL</string>
+    <string name="ble_not_supported">BLE not supported</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="test_prepare">Starting Test Service\u2026</string>
+
+    <string name="code_heart_rate_monitor">Heart Rate Monitor</string>
+    <string name="code_heart_rate_led_monitor">Heart Rate LED Monitor</string>
+    <string name="code_magnetmeter_sensor">Magnetmeter Sensor</string>
+    <string name="code_pressure_sensor">Pressure Sensor</string>
+    <string name="code_g_sensor">G-Sensor</string>
+    <string name="code_a_sensor">Accelerator</string>
+    <string name="code_gyro_sensor">Gyro Sensor Test</string>
+    <string name="code_fuel_guage">Fuel Guage Test</string>
+    <string name="code_key">Key</string>
+    <string name="code_usb">USB</string>
+    <string name="code_changing">Changing</string>
+    <string name="code_battery_temp">Battery and Temp</string>
+    <string name="code_backlight">Back Light</string>
+    <string name="code_lcm">LCM</string>
+    <string name="code_tp0">TP0</string>
+    <string name="code_tp1">TP1</string>
+    <string name="code_led_test">LED</string>
+    <string name="code_vibrate_test">Vibrate</string>
+    <string name="code_lcdmire">LCD RGB</string>
+    <string name="code_lcdblck">LCD BLACK</string>
+    <string name="code_lcdwhite">LCD WHITE</string>
+
+
+    <string name="bt_resetting">Resetting Bluetooth Adapter\u2026</string>
+    <string name="bt_prepare">Put Device and Phone into Box within 5s</string>
+    <string name="bt_searching">Searching\u2026</string>
+    <string name="bt_device">Device</string>
+    <string name="bt_connecting">Connecting %1$s\u2026</string>
+    <string name="bt_requesting">Sending request\u2026</string>
+    <string name="bt_receiving">Waiting for response\u2026</string>
+    <string name="bt_received">Received Data</string>
+    <string name="bt_received_fail">Receive Data Fail</string>
+    <string name="bt_request_fail">Request Data Failed</string>
+    <string name="bt_nodevice">No Device Detected</string>
+    <string name="bt_disconnected">Can not Connect to Device\n%1$s</string>
+    <string name="bt_connection_success">Connection to Device Success</string>
+    <string name="bt_connection_fail">Connection to Device Failed</string>
+    <string name="bt_searching_fail">Search Failed</string>
+    <string name="bt_send_echo_msg">Sending echo message</string>
+
+    <string name="sn">SN: XXXX\nWirte Success</string>
+    <string name="sn_writing">Writing SN to Device\u2026</string>
+    <string name="sn_read_fail">Read SN fail, try again</string>
+    <string name="sn_read">Reading SN</string>
+    <string name="sn_write_ok">Write Success!</string>
+    <string name="sn_write_fail">Write Failed!</string>
+    <string name="sn_write">Scan Device SN</string>
+    <string name="sn_checking">Checking write result\u2026</string>
+    <string name="sn_checking_fail">Checking SN write FAILED</string>
+    <string name="sn_lack_information">Bluetooth test failed,Lack of SN information!!!</string>
+
+    <string name="rom_get_failed">Get Rom Version Failed</string>
+    <string name="rom_retriving">Retriving Rom Version\u2026</string>
+    <string name="send_getting_rom_version_failed">Send Getting Rom Verion Request Failed</string>
+    <string name="rom_version_matched">rom version matched</string>
+    <string name="rom_version_mismatched">rom version mismatched</string>
+    <string name="getting_rom_version">Getting rom version</string>
+    <string name="rom_version_got">Get rom version from wristband</string>
+
+    <string name="write_cu_ref">Writing CU reference:</string>
+    <string name="write_cu_failed">Write CU reference failed</string>
+    <string name="write_cu_success">Write CU reference success</string>
+
+    <string name="getting_pt_flag">Getting pt flag</string>
+
+    <string name="flag_writing">Writing Flag\u2026</string>
+    <string name="flag_write_failed">Write Failed</string>
+    <string name="flag_write_ok">Write Success</string>
+    <string name="flag_checking">Checking write result\u2026</string>
+    <string name="flag_checking_failed">Checking write flag FAILED</string>
+
+    <string name="trace_retrieving">Retrieving information\u2026</string>
+    <string name="trace_retrieving_failed">Retrieving FAILED</string>
+    <string name="trace_retrieving_success">Retrieving SUCCESS</string>
+
+    <string name="test_nfc">Starting Nfc Test</string>
+    <string name="reading_nfc_info">Reading NFC information</string>
+    <string name="reading_nfc_fail">Reading NFC fail</string>
+    <string name="scan_tag_tip">Please use tag to touch the back of devices!</string>
+    <string name="sending_nfc_bt_addr_req">Sending bt address request</string>
+    <string name="bt_addr_get_fail">Get bt address failed</string>
+    <string name="getting_bt_address">Getting bt address</string>
+    <string name="wirstband_bt_address">Wristband bluetooth address</string>
+    <string name="start_write_nfc_tag">Writing Bluetooth address to nfc tag</string>
+    <string name="read_nfc_tag_to_check">Read bluetooth address from Nfc tag to check</string>
+    <string name="read_bt_addr_from_nfc_tag">Read bluetooth address from Nfc tag</string>
+    <string name="test_bt_first">Please do bluetooth test first to get bluetooth address.</string>
+    <string name="write_bt_to_nfc_tag_success">Write bluetooth address to Nfc tag success.</string>
+    <string name="write_bt_to_nfc_tag_fail">Write bluetooth address to Nfc tag fail.</string>
+    <string name="check_bt_address_mismatched">Bluetooth address mismatched</string>
+    <string name="check_bt_address_matched">Bluetooth address matched</string>
+    <string name="do_write_nfc_first">nfc tag data is null,please do write NFC first!</string>
+    <string name="read_only_tag">Tag has been encrypted,can not write bt address to nfc,please decrypt first.</string>
+
+    <string name="restart">Restart</string>
+    <string name="result_title">MMI TEST STATUS</string>
+    <string name="result_detail">PASSED</string>
+    <string name="restart_question">Restart?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="key_dev_name">dev_name</string>
+    <string name="pref_dev_name_title">Target Device Name</string>
+    <string name="pref_dev_name_sum">Set name of the target device.</string>
+
+    <string name="key_rssi">key_rssi</string>
+    <string name="pref_min_rssi_title">Min Rssi</string>
+    <string name="pref_min_rssi_sum">Set min rssi value to be detected.</string>
+
+    <string name="key_test_bench">test_bench</string>
+    <string name="pref_test_bench_title">Test Bench</string>
+    <string name="pref_test_bench_sum">Set Test Bench.</string>
+
+    <string name="key_resetbt">key_resetbt</string>
+    <string name="pref_resetbt_title">Reset Bluetooth</string>
+    <string name="pref_resetbt_sum">Reset(disable/enable) bluetooth before testing.</string>
+
+    <string name="key_enable_set_cu">key_enable_set_cu</string>
+    <string name="pref_enable_set_cu">Enable Set Curef</string>
+    <string name="pref_enable_set_cu_title">Reset(disable/enable) to set curef before testing.</string>
+
+    <string name="key_enable_set_rom_version">key_enable_set_rom_version</string>
+    <string name="pref_enable_set_rom_version">Reset Bluetooth</string>
+    <string name="pref_enable_set_rom_version_title">Reset(disable/enable) to set rom before testing.</string>
+
+    <string name="key_device_name">device_name</string>
+    <string name="pref_device_name_title">Device name</string>
+    <string name="pref_device_name_sum">Preset device name to be detected</string>
+
+    <string name="key_rom_version">rom_version</string>
+    <string name="pref_rom_version_value">V1.0.0</string>
+    <string name="pref_rom_version_title">Rom version</string>
+    <string name="pref_rom_version_sum">Preset rom version to be detected</string>
+
+    <string name="key_set_pcba">set_pcba</string>
+    <string name="pref_set_pcba_value">000000000000000</string>
+    <string name="pref_set_pcba_title">Set PCBA value</string>
+    <string name="pref_set_pcba_sum">Preset PCBA to be detected</string>
+
+    <string name="key_test_model">test_model</string>
+    <string name="pref_test_model_value">0</string>
+    <string name="pref_test_model_title">Test model</string>
+    <string name="pref_test_model_sum">0 or others for MMI test, 1 for Packing test</string>
+
+    <string name="key_test_set_cu">set_curef_version</string>
+    <string name="pref_test_set_cu_value">MB12-</string>
+    <string name="pref_test_set_cu_title">Set Curef</string>
+    <string name="pref_test_set_cu_sum">Preset curef version, Like MB12-2AALEU0</string>
+
+    <string name="key_test_set_rom">set_rom_version</string>
+    <string name="pref_test_set_rom_value">V1.0.0</string>
+    <string name="pref_test_set_rom_title">Set Rom Version</string>
+    <string name="pref_test_set_rom_sum">Preset rom version, Like V1.0.1</string>
+
+    <string name="key_reset_bt_time">key_reset_bt_time</string>
+    <string name="pref_reset_bt_time_title">Reset BT Time(second)</string>
+    <string name="pref_reset_bt_time_sum">Set the reseting bluetooth time(second).</string>
+
+    <string name="key_valid_rssi_value">key_valid_rssi_value</string>
+    <string name="pref_valid_rssi_value_title">Vaild Rssi Value</string>
+    <string name="pref_valid_rssi_value_sum">Set vaild rssi value.</string>
+
+    <string name="key_cu_ref_value">key_cu_ref_value</string>
+    <string name="pref_cu_ref_value_title">CU Ref Value</string>
+    <string name="pref_cu_ref_value_sum">Set CU Ref value.</string>
+
+    <string name="key_max_connect_value">key_max_connect_value</string>
+    <string name="pref_max_connect_value_title">Maximum number of connections</string>
+    <string name="pref_max_connect_value_sum">Set Maximum number of connections</string>
+
+    <string name="msg_default_status">Place a barcode inside the viewfinder rectangle to scan it.</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the
+        device.
+    </string>
+    <string name="button_ok">OK</string>
+    <string name="connect_time_out">No response from wristband,timeout.</string>
+    <string name="send_connect_request_time_out">Timeout! Can not connect to the device.</string>
+    <string name="scan_bt_time_out">Scan bluetooth timeout</string>
+    <string name="signal_intensity_weak">Signal intensity is weak,bt connection failed!</string>
+    <string name="read_sn_time_out">Read SN timeout</string>
+    <string name="read_flag_time_out">Read flag timeout</string>
+    <string name="continue_test_or_exit">This test case failed,would you like to continue next test or exit mini test?
+    </string>
+    <string name="start_manual_test_on_band">Start manual test on band</string>
+    <string name="start_auto_test_on_band">Start auto test on band</string>
+    <string name="button_next">next</string>
+    <string name="button_exit">exit</string>
+    <string name="choose_next_or_exit">Press next to continue next test,press exit to end test</string>
+    <string name="wait_band_test_finished">Please wait wristband test finished.</string>
+    <string name="wristband_test_finished">Wristband test finished,continue auto test on phone</string>
+    <string name="set_smartband_color">Setting smarband color...</string>
+    <string name="set_smartband_color_success">Set smarband color successfully.</string>
+    <string name="set_smartband_color_fail">Set smarband color unsuccessfully.</string>
+    <string name="choose_smartband_color">Choose smartband color:</string>
+    <!-- add by xuliang for mini test end -->
+
+
+    <!-- add by xinhua.lin begin  -->
+    <string name="string_now">"Now"</string>
+    <string name="string_unit_duration_time">""H:M""</string>
+    <string name="string_unit_duration_time_minutes">"Min"</string>
+    <string name="string_unit_hour_time">"Hour"</string>
+    <string name="string_unit_distance_m">"m"</string>
+    <string name="string_unit_calories_kcal">"Kcal"</string>
+    <string name="string_unit_calories_cal">"cal"</string>
+    <string name="string_action_name_run">"Run"</string>
+    <string name="string_action_name_cycle">"Cycle"</string>
+    <string name="string_action_name_stand">"Stand"</string>
+    <string name="string_action_name_walk">"Walk"</string>
+    <string name="string_action_name_drive">"Drive"</string>
+    <string name="string_action_name_sleep_deep">"Deep"</string>
+    <string name="string_action_name_sleep_light">"Light"</string>
+    <string name="string_action_name_sleep_awake">"Awake"</string>
+    <string name="recent_activity_action_summary">"for %d minutes"</string>
+    <string name="heart_rate_title">"Heart Rate(Bmp)"</string>
+    <string name="heart_rate_unit">"Bmp"</string>
+    <string name="heart_rate_name">"Heart Rate"</string>
+    <string name="average">"AVERAGE"</string>
+    <string name="maximum">"MAXIMUM"</string>
+    <string name="recent_activity_running_summary" formatted="false">"for %d minutes\n%.1f km/h\n%d steps"</string>
+    <string name="recent_activity_cycling_summary" formatted="false">"for %d minutes\n%.1f km/h"</string>
+    <string name="string_runing">"RUNING"</string>
+    <string name="string_walking">"WALKING"</string>
+    <string name="string_sleep_deep">"DEEP"</string>
+    <string name="string_sleep_light">"LIGHT"</string>
+    <string name="string_sleep_awake">"AWAKE"</string>
+    <string name="string_recent_runing">"Running"</string>
+    <string name="string_recent_walking">"Walking"</string>
+    <string name="string_device_bluetooth">"Bluetooth"</string>
+    <string name="string_device_bluetooth_visible">"Only visible to wave"</string>
+    <string name="string_device_bluetooth_paired_devices">"Paired Devices"</string>
+    <string name="string_device_bluetooth_tips">"To see devices,turn Bluetooth on."</string>
+    <string name="string_device_bluetooth_search_tips">"SEARCHING..."</string>
+    <string name="string_device_bluetooth_to_search_tips">""SEARCH FOR DEVICES""</string>
+
+    <string name="disable_create_file">MMI TEST FAIL \n file is not created</string>
+
+    <!-- add by xinhua.lin end  -->
+
+    <!-- add by dingmao.sun for phantom  -->
+    <!-- <string name="app_label">State Daemon</string>
+    <string name="step_sync_data">Step sync data</string>
+    <string name="step_start_time">Start time: </string>
+    <string name="step_end_time">End time: </string>
+    <string name="step_type">Type: </string>
+    <string name="step_steps">Steps: </string>
+    <string name="step_calories">Calories: </string>
+    <string name="step_distance">Distance: </string> -->
+    <!-- add by dingmao.sun for phantom end -->
+    <string name="smartband_factory_reset_confirm">Do you want to factory reset WATCH?</string>
+    <string name="smartband_settings_language_set">Language setting</string>
+    <string name="smartband_settings_black_light">Black light</string>
+    <string name="black_light_dialog_title">Set black light</string>
+    <string name="smartband_setting_wallpaper_connect_title">Connect Your WATCH</string>
+    <string name="smartband_setting_wallpaper_connect_context">Please do bluetooth test firstly.</string>
+
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!--测试页面提示的字符串-->
+    <string name="report_dir">/production_test_report/</string>
+    <string name="device_name">MB12</string>
+    <string name="not_create_report">No report!!!</string>
+    <string name="back">Back</string>
+    <string name="to_test_menu">Test menu</string>
+    <string name="send_test_echo">Test</string>
+    <string name="tips">Tips</string>
+    <string name="bt_echo">BT echo</string>
+    <string name="bt_fail">BT Test Fail</string>
+    <string name="bt_pass">BT Test Pass</string>
+
+    <string name="rv_echo">RV echo</string>
+    <string name="rv_fail">RV Test Fail</string>
+    <string name="rv_pass">RV Test Pass</string>
+
+    <string name="gs_echo">GS echo</string>
+    <string name="gs_fail">GS Test Fail</string>
+    <string name="gs_pass">GS Test Pass</string>
+
+    <string name="led_echo">LED echo</string>
+    <string name="led_fail">LED Test Fail</string>
+    <string name="led_pass">LED Test Pass</string>
+
+    <string name="vib_echo">VIB echo</string>
+    <string name="vib_fail">VIB Test Fail</string>
+    <string name="vib_pass">VIB Test Pass</string>
+
+    <string name="charger_echo">Please insert the charger</string>
+    <string name="charger_fail">Charger Test Fail</string>
+    <string name="charger_pass">Charger Test Pass</string>
+
+    <string name="pcba_echo">PCBA echo</string>
+    <string name="pcba_fail">PCBA Test Fail</string>
+    <string name="pcba_pass">PCBA Test Pass</string>
+
+    <string name="flag_echo">Flag echo</string>
+    <string name="flag_fail">Flag Test Fail</string>
+    <string name="flag_pass">Flag Test Pass</string>
+
+    <string name="upgrade_fail">Upgrade fail</string>
+    <string name="upgrade_pass">Upgrade success</string>
+
+    <string name="corrupt_data">data corrupt</string>
+    <string name="insufficient_data">data insufficient</string>
+
+    <string name="blue_connect_success">连接成功</string>
+    <string name="blue_device_death">连接超时</string>
+    <string name="test_no_pcba_version">请先获取版本号。</string>
+    <string name="test_led_status">LED State...</string>
+    <string name="test_led_open">LED Open</string>
+    <string name="test_led_close">LED Close</string>
+    <string name="test_pcba_version_success_pre">Success--</string>
+    <string name="test_pcba_version_is_null">Success--000000000000000</string>
+    <string name="test_test_desc_pcba">PCBA version test</string>
+    <string name="test_test_desc_blue">Bluebooth test</string>
+    <string name="test_test_desc_rom_version">Rom version test</string>
+    <string name="test_test_desc_set_cu">Set curef test</string>
+    <string name="test_test_desc_set_rom_version">Set rom version test</string>
+    <string name="test_test_desc_gseneor">Gseneor test</string>
+    <string name="test_test_desc_led">LED test</string>
+    <string name="test_test_desc_vib">VIB test</string>
+    <string name="test_test_desc_electricity">Electricity test</string>
+    <string name="test_test_desc_charger">Charger test</string>
+    <string name="test_test_desc_write_flag">Write flag test</string>
+    <string name="test_test_desc_activation">AntiActivation test</string>
+    <string name="test_sending">Sending</string>
+    <string name="test_success">Success</string>
+    <string name="test_blue_success">Bluetooth Success</string>
+    <string name="test_gseneor_success">G-seneor Success</string>
+    <string name="test_led_open_success">LED OPEN Success</string>
+    <string name="test_led_close_success">LED CLOSE Success</string>
+    <string name="test_vib_open_success">VIB OPEN Success</string>
+    <string name="test_vib_close_success">VIB CLOSE Success</string>
+    <string name="test_electricity_success">Electricity Success</string>
+    <string name="test_charger_test">Please insert the charger.</string>
+    <string name="test_charger_success">Charger Success</string>
+    <string name="test_write_flag_success">Write Flag Success</string>
+    <string name="test_write_flag_fail">Write Flag Fail</string>
+    <string name="test_anti_activation_success">Anti Activation Success</string>
+    <string name="test_all_test_pass">All tests pass.</string>
+
+    <!--升级的字符串-->
+    <string name="title_devices">MB12M MiniSW</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="unknown_device">Unknown device</string>
+    <string-array name="app_device_titles">
+        <item>Device info</item>
+        <item>File selection</item>
+        <item>Parameter settings</item>
+        <item>Uploading file</item>
+    </string-array>
+    <string name="allowed_hex_chars">0123456789abcdefABCDEFx</string>
+    <string-array name="gpio_values">
+        <item id="0x00">P0_0</item>
+        <item id="0x01">P0_1</item>
+        <item id="0x02">P0_2</item>
+        <item id="0x00">P0_3</item>
+        <item id="0x00">P0_4</item>
+        <item id="0x00">P0_5</item>
+        <item id="0x00">P0_6</item>
+        <item id="0x00">P0_7</item>
+        <item id="0x00">P1_0</item>
+        <item id="0x01">P1_1</item>
+        <item id="0x02">P1_2</item>
+        <item id="0x00">P1_3</item>
+        <item id="0x00">P2_0</item>
+        <item id="0x01">P2_1</item>
+        <item id="0x02">P2_2</item>
+        <item id="0x00">P2_3</item>
+        <item id="0x00">P2_4</item>
+        <item id="0x00">P2_5</item>
+        <item id="0x00">P2_6</item>
+        <item id="0x00">P2_7</item>
+        <item id="0x00">P2_8</item>
+        <item id="0x00">P2_9</item>
+        <item id="0x00">P3_0</item>
+        <item id="0x01">P3_1</item>
+        <item id="0x02">P3_2</item>
+        <item id="0x00">P3_3</item>
+        <item id="0x00">P3_4</item>
+        <item id="0x00">P3_5</item>
+        <item id="0x00">P3_6</item>
+        <item id="0x00">P3_7</item>
+    </string-array>
+    <string-array name="image_bank_addresses">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_disconnect">Disconnect</string>
+
+    <!--日志的字符串-->
+    <string name="sp_start_time">TestTimeStart</string>
+    <string name="sp_pcba_version">PcbaVersion</string>
+    <string name="report_completed">Report completed</string>
+    <string name="not_according_rule">Please according the rule test!!!</string>
+    <string name="not_all_test_pass">Only pass all test, you can upgrade!!!</string>
+    <string name="bt_scan_gps_prompt">Android 6.0 requires Location services to be turned on in order to search for and connect your Watch with your device.</string>
+    <string name="cancel_label">Cancel</string>
+
+    <string name="default_no_device">Not connected device!</string>
+    <string name="default_result">PASS</string>
+
+    <string-array name="preset_max_connect_list">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="preset_max_connect_value_list">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+</resources>

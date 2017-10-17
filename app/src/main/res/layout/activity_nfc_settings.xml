@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <!-- Settings: Header -->
+    <RelativeLayout
+        android:id="@+id/nfc_settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <ImageButton
+            android:id="@+id/nfc_settings_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_bg"
+            android:src="@drawable/icon_previous" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/nfc_settings_title"
+            android:textColor="#404040"
+            style="@style/roboto_light"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!-- divider Line -->
+    <ImageView
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line"/>
+
+    <!-- checkbox: Unlock Phone -->
+    <LinearLayout android:id="@+id/nfc_unlock_phone_checkbox_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true">
+
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+		    android:layout_weight="1"
+		    android:text="@string/nfc_settings_unlock_phone"
+		    style="@style/roboto_light"
+		    android:textSize="14sp"/>
+ 
+
+        <CheckBox
+		    android:id="@+id/nfc_unlock_phone_checkbox"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:checked="true" />
+
+    </LinearLayout>
+
+	<!-- divider Line -->
+    <ImageView
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line"/>
+    
+    <!-- checkbox: Launch boomband life -->
+    <LinearLayout android:id="@+id/nfc_launch_smartband2_checkbox_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true">
+
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+		    android:layout_weight="1"
+		    android:text="@string/nfc_settings_launch_smartband2"
+		    style="@style/roboto_light"
+		    android:textSize="14sp"/>
+ 
+
+        <CheckBox
+		    android:id="@+id/nfc_launch_smartband2_checkbox"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:checked="true" />
+
+    </LinearLayout>
+    
+    <!-- divider Line -->
+    <ImageView
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line"/>
+</LinearLayout>

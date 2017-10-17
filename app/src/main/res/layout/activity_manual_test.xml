@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_open_bluetooth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jrdcom.wearable.gowatch.factorytest.activity.AutoTestMainActivity">
+
+    <LinearLayout
+        android:id="@+id/item_led_test"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:id="@+id/title_led_test"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Led Test:"/>
+
+
+
+        <Button
+            android:id="@+id/bt_led_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.2"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Start"/>
+
+
+        <TextView
+            android:id="@+id/content_led_test_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Result"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"/>
+
+    <LinearLayout
+        android:id="@+id/item_vib_test"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:id="@+id/title_vib_test"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="VIB Test:"/>
+
+
+
+        <Button
+            android:id="@+id/bt_vib_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.2"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Start"/>
+
+
+        <TextView
+            android:id="@+id/content_vib_test_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Result"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"/>
+
+
+    <LinearLayout
+        android:id="@+id/item_charger_test"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:id="@+id/title_charger_test"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Charger Test:"/>
+
+
+
+        <Button
+            android:id="@+id/bt_charger_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.2"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Start"/>
+
+
+        <TextView
+            android:id="@+id/content_charger_test_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Result"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"/>
+
+    <LinearLayout
+        android:id="@+id/item_set_pcba_test"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:id="@+id/title_set_pcba_test"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Set PCBA:"/>
+
+
+
+        <Button
+            android:id="@+id/bt_set_pcba_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.2"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Start"/>
+
+
+        <TextView
+            android:id="@+id/content_set_pcba_test_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Result"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"/>
+
+    <LinearLayout
+        android:id="@+id/item_anti_test"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:id="@+id/title_anti_test"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Anti-activation:"/>
+
+
+
+        <Button
+            android:id="@+id/bt_anti_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.2"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Start"/>
+
+
+        <TextView
+            android:id="@+id/content_anti_test_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="Result"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/test_finish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Finish"/>
+    </LinearLayout>
+
+
+</LinearLayout>

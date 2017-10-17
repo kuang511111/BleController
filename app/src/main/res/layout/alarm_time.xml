@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/alarm_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|top"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/list_bg_top">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+            <com.jrdcom.wearable.smartband2.clock.widget.TextTime
+                android:id="@+id/digital_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/medium_light"
+                android:textSize="@dimen/alarm_time_font_size"
+                android:textColor="#000000"
+                android:baselineAligned="true"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <Space
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/onoff"
+                android:thumbTextPadding="10dp"
+                android:layout_gravity="center_vertical|end"
+                style="@style/SwitchStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_bg_bottom_without_line">
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="8dp"
+            android:paddingEnd="8dp"
+            android:paddingLeft="8dp"
+            android:paddingStart="8dp"
+            android:src="@drawable/ic_delete"
+            android:layout_gravity="top|end" />
+        <LinearLayout
+            android:id="@+id/expand_area"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/collapse_expand_height"
+            android:layout_gravity="bottom">
+            <CheckBox
+                android:id="@+id/repeat_onoff"
+                android:text="@string/alarm_repeat"
+                android:layout_height="48dp"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="center_vertical|start"
+                style="@style/body"
+                android:textColor="#000000"/>
+            <LinearLayout
+                android:id="@+id/repeat_days"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="top"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <!-- Day buttons are put here programatically -->
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/collapse_expand"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/collapse_expand_height"
+            android:layout_gravity="bottom" >
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="48dp"
+                android:layout_height="32dp"
+                android:src="@drawable/icon_down"
+                android:layout_gravity="start|center_vertical"/>
+            <View
+                android:id="@+id/hairline"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="match_parent"
+                android:background="#d4d4d4"
+                android:layout_gravity="bottom" />
+            <com.jrdcom.wearable.smartband2.clock.widget.EllipsizeLayout
+                android:id="@+id/summary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="48dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginRight="104dp"
+                android:layout_marginEnd="104dp"
+                android:gravity="center_vertical" >
+                <TextView android:id="@+id/label"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      style="@style/alarm_label_not_caps"
+                      android:textColor="#000000"
+                      android:ellipsize="end"
+                      android:singleLine="true" />
+                <TextView android:id="@+id/daysOfWeek"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      style="@style/alarm_label_bold"
+                      android:textColor="#000000"
+                      android:ellipsize="none"
+                      android:singleLine="true" />
+            </com.jrdcom.wearable.smartband2.clock.widget.EllipsizeLayout>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

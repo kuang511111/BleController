@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		this file is built by arct v:froyo_2011-03-23, Wed Apr 02 14:30:18 CST 2014
+	-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!---->
+	<string name="gender">"Sesso"</string>
+	<!---->
+	<string name="male">"Uomo"</string>
+	<!---->
+	<string name="female">"Donna"</string>
+	<!---->
+	<string name="birth">"Compleanno"</string>
+	<!---->
+	<string name="height">"Altezza"</string>
+	<!---->
+	<string name="weight">"Peso"</string>
+	<!---->
+	<string name="str_sync_waiting_notify">"In attesa dell\'aggiornamento a BoomBand..."</string>
+	<!--Type:string Purpose:when user change the My reminders settings, it will update the configuration to BoomBand and then show this message below the My reminders to indicate configuration has been updated ScreenPath:Main screen->My reminders-->
+	<string name="str_sync_suc_notify">"Aggiornato correttamente."</string>
+	<!---->
+	<string name="height_picker_dialog_title">"Imposta altezza"</string>
+	<!---->
+	<string name="weight_picker_dialog_title">"Imposta peso"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of string ScreenPath:Filpactivity interface->click pen icon ->target set interface-->
+	<string name="step_picker_dialog_title">"Imposta obiettivo (fase)"</string>
+	<!---->
+	<string name="progress_title_finish">"Fine"</string>
+	<!---->
+	<string name="target">"Obiettivo"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display step number int mian interface-->
+	<string name="unit">"fase"</string>
+	<!--Type:String Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display step number int mian interface-->
+	<string name="steps">"fasi"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display calories number int mian interface-->
+	<string name="calories">"calorie"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display Km number int mian interface-->
+	<string name="distances">"km"</string>
+	<!-- no translation found for length_units -->
+	<skip />
+	<!--Type:string Purpose:wrist app the sports data details day icon ScreenPath:wrist app the sports data details day icon-->
+	<string name="today">"Oggi"</string>
+	<!---->
+	<string name="yesterday">"Ieri"</string>
+	<!---->
+	<string name="toast_setting_birth">"Impostare la data di nascita"</string>
+	<!---->
+	<string name="toast_setting_height">"Impostare l\'altezza"</string>
+	<!---->
+	<string name="toast_setting_weight">"Impostare il peso"</string>
+	<!---->
+	<string name="profile_finish">"Impostazione completata"</string>
+	<!---->
+	<string name="settings">"Impostazioni"</string>
+	<!---->
+	<string name="share">"Condividi"</string>
+	<!---->
+	<string name="str_set_bluetooth">"Imposta Bluetooth"</string>
+	<!---->
+	<string name="str_set_bluetooth_content">"Per la connessione con BoomBand è necessario attivare la funzione Bluetooth. Continuare?"</string>
+	<!---->
+	<string name="str_set_bluetooth_open">"Attiva"</string>
+	<!---->
+	<string name="str_add_device">"Aggiungi dispositivo"</string>
+	<!---->
+	<string name="str_bluetooth_disconnect">"Riprova"</string>
+	<!---->
+	<string name="str_bluetooth_connecting">"Connessione..."</string>
+	<!---->
+	<string name="str_bluetooth_connected">"Connesso"</string>
+	<!---->
+	<string name="str_bluetooth_turnoff">"Bluetooth spento"</string>
+	<!---->
+	<string name="str_sports">"Sport"</string>
+	<!---->
+	<string name="str_sleep">"Sonno"</string>
+	<!--Type:string Purpose:in main screen, sleep data statistic, title of the total sleep time. ScreenPath:main screen->total sleep time-->
+	<string name="str_sleep_title">"Durata totale del sonno"</string>
+	<!--Type:string Purpose:in main screen, sleep data statistic, title of the sleep condition. ScreenPath:main screen->total sleep time-->
+	<string name="str_sleep_condition">"Condizioni del sonno:<xliff:g id="sleep_condition_percent" example="80">%s</xliff:g>%%"</string>
+	<!---->
+	<string name="about_version">"Versione corrente"</string>
+	<!--Type:String Purpose:String display for user see what is this ScreenPath:setting option: help -> help interface option:About->About title-->
+	<string name="about_title">"Informazioni"</string>
+	<!---->
+	<string name="profile_tick1">"Per fornirti un aiuto migliore per la tua salute"</string>
+	<!---->
+	<string name="profile_tick2">"Impostare le informazioni personali"</string>
+	<!---->
+	<string name="please_choose">"Scegliere"</string>
+	<!--Type:show a description string Purpose:String display for notification user that what happened now ScreenPath:Filpactivity interface->display goto today in mian interface-->
+	<string name="toToday">"a Oggi"</string>
+	<!---->
+	<string name="my_devices">"Dispositivi"</string>
+	<!---->
+	<string name="add_new_device">"Aggiungi nuovo dispositivo"</string>
+	<!---->
+	<string name="setting_my_warn_noti_title">"Avviso BoomBand"</string>
+	<!---->
+	<string name="setting_my_warn_noti_desp1">"Obiettivo raggiunto"</string>
+	<!---->
+	<string name="setting_my_warn_noti_desp2">"%, impegnati!"</string>
+	<!---->
+	<string name="setting_my_warn_dialog_desp1">"Obiettivo raggiunto"</string>
+	<!---->
+	<string name="setting_my_warn_dialog_desp2">"Impegnati!"</string>
+	<!---->
+	<string name="setting_my_warn_nolonger">"Ignora"</string>
+	<!---->
+	<string name="setting_my_clock_tips">"Doppia vibrazione, nessuna spia"</string>
+	<!--Type:String Purpose:String display for notification user ScreenPath:Filpactivity interface->notic icon->notification interface->set alarm-->
+	<string name="setting_my_clock_text">"allarme(i)"</string>
+	<!---->
+	<string name="setting_my_clock_repeat">"Ripeti"</string>
+	<!---->
+	<string name="setting_my_clock_max_count">"Otto allarmi al massimo"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:setting option: help -> help interface option:know the Boomband->tips-->
+	<string name="str_silent_sleep_explain">"Quando BoomBand è in standby, il telefono entra in modalità silenziosa."</string>
+	<!---->
+	<string name="everyday">"Ogni giorno"</string>
+	<!---->
+	<string name="setting_anti_lost_tip">"Doppia vibrazione, cinque luci lampeggiano alternativamente"</string>
+	<!--Type:string Purpose:comments on Alert while left settings ScreenPath:Main screen->My reminders->Alert while left-->
+	<string name="setting_anti_lost_dialog_content">"Quando il BoomBand è lontano dal telefono, vibrerà per segnalare l\'avviso anti perdita (doppia vibrazione tre volte, cinque luci che lampeggiano alternativamente)."</string>
+	<!---->
+	<string name="setting_calling_alarm_tip">"Singola vibrazione, una luce lampeggiante"</string>
+	<!--Type:string Purpose:first click the Main screen->My reminders->Call reminder will popup this dialog ScreenPath:Main screen->My reminders->Call reminder-->
+	<string name="setting_calling_alarm_dialog_content">"BoomBand vibrerà (vibrazione lunga) in caso di chiamata in entrata dai contatti selezionati"</string>
+	<!---->
+	<string name="setting_calling_alarm_add_tip">"Elenco promemoria chiamata"</string>
+	<!---->
+	<string name="setting_calling_alarm_add_limit_tip">"Un massimo di 5 persone"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:Filpactivity interface->display current boomband mode-->
+	<string name="str_notification_text_normal">"BoomBand è in standby"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:Notification settings interface:option description-->
+	<string name="str_notification_text_mute">"BoomBand entrerà in standby quando il telefono è in modalità silenziosa"</string>
+	<!---->
+	<string name="str_notification_text_low_battery">"Il livello della batteria di BoomBand è inferiore a %s, collegare il caricabatterie"</string>
+	<!--Type:string Purpose:It will pop up a dialogue in the main screen when BoomBand is in low battery.  ScreenPath:Main screen->Alert dialog-->
+	<string name="str_low_battery_dialog_title">"Avviso batteria BoomBand scarica"</string>
+	<!--Type:show a description string Purpose:String display for notification user to know the mean of this screen show ScreenPath:setting option: My devices -> boomband ->Device information interface-->
+	<string name="device_informtion_title">"Info dispositivo"</string>
+	<!---->
+	<string name="device_informtion_manufacture_name">"Produttore:"</string>
+	<!---->
+	<string name="device_informtion_model_number">"Modello dispositivo:"</string>
+	<!---->
+	<string name="device_informtion_hw_revision">"Versione hardware:"</string>
+	<!---->
+	<string name="device_informtion_sw_revision">"Versione software:"</string>
+	<!---->
+	<string name="device_informtion_wait_read">"In attesa di connessione..."</string>
+	<!---->
+	<string name="str_snapshot_waitting">"Attendere..."</string>
+	<!---->
+	<string name="str_vip_list_limit">"5 contatti aggiunti"</string>
+	<!---->
+	<string name="str_choose_device_title">"Imposta Bluetooth"</string>
+	<!---->
+	<string name="str_choose_device_open_bt">"Attivare la funzione Bluetooth per effettuare l\'associazione con BoomBand."</string>
+	<!---->
+	<string name="str_choose_bt_open_bt">"Attivare la funzione Bluetooth per connettersi a BoomBand?"</string>
+	<!---->
+	<string name="str_bind_bt">"Allaccia BoomBand"</string>
+	<!---->
+	<string name="str_bind_wait">"Più tardi"</string>
+	<!---->
+	<string name="str_remove_devices">"Disconnetti"</string>
+	<!--Type:string Purpose:when user want to bind another BoomBand, it firstly should remove the bond device, when user do this, it will pop up a warning dialog ScreenPath:Main screen->Settings->My devices->Add new device-->
+	<string name="str_remove_devices_title">"Disconnetti da dispositivo"</string>
+	<!---->
+	<string name="str_remove_device_content">"Il dispositivo verrà scollegato da BoomBand"</string>
+	<!---->
+	<string name="str_connected_device_tips">"È stata effettuata la connessione a BoomBand"</string>
+	<!---->
+	<string name="str_replace_device_tips">"Sostituire il BoomBand attualmente connesso?"</string>
+	<!---->
+	<string name="str_no_vip_contacts">"Nessun contatto"</string>
+	<!---->
+	<string name="str_add_vip_contacts">"Aggiungi contatti"</string>
+	<!---->
+	<string name="str_added_vip_contact">"Contatti aggiunti"</string>
+	<!--Type:string Purpose:wrist app the sports data details week icon ScreenPath:wrist app the sports data details week icon-->
+	<string name="str_chart_7_day">"7 giorni"</string>
+	<!--Type:string Purpose:wrist app the sports data details month icon ScreenPath:wrist app the sports data details month icon-->
+	<string name="str_chart_31_day">"31 giorni"</string>
+	<!--Type:string Purpose:wristapp enter sleep data summary remind string ScreenPath:wristapp enter sleep data summary remind string-->
+	<string name="str_chart_sleep_waste">"Consumo durante il sonno"</string>
+	<!--Type:string Purpose:wrist app enter sleep data summary detail remind string ScreenPath:wrist app enter sleep data summary detail remind string-->
+	<string name="str_chart_sleep_effi">"Efficacia sonno"</string>
+	<!--Type:string Purpose:wrist app enter sleep data summary detail the remind string ScreenPath:wrist app enter sleep data summary detail the remind string-->
+	<string name="str_chart_sleep_total_time">"Durata totale del sonno"</string>
+	<!---->
+	<string name="str_chart_sleep_effi_pre">"Efficacia del sonno:"</string>
+	<!--Type:string Purpose:wristapp enter sleep data summary remind string ScreenPath:wristapp enter sleep data summary remind string-->
+	<string name="str_chart_sleep_waste_pre">"Utilizzo durata sonno:"</string>
+	<!---->
+	<string name="str_chart_sleep_total_pre">"Durata totale del sonno:"</string>
+	<!---->
+	<string name="str_chart_sport_target">"Obiettivo:"</string>
+	<!---->
+	<string name="str_share_failed">"Impossibile condividere"</string>
+	<!---->
+	<string name="add_device_charge_prev_step">"Fase precedente"</string>
+	<!---->
+	<string name="add_device_charge_next_step">"Fase successiva"</string>
+	<!---->
+	<string name="add_device_battery_prev_step">"Fase precedente"</string>
+	<!--Type:string Purpose:wrist app connecting limitation reminder to 20% ScreenPath:wrist app connecting limitation reminder to 20%-->
+	<string name="add_device_battery_next_step">"Carico al 60%"</string>
+	<!---->
+	<string name="add_device_connect_tip">"Ricerca dispositivi in corso..."</string>
+	<!--Type:string Purpose:When user try to bind the BoomBand, at last click this button to experience. at the bottom of the bind success screen. ScreenPath:Welcome->Bind device->Bond-->
+	<string name="add_device_bind_success_done">"Inizia l\'attività"</string>
+	<!---->
+	<string name="add_device_connect_fail_tip_1">"Dispositivo non trovato"</string>
+	<!---->
+	<string name="add_device_connect_fail_tip_2">"Avvicinare il dispositivo al telefono, allontanarlo da altri telefoni o BoomBand"</string>
+	<!--Type:String Purpose:Toast the tip when the device connect the wristband fail. ScreenPath:BoomBand APP -> setting -> new device -> Add new device -> next step -> next step -> search.-->
+	<string name="add_device_connect_fail_tip_3">"Allontanarlo da altri telefoni o BoomBand"</string>
+	<!---->
+	<string name="add_device_connect_fail_retry">"Riprova"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_1">"Connessione non riuscita svariate volte, possibili cause:"</string>
+	<!--Type:string Purpose:when user try to bind device, after bond failed, it will show some tips. user can follow those tips to make a successful binding. ScreenPath:Main screen->bind device->bind failed-->
+	<string name="add_device_bind_fail_tip_2">"1. BoomBand è troppo lontano dal telefono"</string>
+	<!--Type:string Purpose:when user try to bind device, after bond failed, it will show some tips. user can follow those tips to make a successful binding. ScreenPath:Main screen->bind device->bind failed-->
+	<string name="add_device_bind_fail_tip_3">"Suggerimento: cercare di avvicinare BoomBand al telefono (un metro circa)"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_4">"2. Assicurarsi che non esistano connessioni con altri BoomBand o telefoni"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_5">"Suggerimento: tenere telefono e BoomBand lontano da altri dispositivi"</string>
+	<!--Type:string Purpose:when user try to bind device, after bond failed, it will show some tips. user can follow those tips to make a successful binding. ScreenPath:Main screen->bind device->bind failed-->
+	<string name="add_device_bind_fail_tip_6">"3. Livello batteria BoomBand inferiore al 60%"</string>
+	<!---->
+	<string name="add_device_bind_fail_tip_7">"Suggerimento: collegare BoomBand al caricabatterie"</string>
+	<!---->
+	<string name="add_device_bind_fail_retry">"Riprova"</string>
+	<!---->
+	<string name="add_device_need_bind_tip_1">"BoomBand è stato collegato a un altro telefono. Ricollegare?"</string>
+	<!---->
+	<string name="add_device_need_bind_bind">"Connetti"</string>
+	<!--Type:string Purpose:when user try to bind the device, firstly it will indicate that the BoomBand battery level should great then 60% ScreenPath:Main screen->add device->Battery-->
+	<string name="guide_battery_tip_1">"Aumenta la durata della batteria, verificare che la batteria abbia una carica di almeno il 20% (2 luci lampeggianti)"</string>
+	<!---->
+	<string name="guide_bind_tip">"Trovare BoomBand e toccarlo due volte"</string>
+	<!---->
+	<string name="guide_bind_double_click">"Toccare due volte"</string>
+	<!---->
+	<string name="guide_battery_charge_tip">"Collegare il caricabatterie"</string>
+	<!--Type:string Purpose:when user successfully connect the BoomBand, this screen will appear. user can click the Begin to experience to enter main screen ScreenPath:Main screen->bind device->bind ok-->
+	<string name="guide_connect_successful_tip">"Collegato correttamente."</string>
+	<!--Type:string Purpose:when user start to bind the BoomBand, while succeed, this screen will pop up. user can start to experience ScreenPath:Main screen->bind device->bind ok-->
+	<string name="guide_connect_successful_tip_comments">"Indossare BoomBand e iniziare a correre"</string>
+	<!--Type:String Purpose:String display for notice user ScreenPath:Filpactivity interface->notic icon->notification interface-->
+	<string name="reminders_title">"Promemoria personali"</string>
+	<!---->
+	<string name="reminders_shake_title">"Promemoria BoomBand con vibrazione"</string>
+	<!--Type:String Purpose:string display for notification user ScreenPath:Filpactivity interface->notic icon->notification interface->alarm-->
+	<string name="reminders_shake_alarm">"Allarme"</string>
+	<!---->
+	<string name="reminders_shake_anti_lost">"Avviso anti perdita"</string>
+	<!---->
+	<string name="reminders_shake_call_reminder">"Promemoria chiamata"</string>
+	<!---->
+	<string name="reminders_phone_client_title">"Promemoria telefono"</string>
+	<!--Type:String Purpose:Sting display for notification user, this is  Sleep mode sync now ScreenPath:Filpactivity interface->detail sleep interface->check data-->
+	<string name="reminders_phone_client_sync_reminder">"Promemoria sincronizzazione sonno"</string>
+	<!--Type:show a description string Purpose:show string for people when people begin to use the feature for reminder. ScreenPath:Wristband->alarm->-->
+	<string name="reminders_phone_client_task_reminders">"Promemoria attività"</string>
+	<!--Type:string Purpose:in Call reminder setting screen, a radio button item for user selection where or not vibrate when incoming call is ringing ScreenPath:Main screen->My reminders->Call reminder-->
+	<string name="call_remind_all_incoming_call">"Tutte le chiamate in entrata"</string>
+	<!---->
+	<string name="call_remind_only_in_the_list">"Solo nell\'elenco dei contatti"</string>
+	<!--Type:string Purpose:in the main screen, there is diagram to show current statics: Awake, Turn over and Sleep ScreenPath:Main screen->diagram-->
+	<string name="sleep_status_no_sleep">"Sveglia"</string>
+	<!---->
+	<string name="sleep_status_turn_over">"Capovolgi"</string>
+	<!---->
+	<string name="sleep_status_sleep">"Sonno"</string>
+	<!---->
+	<string name="tip_content_1">"Registra i dati sullo sport ogni giorno"</string>
+	<!---->
+	<string name="tip_title_2">"BoomBand"</string>
+	<!--Type:string Purpose:string remind you that the boomband will track your sleep  ScreenPath:string remind you to track your sleep-->
+	<string name="tip_content_2">"Traccia le condizioni del sonno"</string>
+	<!---->
+	<string name="tip_content_3">"Ricorda sempre e ovunque"</string>
+	<!---->
+	<string name="tip_title_4">"Come rendere accurati i dati sullo sport?"</string>
+	<!--Type:string Purpose:wrist app apk entry the help title reminder view ScreenPath:wrist app apk entry the help title reminder view-->
+	<string name="tip_content_4">"Indossare Boomband sul polso che si utilizza meno."</string>
+	<!---->
+	<string name="tip_title_5">"Come si attiva lo standby?"</string>
+	<!--Type:string Purpose:A tip show after the welcome screen when user first launch this application. ScreenPath:Welcome->tips-->
+	<string name="tip_content_5">"Bussare velocemente per 6 volte sul BoomBand."</string>
+	<!---->
+	<string name="version_found">"Aggiornamento versione"</string>
+	<!---->
+	<string name="version_update">"Aggiorna"</string>
+	<!--Type:String Purpose:The  notification bar massage about the new apk version
+download. ScreenPath:new apk download -> notification -> the message-->
+	<string name="download_description">"Aggiornamento della versione in corso"</string>
+	<!--Type:string Purpose:A dialog to show when newer version is available. user can choose yes to download & install the newer version ScreenPath:Main screen-->
+	<string name="version_messsage">"Nuova versione trovata sul Web. Aggiornare?"</string>
+	<!--Type:string Purpose:show an item in the main screen->settings, will between profile and my devices setting. A function used to control where or not enable double click BoomBand to unlock scren ScreenPath:main screen->settings-->
+	<string name="setting_double_click_unlock_screen_title">"Toccare due volte per sbloccare lo schermo"</string>
+	<!--Type:string Purpose:When user click the Sport/Sleep switcher in the main screen, it will pop up a dialog to tell user what its meaning ScreenPath:Main screen->click sport/sleep switcher-->
+	<string name="switcher_tip_content">"Toccare per visualizzare solo le statistiche. Per cambiare modalità, bussare sul BoomBand 6 volte finché non vibra una volta e la spia LED non lampeggia."</string>
+	<!--Type:string Purpose:When user click the Sport Sleep switcher in the main screen, it will pop up a dialog to tell user what its meaning ScreenPath:Main screen->click sport sleep switcher-->
+	<string name="switcher_tip_action">"Non mostrare di nuovo"</string>
+	<!--Type:string Purpose:show current BoomBand status in the bottom of the main screen. when user switch the BoomBand status, the message will be updated ScreenPath:main screen-->
+	<string name="device_mode_indicate_sport">"Il dispositivo è in modalità sport."</string>
+	<!--Type:string Purpose:show current BoomBand status in the bottom of the main screen. when user switch the BoomBand status, the message will be updated ScreenPath:main screen-->
+	<string name="device_mode_indicate_sleep">"Il dispositivo è in standby."</string>
+	<!--Type:string Purpose:A button show between the statistic data and the step/calories/km, can use to switch sleep data statics and sport data statics ScreenPath:main screen-->
+	<string name="data_statistic_sport_data">"Dati sport"</string>
+	<!--Type:string Purpose:A button show between the statistic data and the step/calories/km, can use to switch sleep data statics and sport data statics ScreenPath:main screen-->
+	<string name="data_statistic_sleep_data">"Dati sonno"</string>
+	<!--Type:string Purpose:in the main screen title bar, show the bluetooth device status information, indicate the BoomBand is upgrading its firmware. ScreenPath:main screen title bar-->
+	<string name="str_bluetooth_upgrading">"Aggiornamento firmware in corso..."</string>
+	<!-- no translation found for dfu_upgrade_firmware -->
+	<skip />
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_go_to_dfu">"Passa a modalità DFU"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_can_not_found_device">"Dispositivo non trovato."</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_connect_device">"Connessione al dispositivo in corso..."</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_device_connected">"Dispositivo connesso"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_device_service_found">"Trovato servizio DFU"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_device_disconnect">"Dispositivo disconnesso"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_start_transfer_firmware">"Aggiornamento firmware in corso..."</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="duf_upgrade_transfer_complete">"Aggiornamento completato"</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_success">"Aggiornamento completato correttamente."</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_reset_device">"Reimpostazione dispositivo..."</string>
+	<!--Type:string Purpose:device firmware upgrade information, place in main screen->settings->my devices. while the BoomBand firmware version is lower than the apk contained firmware, it will show this message after the BoomBand connected ScreenPath:main scree-->
+	<string name="dfu_upgrade_failed">"Aggiornamento non riuscito. Riprovare"</string>
+	<!-- no translation found for apk_new_version_exist_onlocal -->
+	<skip />
+	<!-- no translation found for apk_versoin_already_newest -->
+	<skip />
+	<!-- no translation found for verion_update_setting_item -->
+	<skip />
+	<!-- no translation found for version_update_msg_title -->
+	<skip />
+	<!-- no translation found for download_network_not_available -->
+	<skip />
+	<!-- no translation found for version_check_network_err -->
+	<skip />
+	<!-- no translation found for alarm_repeat -->
+	<skip />
+	<!-- no translation found for every_day -->
+	<skip />
+	<!-- no translation found for help_option_title -->
+	<skip />
+	<!-- no translation found for tip_4_title -->
+	<skip />
+	<!-- no translation found for tip_4_sub_1_title -->
+	<skip />
+	<!-- no translation found for tip_4_sub_1_content -->
+	<skip />
+	<!-- no translation found for tip_4_sub_2_title -->
+	<skip />
+	<!-- no translation found for tip_4_sub_2_content -->
+	<skip />
+	<!-- no translation found for tip_5_title -->
+	<skip />
+	<!-- no translation found for tip_5_content -->
+	<skip />
+	<!-- no translation found for tip_7_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_1_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_1_content -->
+	<skip />
+	<!-- no translation found for tip_7_sub_2_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_2_content -->
+	<skip />
+	<!-- no translation found for tip_7_sub_3_title -->
+	<skip />
+	<!-- no translation found for tip_7_sub_3_content -->
+	<skip />
+	<!-- no translation found for tip_8_title -->
+	<skip />
+	<!-- no translation found for tip_8_content -->
+	<skip />
+	<!-- no translation found for tip_9_title -->
+	<skip />
+	<!-- no translation found for tip_9_content -->
+	<skip />
+	<!-- no translation found for help_option_tips -->
+	<skip />
+	<!-- no translation found for help_option_questions -->
+	<skip />
+	<!-- no translation found for help_option_application -->
+	<skip />
+	<!--Type:show a description string Purpose:Help interface option:About ScreenPath:setting option: help -> help interface option:About-->
+	<string name="help_option_about">"Informazioni"</string>
+</resources>

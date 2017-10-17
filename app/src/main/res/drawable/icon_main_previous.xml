@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:drawable="@drawable/last" android:state_pressed="true" android:state_enabled="true"/>
+    <item android:drawable="@drawable/last" android:state_focused="true" android:state_enabled="true"/>
+    <item android:drawable="@drawable/last" android:state_selected="true" android:state_enabled="true"/>
+    <item android:drawable="@drawable/last" android:state_pressed="false" android:state_enabled="true"/>
+	<item android:drawable="@drawable/arrow_l_disable" android:state_enabled="false"/>
+</selector>

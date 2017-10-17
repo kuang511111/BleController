@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Help Option: Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <ImageButton
+            android:id="@+id/help_option_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_bg"
+            android:src="@drawable/icon_previous" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/help_option_title"
+            android:textColor="#404040"
+            style="@style/roboto_light"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!-- Help Option: divider -->
+    <ImageView
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line"/>
+
+    <!-- Help Options -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/option_help_tips"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/list_bg_top"
+            android:paddingLeft="16dp"
+            android:paddingRight="6dp">
+
+            <TextView
+                android:id="@+id/option_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/help_option_tips"
+                style="@style/roboto_light"
+                android:textSize="16sp" />
+
+              <ImageView
+                android:id="@+id/right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_next_nomal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/option_help_questions"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/list_bg_bottom"
+            android:paddingLeft="16dp"
+            android:paddingRight="6dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/option_questions"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/help_option_questions"
+                style="@style/roboto_light"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_next_nomal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/option_help_application"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/list_bg_bottom"
+            android:paddingLeft="16dp"
+            android:paddingRight="6dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/option_application"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/help_option_application"
+                style="@style/roboto_light"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_next_nomal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/option_help_about"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/list_bg_bottom"
+            android:paddingLeft="16dp"
+            android:paddingRight="6dp" >
+
+            <TextView
+                android:id="@+id/option_about"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/help_option_about"
+                style="@style/roboto_light"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_next_nomal" />
+        </RelativeLayout>
+
+	</LinearLayout>
+</LinearLayout>

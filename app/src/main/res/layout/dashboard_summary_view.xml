@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Sleep view -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/dashboard_target_view"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/dashboard_target_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:id="@+id/linear_target_clock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical" >
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                <!-- Target progress view: bottom layer -->
+                <ImageView
+                        android:id="@+id/dashboard_target_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@null"
+                        android:layout_centerInParent="true"/>
+
+                <!-- Target view: content layer -->
+                <com.jrdcom.wearable.smartband2.ui.view.DashboardSummeryView
+                        android:id="@+id/dashboard_summery_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                <!-- progress view: top layer 1 -->
+        <!--       <ImageView
+                        android:id="@+id/summery_view_top_bk_layer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/summery_topside"
+                        android:layout_centerInParent="true"/>-->
+
+                <!-- progress view: top layer 2-->
+                <com.jrdcom.wearable.smartband2.ui.view.RoundClickArea
+                        android:id="@+id/summery_view_top_layer"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/topside"
+                        android:layout_centerInParent="true"/>
+
+                <FrameLayout
+                        android:id="@+id/linear_sleep_status"
+                        android:layout_width="126dp"
+                        android:layout_height="126dp"
+                        android:layout_centerInParent="true"
+                         >
+<ImageView
+        android:id="@+id/dashboard_target_title_image_view"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/step_icon"
+        />
+<!--                    <TextView
+                            android:id="@+id/dashboard_target_title_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:text="Sports"
+                            android:textColor="#a9a9a9"
+                            android:textSize="18sp"
+                            style="@style/roboto_light"
+                            android:gravity="center_horizontal"/>-->
+
+                    <TextView
+                            android:id="@+id/dashboard_target_value_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="0dp"
+
+                            android:textColor="#5c5c5c"
+                            style="@style/roboto_light"
+                            android:textSize="34sp"
+                            android:visibility="gone"
+                            android:gravity="center"/>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:gravity="center">
+                        <ImageView
+                                android:id="@+id/dashboard_target_value_image_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                />
+                    </LinearLayout>
+
+
+                    <TextView
+                            android:id="@+id/dashboard_target_unit_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="83dp"
+                            android:textColor="#5c5c5c"
+                            android:textSize="14sp"
+
+                            style="@style/roboto_light"
+                            android:gravity="center_horizontal"/>
+                </FrameLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+       <!-- <ImageView
+                android:id="@+id/image_sleep_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/rotate_night_clock"
+                android:visibility="gone" />
+
+        <ImageView
+                android:id="@+id/image_wake_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/rotate_day_clock"
+                android:visibility="gone" />-->
+    </RelativeLayout>
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="70dp">
+    </LinearLayout>
+</LinearLayout>

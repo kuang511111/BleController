@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/guide_battery_tip_1"
+            android:textSize="20sp"
+            android:textColor="@color/add_device_guid_button_color"
+            android:textAlignment="center"
+            style="@style/roboto_light"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView android:id="@+id/guide_battery_tip2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/guide_battery_tip_2"
+            android:textSize="20sp"
+            android:textColor="@color/add_device_guid_button_color"
+            android:textAlignment="center"
+            style="@style/roboto_light"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/guide_battery_tip_comments"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            style="@style/roboto_light"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/btn_add_device_battery_prev_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_add_device_normal"
+            android:textColor="@color/add_device_guid_button_color"
+            android:textSize="14sp"
+            android:text="@string/add_device_battery_prev_step"/>
+
+        <Button
+            android:id="@+id/btn_add_device_battery_next_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_add_device_highlight"
+            android:textColor="@color/add_device_guid_button_color"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/btn_add_device_battery_prev_step"
+            android:text="@string/add_device_battery_next_step"/>
+    </RelativeLayout>
+
+</RelativeLayout>

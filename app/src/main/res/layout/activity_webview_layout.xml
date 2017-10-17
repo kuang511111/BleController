@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:id="@+id/tab1"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" >
+    <WebView android:id="@+id/wv"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:scrollbars="none"
+    	android:background="@color/tips_bg" />
+    <LinearLayout
+        android:id="@+id/time_out_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone" >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginLeft="20.0dip"
+	        android:layout_marginRight="20.0dip"
+	        android:text="@string/login_webview_error_info" />
+        <Button
+            android:id="@+id/time_out_refresh"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20.0dip"
+	        android:text="@string/login_captcha_refresh"/>
+    </LinearLayout>
+</FrameLayout>

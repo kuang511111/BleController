@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <android.support.v4.widget.DrawerLayout
+            android:id="@+id/flip_drawer_layout"
+            android:background="@color/dashboard_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:id="@+id/layout_flip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp">
+                <RelativeLayout
+                        android:id="@+id/main"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        >
+                    <ImageButton
+                            android:id="@+id/main_menu_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/menu"/>
+                </RelativeLayout>
+                <TextView
+                        android:id="@+id/recent_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@id/main"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:textColor="#929497"
+                        android:text="@string/menu_list_recent"
+                        style="@style/roboto_light"
+                        android:textSize="18sp"/>
+            </RelativeLayout>
+            <ImageView
+                    android:layout_height="2dp"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/divide_line"/>
+
+
+            <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    >
+              <include layout="@layout/recent_day_tag"
+                         android:id="@+id/day_tag"
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:layout_centerHorizontal="true"
+                         >
+                </include>
+                <com.jrdcom.wearable.smartband2.ui.view.RecentScrollView
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/list_item_view"
+                    android:overScrollMode="never"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+                    <include layout="@layout/recent_timeline"></include>
+                </com.jrdcom.wearable.smartband2.ui.view.RecentScrollView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- SmartBand2 Menu List Drawer -->
+        <include android:id="@+id/menu_list_drawer"
+                 android:layout_width="234dp"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="left"
+                 layout="@layout/menu_list_drawer" />
+    </android.support.v4.widget.DrawerLayout>
+</FrameLayout>

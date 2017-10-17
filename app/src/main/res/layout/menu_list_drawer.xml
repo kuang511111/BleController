@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+   
+	<!-- user icon & name -->
+	<RelativeLayout
+        android:id="@+id/menu_list_user_icon_and_name_area"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:background="#f9f9f9" >
+        
+	    <com.jrdcom.wearable.smartband2.ui.view.RoundedImageView
+	        android:id="@+id/user_icon_image"
+            android:layout_width="79dp"
+            android:layout_height="79dp"
+          	android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/list_user" />
+
+        <TextView
+            android:id="@+id/user_name_text"
+            style="@style/roboto_light"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/user_icon_image"
+            android:text="Jane"
+            android:textColor="#6e6e6e"
+            android:textSize="20sp" />
+        
+    </RelativeLayout>
+    
+	<LinearLayout
+	    android:id="@+id/menu_list_area"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cdececec" >
+		
+	    <!-- My profile -->
+		<RelativeLayout
+			android:id="@+id/menu_list_my_profile_layout"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:background="@drawable/list_bg_middle" >
+			
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:layout_marginLeft="15dp"
+			    android:gravity="center"
+			    android:text="@string/menu_list_my_profile"
+			    style="@style/roboto_light"
+			    android:textColor="#464646"
+			    android:textSize="16sp" />
+	    </RelativeLayout>
+	    
+		<!-- divide line -->
+	     <TextView
+	        android:layout_height="1dp"
+	        android:layout_width="match_parent"
+	        android:background="#bdbdbd" />
+	    
+		<!-- Dashboard -->
+		<RelativeLayout
+		    android:id="@+id/menu_list_dashboard_layout"
+		    android:layout_width="match_parent"
+		    android:layout_height="48dp"
+		    android:background="@drawable/list_bg_middle" >
+		
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:layout_marginLeft="15dp"
+		        android:gravity="center"
+		        android:text="@string/menu_list_dashboard"
+		        style="@style/roboto_light"
+		        android:textColor="#464646"
+		        android:textSize="16sp" />
+	    </RelativeLayout>
+	    
+		<!-- divide line -->
+	    <TextView
+	        android:layout_height="1dp"
+	        android:layout_width="match_parent"
+	        android:background="#bdbdbd" />
+	    
+	    <!-- Recent -->
+		<RelativeLayout
+		android:id="@+id/menu_list_recent_layout"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:background="@drawable/list_bg_middle" >
+		
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="15dp"
+		    android:gravity="center"
+		    android:text="@string/menu_list_recent"
+		    style="@style/roboto_light"
+		    android:textColor="#464646"
+		    android:textSize="16sp" />
+	    </RelativeLayout>
+	    
+		<!-- Charts&Trends -->
+	     <TextView
+	        android:layout_height="1dp"
+	        android:layout_width="match_parent"
+	        android:background="#bdbdbd" />
+	    
+	    <!-- charts and trends  -->
+		<RelativeLayout
+			android:id="@+id/menu_list_charts_and_trends_layout"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:background="@drawable/list_bg_middle" >
+			
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:layout_marginLeft="15dp"
+			    android:gravity="center"
+			    android:text="@string/menu_list_charts_and_trends"
+			    style="@style/roboto_light"
+			    android:textColor="#464646"
+			    android:textSize="16sp" />
+	    </RelativeLayout>
+	    
+		<!-- divide line -->
+	     <TextView
+	        android:layout_height="1dp"
+	        android:layout_width="match_parent"
+	        android:background="#bdbdbd" />
+	    
+	    <!-- Goals -->
+		<RelativeLayout
+			android:id="@+id/menu_list_goals_layout"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:background="@drawable/list_bg_middle" >
+			
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:layout_marginLeft="15dp"
+			    android:gravity="center"
+			    android:text="@string/menu_list_goals"
+			    style="@style/roboto_light"
+			    android:textColor="#464646"
+			    android:textSize="16sp" />
+	    </RelativeLayout>
+	    
+		<!-- divide line -->
+	     <TextView
+	        android:layout_height="1dp"
+	        android:layout_width="match_parent"
+	        android:background="#bdbdbd" />
+	    
+	     <!-- Settings -->
+		<RelativeLayout
+			android:id="@+id/menu_list_settings_layout"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:background="@drawable/list_bg_middle" >
+			
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:layout_marginLeft="15dp"
+			    android:gravity="center"
+			    android:text="@string/settings"
+			    style="@style/roboto_light"
+			    android:textColor="#464646"
+			    android:textSize="16sp" />
+	    </RelativeLayout>
+	    
+		<!-- divide line -->
+	     <TextView
+	        android:layout_height="1dp"
+	        android:layout_width="match_parent"
+	        android:background="#bdbdbd" />
+	     
+	    <!-- Login out -->
+		<RelativeLayout
+			android:id="@+id/menu_list_login_out_layout"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:background="@drawable/list_bg_middle" >
+			
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:layout_marginLeft="15dp"
+			    android:gravity="center"
+			    android:text="@string/menu_list_login_out"
+			    style="@style/roboto_light"
+			    android:textColor="#464646"
+			    android:textSize="16sp" />
+	    </RelativeLayout>
+	    
+		<!-- divide line -->
+	     <TextView
+	        android:id="@+id/login_out_layout_divide_line" 
+	        android:layout_height="1dp"
+	        android:layout_width="match_parent"
+	        android:background="#bdbdbd" />
+
+    </LinearLayout>
+    
+</LinearLayout>
+
+

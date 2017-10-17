@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HeightView">
+   		<attr name="heightPickerStyle" format="reference"/>
+    </declare-styleable>
+    
+    <declare-styleable name="HeightPicker">
+   		<attr name="layout" format="reference"/>
+    </declare-styleable>
+    
+    <declare-styleable name="SleepView"> 
+        <attr name="ring_width" format="dimension"/>
+        <attr name="inner_ring_color" format="color"/>
+        <attr name="outer_ring_color" format="color"/>
+        <attr name="arc_color1" format="color"/> 
+        <attr name="arc_color2" format="color"/>
+        <attr name="arc_color3" format="color"/> 
+    </declare-styleable>
+
+	<!-- Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+    <!-- Defines the custom XML attributes supported for a DashedLine  -->
+    <declare-styleable name="DashedLine">
+        <attr name="line_color" format="color"/>
+    </declare-styleable>
+</resources>

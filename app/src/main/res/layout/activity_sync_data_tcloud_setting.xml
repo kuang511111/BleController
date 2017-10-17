@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Sync data setting head -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42.0dip" >
+
+        <ImageButton
+            android:id="@+id/sync_data_setting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_bg"
+            android:src="@drawable/icon_previous" />
+
+        <TextView
+            style="@style/roboto_light"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/login_sync_data_setting"
+            android:textColor="@color/txt_color_font_color"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- Sync data setting divider -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16.0dip"
+        android:background="@drawable/list_bg_top" >
+
+        <LinearLayout
+            android:id="@+id/sync_data_master_area"
+            android:layout_width="match_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/roboto_light"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/txt_color_font_color"
+                android:text="@string/login_sync_data_tcloud"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/master_control_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="60dip"
+                android:switchPadding="16dip"
+                android:layout_gravity="center_vertical"
+                android:textOff="@string/switch_a_space"
+                android:textOn="@string/switch_a_space"
+                android:thumb="@drawable/switch_inner_holo_dark_jrd"
+                android:thumbTextPadding="12dip"
+                android:track="@drawable/switch_track_holo_dark_jrd" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/list_bg_middle" >
+
+        <LinearLayout
+            android:id="@+id/sync_data_wifi_only_area"
+            android:layout_width="match_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/roboto_light"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/txt_color_font_color"
+                android:text="@string/login_sync_data_wifi"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/sync_data_wifi_only_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="60dip"
+                android:switchPadding="16dip"
+                android:layout_gravity="center_vertical"
+                android:textOff="@string/switch_a_space"
+                android:textOn="@string/switch_a_space"
+                android:thumb="@drawable/switch_inner_holo_dark_jrd"
+                android:thumbTextPadding="12dip"
+                android:track="@drawable/switch_track_holo_dark_jrd" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/list_bg_bottom" >
+
+        <LinearLayout
+            android:id="@+id/sync_data_frequency_area"
+            android:layout_width="match_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/roboto_light"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/txt_color_font_color"
+                android:text="@string/login_sync_data_frequency"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sync_data_frequency"
+                style="@style/roboto_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/txt_color_font_color"
+                android:text="@string/login_sync_data_frequency_info"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

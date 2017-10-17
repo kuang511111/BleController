@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/set_calories_goal_title"
+        android:layout_width="match_parent"
+        android:layout_height="42dp" >
+
+        <ImageButton
+            android:id="@+id/set_goal_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_bg"
+            android:src="@drawable/icon_previous" />
+
+        <TextView
+            style="@style/roboto_light"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/string_goals_calories"
+            android:textColor="#6e6e6e"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/set_goal_save"
+            android:background="@drawable/goal_settinggoal_save_"
+            style="@style/roboto_light"
+            android:layout_width="82dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="@string/string_goals_set_save_title"
+            android:textColor="#6e6e6e"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- divider Line -->
+    <ImageView
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line"/>
+
+
+	<TextView 
+		android:layout_height="42dp"
+		android:layout_width="match_parent"
+		android:layout_marginTop="51dp"
+		android:gravity="center_horizontal"
+		android:text="@string/string_goals_set_calories_tips"
+		style="@style/roboto_light"
+		android:textColor="#6e6e6e"
+		android:textSize="20sp"/>
+
+	
+	<RelativeLayout 
+		android:id="@+id/seek_bar_layout"
+		android:orientation="vertical"
+		android:layout_height="150dp"
+		android:layout_width="match_parent" >
+        
+		
+		 <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:weightSum="5" >
+			<LinearLayout
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<RelativeLayout
+				    android:orientation="vertical"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent" >
+					<TextView 
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:layout_marginTop="30dp"
+						android:layout_centerHorizontal="true"
+						android:text="1.7KJ"
+						style="@style/roboto_light"
+						android:textColor="#6e6e6e"
+						android:textSize="14sp"/> 
+				</RelativeLayout>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<RelativeLayout
+				    android:orientation="vertical"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent" >
+					<TextView 
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:layout_marginTop="30dp"
+						android:layout_centerHorizontal="true"
+						android:text="2.0KJ"
+						android:textColor="#6e6e6e"
+						style="@style/roboto_light"
+						android:textSize="14sp"/> 
+				</RelativeLayout>
+			
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<RelativeLayout
+				    android:orientation="vertical"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent" >
+					<TextView 
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:layout_marginTop="30dp"
+						android:layout_centerHorizontal="true"
+						android:text="2.3KJ"
+						android:textColor="#6e6e6e"
+						style="@style/roboto_light"
+						android:textSize="14sp"/> 
+				</RelativeLayout>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<RelativeLayout
+				    android:orientation="vertical"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent" >
+					<TextView 
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:layout_marginTop="30dp"
+						android:layout_centerHorizontal="true"
+						android:text="2.6KJ"
+						android:textStyle="bold"
+						android:textColor="#6e6e6e"
+						android:textSize="14sp"/> 
+				</RelativeLayout>
+			</LinearLayout>
+			
+		     <LinearLayout
+		        android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<RelativeLayout
+				    android:orientation="vertical"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent" >
+					<TextView 
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:layout_marginTop="30dp"
+						android:layout_centerHorizontal="true"
+						android:text="2.9KJ"
+						android:textColor="#6e6e6e"
+						style="@style/roboto_light"
+						android:textSize="14sp"/> 
+				</RelativeLayout>
+			</LinearLayout>
+		</LinearLayout>
+		
+		<ImageView
+			android:background="@drawable/goals_setting_caloriesline"
+			android:layout_marginLeft="25dp"
+	        android:layout_marginRight="25dp"
+			android:layout_marginTop="51dp"
+			android:layout_centerHorizontal="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		
+		<SeekBar
+		    android:id="@+id/calories_seekbar"
+		    android:layout_width="fill_parent"
+		    android:layout_marginTop="14dp"
+	        android:layout_height="100dp"
+	        android:layout_gravity="center"
+	        android:layout_marginLeft="19dp"
+	        android:layout_marginRight="19dp"
+	        android:maxHeight="100dp"
+            android:minHeight="100dp"   
+	        android:thumb="@drawable/calories_seekbar_thumb"
+	        android:progressDrawable="@drawable/seekbar_style"
+	        android:max="8000" />
+		
+		 <LinearLayout
+            android:layout_marginTop="113dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+            android:orientation="horizontal" 
+            android:weightSum="2" >
+			<LinearLayout
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				
+				<TextView 
+					android:layout_height="match_parent"
+					android:layout_width="match_parent"
+					android:gravity="center"
+					android:text="@string/string_goals_set_tip1"
+					android:textStyle="bold"
+					android:textColor="#6e6e6e"
+					android:textSize="16sp"/> 
+					
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				
+				<TextView 
+					android:layout_height="match_parent"
+					android:layout_width="match_parent"
+					android:gravity="center"
+					android:text="@string/string_goals_set_tip2"
+					android:textStyle="bold"
+					android:textColor="#6e6e6e"
+					android:textSize="16sp"/> 
+					
+			</LinearLayout>
+		
+		</LinearLayout>
+		
+	</RelativeLayout>
+	
+	<RelativeLayout 
+		android:orientation="vertical"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="109dp"
+		android:layout_width="match_parent" >
+	
+	<Button
+	    android:id="@+id/remove_goal_button" 
+		android:layout_height="43dp"
+		android:layout_width="170dp"
+		android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+		android:text="@string/string_goals_set_remove_goal"
+		android:background="@drawable/goal_settinggoal_removegoal_"
+		android:gravity="center"
+		style="@style/roboto_light"
+		android:textColor="#6e6e6e"
+		android:textSize="20sp"/>
+	</RelativeLayout>
+
+</LinearLayout>

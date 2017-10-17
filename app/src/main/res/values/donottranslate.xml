@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wave Life</string>
+    <string name="boom_band">Wave Life</string>
+    <string name="day_concat">", "</string>
+    <string name="never">Never</string>
+
+    <string name="switch_a_space" />
+    <string name="str_sleep_duration">0:00</string>
+</resources>

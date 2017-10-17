@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!-- Sync data setting head -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <ImageButton
+            android:id="@+id/smartband_setting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_bg"
+            android:src="@drawable/icon_previous" />
+
+        <TextView
+            style="@style/roboto_light"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/settings_smartband_settings"
+            android:textColor="#656565"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- Settings: divider -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical" >
+
+        <!-- Sequence -->
+
+        <LinearLayout
+            android:id="@+id/sequence_item"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/list_bg_top"
+            android:clickable="true"
+            android:fontFamily="sans-serif-light" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/roboto_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/smartband_settings_sequence"
+                        android:textColor="#656565"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        style="@style/roboto_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/smartband_settings_sequence_tips"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/icon_next_nomal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Control Music -->
+
+        <LinearLayout
+            android:id="@+id/control_music_item"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/list_bg_middle"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="0dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/roboto_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/smartband_settings_control_music"
+                    android:textColor="#656565"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/control_music_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:switchMinWidth="60dp"
+                android:switchPadding="16dp"
+                android:textOff="@string/switch_a_space"
+                android:textOn="@string/switch_a_space"
+                android:thumb="@drawable/switch_inner_holo_dark_jrd"
+                android:thumbTextPadding="12dp"
+                android:track="@drawable/switch_track_holo_dark_jrd" />
+        </LinearLayout>
+
+        <!-- Camera Music -->
+
+        <LinearLayout
+            android:id="@+id/control_camera_item"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/list_bg_middle"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="0dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/roboto_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/smartband_settings_control_camera"
+                    android:textColor="#656565"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/control_camera_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:switchMinWidth="60dp"
+                android:switchPadding="16dp"
+                android:textOff="@string/switch_a_space"
+                android:textOn="@string/switch_a_space"
+                android:thumb="@drawable/switch_inner_holo_dark_jrd"
+                android:thumbTextPadding="12dp"
+                android:track="@drawable/switch_track_holo_dark_jrd" />
+        </LinearLayout>
+
+        <!-- blocking mode -->
+
+        <LinearLayout
+            android:id="@+id/blocking_mode_item"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/list_bg_middle" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="0dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/roboto_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/smartband_settings_blocking_mode"
+                        android:textColor="#656565"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        style="@style/roboto_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/smartband_settings_blocking_mode_tips"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/blocking_mode_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="10dp"
+                    android:switchMinWidth="60dp"
+                    android:switchPadding="16dp"
+                    android:textOff="@string/switch_a_space"
+                    android:textOn="@string/switch_a_space"
+                    android:thumb="@drawable/switch_inner_holo_dark_jrd"
+                    android:thumbTextPadding="12dp"
+                    android:track="@drawable/switch_track_holo_dark_jrd" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Factory reset -->
+
+        <LinearLayout
+            android:id="@+id/factory_reset_item"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/list_bg_middle"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="0dp" >
+
+            <TextView
+                style="@style/roboto_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/smartband_settings_factory_reset"
+                android:textColor="#656565"
+                android:textSize="18sp" />
+        </LinearLayout>
+        
+        <!-- Language setting -->
+
+        <LinearLayout
+            android:id="@+id/language_setting_item"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/list_bg_middle"
+            android:clickable="true">
+               
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+                
+           <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+            <TextView
+                style="@style/roboto_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/smartband_settings_language_set"
+                android:textColor="#656565"
+                android:textSize="18sp" />
+            
+             <TextView
+                 style="@style/roboto_light"
+                 android:id="@+id/language_tip"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text=" "
+                 android:textSize="10sp" />
+            </LinearLayout>
+               <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/icon_next_nomal" />
+               </LinearLayout>
+        </LinearLayout>
+        
+        <!-- Black light -->
+
+        <LinearLayout
+            android:id="@+id/black_light_item"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/list_bg_bottom"
+            android:clickable="true">
+
+          <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+            
+            <TextView
+                style="@style/roboto_light"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/smartband_settings_black_light"
+                android:textColor="#656565"
+                android:textSize="18sp" />
+            
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/icon_next_nomal" />
+             </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

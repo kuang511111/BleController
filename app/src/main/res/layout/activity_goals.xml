@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <android.support.v4.widget.DrawerLayout
+            android:id="@+id/flip_drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+		
+        <LinearLayout
+                android:id="@+id/goals_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+	        <!-- Goals: Header -->
+		    <RelativeLayout
+		        android:id="@+id/goals_title"
+		        android:layout_width="match_parent"
+		        android:layout_height="42dp" >
+		
+		        <ImageButton
+		            android:id="@+id/main_menu_list"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="10dp"
+		            android:background="@drawable/menu" />
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="5dp"
+            		android:layout_toRightOf="@+id/main_menu_list"
+		            android:text="@string/menu_list_goals"
+		            android:textColor="#929497"
+		            style="@style/roboto_light"
+		            android:textSize="16sp" />
+		    </RelativeLayout>
+		    
+		    <!-- Divide Line -->
+		    <ImageView
+		        android:layout_height="2dp"
+		        android:layout_width="match_parent"
+		        android:scaleType="fitXY"
+		        android:src="@drawable/divide_line"/>
+	        
+		    <LinearLayout 
+		        android:id="@+id/my_goals_layout"
+		        android:layout_marginTop="25dp"
+		        android:orientation="vertical"
+		        android:layout_height="44dp"
+		        android:layout_width="match_parent" >
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+	        		android:layout_marginLeft="12dp"
+			    	android:text="@string/string_my_goals"
+			    	android:textColor="#656565"
+			    	style="@style/roboto_light"
+			    	android:textSize="20sp"/>
+	
+	        </LinearLayout>
+	        
+		    
+		    <!-- Steps ProgressBar -->
+			<RelativeLayout 
+			    android:id="@+id/steps_goals_layout"
+			    android:orientation="vertical"
+			    android:layout_height="70dp"
+			   	android:layout_marginLeft="12dp"
+			    android:layout_marginRight="12dp"
+			    android:layout_width="match_parent" >
+			    
+			    <ProgressBar  
+			        android:id="@+id/steps_progressbar" 
+			        android:layout_width="fill_parent"  
+			        android:layout_height="match_parent"
+  
+			        style="?android:attr/progressBarStyleHorizontal" 
+			        android:max="10000" 
+			        android:progressDrawable="@drawable/steps_progressbar" /> 
+				
+			    <TextView 
+			        android:id="@+id/steps_count_text" 
+		            android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_alignParentTop="true"
+					android:layout_marginTop="10dp"
+	        		android:layout_marginLeft="12dp"
+			    	style="@style/goal_font_bold"
+			    	android:textColor="#ffffff"
+			    	android:textSize="16sp"/>
+			    
+			    <TextView 
+			        android:id="@+id/steps_goal_text" 
+		            android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+	        		android:layout_marginRight="10dp"
+			    	style="@style/roboto_light"
+			    	android:textColor="#9b9b9b"
+			    	android:textSize="16sp"/>
+			    
+			    <LinearLayout 
+			         android:layout_width="wrap_content"
+			         android:layout_height="wrap_content"
+			         android:layout_alignParentBottom="true"
+			         android:layout_marginLeft="12dp"
+			         android:layout_marginBottom="10dp"
+			         android:orientation="horizontal" >
+			        
+			         <TextView
+			             android:layout_height="wrap_content"
+						 android:layout_width="wrap_content"
+				         style="@style/roboto_light"
+				         android:text="@string/string_goals_steps"
+				         android:textColor="#ffffff"
+				         android:textSize="16sp" />
+			         
+			         <TextView
+			             android:id="@+id/steps_goal_tip"
+			             android:layout_height="wrap_content"
+						 android:layout_width="wrap_content"
+				         style="@style/roboto_light"
+				         android:textColor="#ffffff"
+				         android:textSize="16sp" />
+	
+	        	</LinearLayout>
+			 </RelativeLayout>
+			 
+			<!-- Calories ProgressBar -->
+			<RelativeLayout 
+			    android:id="@+id/calories_goals_layout"
+			    android:orientation="vertical"
+			    android:layout_height="70dp"
+			    android:layout_marginTop="25dp"
+			    android:layout_marginLeft="12dp"
+			    android:layout_marginRight="12dp"
+			    android:layout_width="match_parent" >
+			    
+			    <ProgressBar  
+			        android:id="@+id/calories_progressbar" 
+			        android:layout_width="fill_parent"  
+			        android:layout_height="match_parent"
+			        style="?android:attr/progressBarStyleHorizontal" 
+			        android:max="10000" 
+			        android:progressDrawable="@drawable/calories_progressbar" /> 
+				
+			    <TextView 
+			        android:id="@+id/calories_count_text" 
+		            android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_alignParentTop="true"
+					android:layout_marginTop="10dp"
+	        		android:layout_marginLeft="12dp"
+			    	style="@style/goal_font_bold"
+			    	android:textColor="#ffffff"
+			    	android:textSize="16sp"/>
+			    
+			    <TextView 
+			        android:id="@+id/calories_goal_text" 
+		            android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+	        		android:layout_marginRight="10dp"
+			    	style="@style/roboto_light"
+			    	android:textColor="#9b9b9b"
+			    	android:textSize="16sp"/>
+			    
+			    <LinearLayout 
+			         android:layout_width="wrap_content"
+			         android:layout_height="wrap_content"
+			         android:layout_alignParentBottom="true"
+			         android:layout_marginLeft="12dp"
+			         android:layout_marginBottom="10dp"
+			         android:orientation="horizontal" >
+			        
+			         <TextView
+			             android:layout_height="wrap_content"
+						 android:layout_width="wrap_content"
+				         style="@style/roboto_light"
+				         android:text="@string/string_goals_calories"
+				         android:textColor="#ffffff"
+				         android:textSize="16sp" />
+			         
+			         <TextView
+			             android:id="@+id/calories_goal_tip"
+			             android:layout_height="wrap_content"
+						 android:layout_width="wrap_content"
+				         style="@style/roboto_light"
+				         android:textColor="#ffffff"
+				         android:textSize="16sp" />
+	
+	        	</LinearLayout>
+			 </RelativeLayout>
+			 
+			<!-- Sleep ProgressBar -->
+			<RelativeLayout 
+			    android:id="@+id/sleep_goals_layout"
+			    android:orientation="vertical"
+			    android:layout_height="70dp"
+			    android:layout_marginTop="25dp"
+			    android:layout_marginLeft="12dp"
+			    android:layout_marginRight="12dp"
+			    android:layout_width="match_parent" >
+			    
+			    <ProgressBar  
+			        android:id="@+id/sleep_progressbar" 
+			        android:layout_width="fill_parent"  
+			        android:layout_height="match_parent"
+			        style="?android:attr/progressBarStyleHorizontal" 
+			        android:max="10000" 
+			        android:progressDrawable="@drawable/sleep_progressbar" /> 
+				
+			    <TextView 
+			        android:id="@+id/sleep_count_text" 
+		            android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_alignParentTop="true"
+					android:layout_marginTop="10dp"
+	        		android:layout_marginLeft="12dp"
+			    	style="@style/goal_font_bold"
+			    	android:textColor="#ffffff"
+			    	android:textSize="16sp"/>
+			    
+			    <TextView 
+			        android:id="@+id/sleep_goal_text" 
+		            android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+	        		android:layout_marginRight="10dp"
+			    	style="@style/roboto_light"
+			    	android:textColor="#9b9b9b"
+			    	android:textSize="16sp"/>
+			    
+			    <LinearLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentBottom="true"
+					android:layout_marginLeft="12dp"
+					android:layout_marginBottom="10dp"
+					android:orientation="horizontal" >
+			        
+			         <TextView
+			             android:layout_height="wrap_content"
+						 android:layout_width="wrap_content"
+				         style="@style/roboto_light"
+				         android:text="@string/string_goals_sleep"
+				         android:textColor="#ffffff"
+				         android:textSize="16sp" />
+			         
+			         <TextView
+			             android:id="@+id/sleep_goal_tip"
+			             android:layout_height="wrap_content"
+						 android:layout_width="wrap_content"
+				         style="@style/roboto_light"
+				         android:textColor="#ffffff"
+				         android:textSize="16sp" />
+	
+	        	</LinearLayout>			   
+			 </RelativeLayout>
+			 
+			<!-- Duration ProgressBar -->
+			<RelativeLayout 
+			    android:id="@+id/duration_goals_layout"
+			    android:orientation="vertical"
+			    android:layout_height="70dp"
+			    android:layout_marginTop="25dp"
+			    android:layout_marginLeft="12dp"
+			    android:layout_marginRight="12dp"
+			    android:layout_width="match_parent" >
+			    
+			    <ProgressBar  
+			        android:id="@+id/duration_progressbar" 
+			        android:layout_width="fill_parent"  
+			        android:layout_height="match_parent" 
+			        style="?android:attr/progressBarStyleHorizontal" 
+			        android:max="10000" 
+			        android:progressDrawable="@drawable/duration_progressbar" /> 
+				
+			    <TextView 
+			        android:id="@+id/duration_count_text" 
+		            android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_alignParentTop="true"
+					android:layout_marginTop="10dp"
+	        		android:layout_marginLeft="12dp"
+			    	style="@style/goal_font_bold"
+			    	android:textColor="#ffffff"
+			    	android:textSize="16sp"/>
+			    
+			    <TextView 
+			        android:id="@+id/duration_goal_text" 
+		            android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+	        		android:layout_marginRight="10dp"
+			    	style="@style/roboto_light"
+			    	android:textColor="#9b9b9b"
+			    	android:textSize="16sp"/>
+			    
+			    <LinearLayout 
+			        android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentBottom="true"
+					android:layout_marginLeft="12dp"
+					android:layout_marginBottom="10dp"
+					android:orientation="horizontal" >
+			        
+			         <TextView
+			             android:layout_height="wrap_content"
+						 android:layout_width="wrap_content"
+				         style="@style/roboto_light"
+				         android:text="@string/string_goals_duration"
+				         android:textColor="#ffffff"
+				         android:textSize="16sp" />
+			         
+			         <TextView
+			             android:id="@+id/duration_goal_tip"
+			             android:layout_height="wrap_content"
+						 android:layout_width="wrap_content"
+				         style="@style/roboto_light"
+				         android:textColor="#ffffff"
+				         android:textSize="16sp" />
+	
+	        	</LinearLayout>
+			 </RelativeLayout>
+			 
+			<!-- Distance ProgressBar -->
+			<RelativeLayout 
+			    android:id="@+id/distance_goals_layout"
+			    android:orientation="vertical"
+			    android:layout_height="70dp"
+			    android:layout_marginTop="25dp"
+			    android:layout_marginLeft="12dp"
+			    android:layout_marginRight="12dp"
+			    android:layout_width="match_parent" >
+			    
+			    <ProgressBar  
+			        android:id="@+id/distance_progressbar" 
+			        android:layout_width="fill_parent"  
+			        android:layout_height="match_parent"
+			        style="?android:attr/progressBarStyleHorizontal" 
+			        android:max="10000" 
+			        android:progressDrawable="@drawable/distance_progressbar" /> 
+				
+			    <TextView 
+			        android:id="@+id/distance_count_text" 
+		            android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_alignParentTop="true"
+					android:layout_marginTop="10dp"
+	        		android:layout_marginLeft="12dp"
+			    	style="@style/goal_font_bold"
+			    	android:textColor="#ffffff"
+			    	android:textSize="16sp"/>
+			    
+			    <TextView 
+			        android:id="@+id/distance_goal_text" 
+		            android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+	        		android:layout_marginRight="10dp"
+			    	style="@style/roboto_light"
+			    	android:textColor="#9b9b9b"
+			    	android:textSize="16sp"/>
+			    
+			    <LinearLayout 
+		         	android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentBottom="true"
+					android:layout_marginLeft="12dp"
+					android:layout_marginBottom="10dp"
+					android:orientation="horizontal" >
+			        
+			         <TextView
+			             android:layout_height="wrap_content"
+						 android:layout_width="wrap_content"
+				         style="@style/roboto_light"
+				         android:text="@string/string_goals_distance"
+				         android:textColor="#ffffff"
+				         android:textSize="16sp" />
+			         
+			         <TextView
+			             android:id="@+id/distance_goal_tip"
+			             android:layout_height="wrap_content"
+						 android:layout_width="wrap_content"
+				         style="@style/roboto_light"
+				         android:textColor="#ffffff"
+				         android:textSize="16sp" />
+	
+	        	</LinearLayout>
+			 </RelativeLayout>
+			 
+	    </LinearLayout>
+	    
+    	<!-- SmartBand2 Menu List Drawer -->
+        <include android:id="@+id/menu_list_drawer"
+                 android:layout_width="234dp"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="left"
+                 layout="@layout/menu_list_drawer" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

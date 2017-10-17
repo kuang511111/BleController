@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/add_device_bind_need_bind_from_scan"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:background="@null">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/str_bind_bt"
+                android:textSize="22sp"
+                android:textColor="@color/add_device_guid_button_color"
+                android:textAlignment="center"
+                style="@style/roboto_light"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="230dp"
+            android:layout_marginRight="190dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/str_snapshot_waitting"
+            android:textColor="@color/add_device_guid_button_color"
+            style="@style/roboto_light"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_device_bind_need_bind_from_connect"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:background="@drawable/product">
+
+        <TextView
+            android:id="@+id/add_device_need_bind_tip_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/add_device_need_bind_tip_1"
+            style="@style/roboto_light"
+            android:textSize="16sp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="40dp">
+
+            <Button
+                android:id="@+id/btn_add_device_need_bind_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_add_device_normal"
+                android:textColor="@color/add_device_guid_button_color"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14sp"
+                style="@style/roboto_light"
+                android:text="@android:string/cancel"/>
+
+            <Button
+                android:id="@+id/btn_add_device_need_bind_bind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/btn_add_device_need_bind_cancel"
+                android:background="@drawable/btn_add_device_highlight"
+                android:textColor="@color/add_device_guid_button_color"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14sp"
+                style="@style/roboto_light"
+                android:text="@string/add_device_need_bind_bind"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

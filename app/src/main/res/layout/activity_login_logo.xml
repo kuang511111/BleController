@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tips_bg" >
+
+    <ImageView
+        android:id="@+id/signin_logo_bg"
+        android:layout_width="match_parent"
+        android:layout_height="348.0dip"
+        android:contentDescription="@string/login_logo_login"
+        android:background="@drawable/signin_bgpic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/signin_logo_bg"
+        android:orientation="vertical" >
+        
+        <!-- Sign Up -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29.0dp" >
+	        <Button
+	            android:id="@+id/txt_register"
+	            android:layout_width="200.0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:text="@string/login_logo_register"
+	            android:textColor="@android:color/white"
+	            style="@style/roboto_light"
+	            android:textSize="20sp"
+	            android:background="@drawable/btn_signup_bg_selector" />
+        </RelativeLayout>
+        <!-- Sign In -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9.0dp" >
+	        <Button
+	            android:id="@+id/txt_login"
+	            android:layout_width="200.0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:text="@string/login_logo_login"
+	            android:textColor="@android:color/white"
+	            style="@style/roboto_light"
+	            android:textSize="20sp"
+	            android:background="@drawable/btn_signin_bg_selector" />
+        </RelativeLayout>
+        <!-- As a Visitor -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9.0dp" >
+	        <Button
+	            android:id="@+id/txt_visitor"
+	            android:layout_width="200.0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:text="@string/sigin_as_vistor"
+	            android:textColor="@android:color/white"
+	            style="@style/roboto_light"
+	            android:textSize="20sp"
+	            android:background="@drawable/btn_visitor_bg_selector" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+    
+    <TextView
+        android:id="@+id/bt_mac"
+        style="@style/info_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.60"
+        android:gravity="center" />
+
+	<TextView android:id="@+id/nfc_state"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    style="@style/info_text"
+	    android:text="@string/sending_nfc_bt_addr_req"
+	    android:gravity="center"/>
+	<Button android:id="@+id/restart"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/restart"
+	    android:visibility="invisible"
+	    android:onClick="onClick"/>
+	<include layout="@layout/result_buttons"
+	    android:visibility="visible"/>
+</LinearLayout>

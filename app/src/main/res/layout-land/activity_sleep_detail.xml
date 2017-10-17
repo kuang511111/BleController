@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chart_view_bg"
+    android:orientation="horizontal" >
+
+    <!-- Left side -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:minWidth="80dp"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/btn_chart_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/tab_today_area"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/chart_button_bg" >
+
+                <TextView
+                    android:id="@+id/tab_today"
+                    style="@style/roboto_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/today"
+                    android:textColor="@color/tab_title_green_selected"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_7_day_area"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tab_7_day"
+                    style="@style/roboto_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/str_chart_7_day"
+                    android:textColor="@color/tab_title_green_selected"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_30_day_area"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tab_30_day"
+                    style="@style/roboto_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/str_chart_31_day"
+                    android:textColor="@color/tab_title_green_selected"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Right side -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/chart_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/current_day_sleep_datail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/total_sleep_title"
+                            style="@style/roboto_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_chart_sleep_total_pre"
+                            android:textColor="@color/choose_device_button_color"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/total_sleep_content"
+                            style="@style/roboto_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:textColor="@color/title_orange_selected"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/sleep_effective_title"
+                            style="@style/roboto_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_chart_sleep_effi_pre"
+                            android:textColor="@color/choose_device_button_color"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/sleep_effective_content"
+                            style="@style/roboto_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:textColor="@color/title_orange_selected"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp" >
+
+                        <TextView
+                            android:id="@+id/ready_sleep_title"
+                            style="@style/roboto_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_chart_sleep_waste_pre"
+                            android:textColor="@color/choose_device_button_color"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/ready_sleep_content"
+                            style="@style/roboto_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:textColor="@color/title_orange_selected"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/chart_layout"
+            android:layout_width="473dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp" >
+
+            <FrameLayout
+                android:id="@+id/framelayout_day_detail_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.jrdcom.wearable.smartband2.ui.widget.ChartBoxTipView
+                android:id="@+id/date_cube_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chart_date_bg"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+
+                <TextView
+                    android:id="@+id/moving_box_date"
+                    style="@style/roboto_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/moving_box_content"
+                    style="@style/roboto_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@android:color/white" />
+            </com.jrdcom.wearable.smartband2.ui.widget.ChartBoxTipView>
+
+            <ImageView
+                android:id="@+id/dotted_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date_cube_layout"
+                android:background="@drawable/dotted_line"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sleep_func_switcher_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true" >
+
+                <Button
+                    android:id="@+id/left_tab_total_sleep"
+                    style="@style/roboto_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chart_tab_right_normal"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:minWidth="120dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/str_chart_sleep_total_time"
+                    android:textColor="@color/choose_device_button_color"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/mid_tab_sleep_effective"
+                    style="@style/roboto_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chart_tab_middle_normal"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:minWidth="120dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/str_chart_sleep_effi"
+                    android:textColor="@color/choose_device_button_color"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/right_tab_ready_sleep"
+                    style="@style/roboto_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chart_tab_left_normal"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:minWidth="120dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/str_chart_sleep_waste"
+                    android:textColor="@color/choose_device_button_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/sleep_detail_legend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    style="@style/roboto_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/nosleep_icon"
+                    android:text="@string/sleep_status_no_sleep"
+                    android:textAppearance="@style/AppFont.Small"
+                    android:textColor="@color/choose_device_button_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    style="@style/roboto_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/turnover_icon"
+                    android:text="@string/sleep_status_turn_over"
+                    android:textAppearance="@style/AppFont.Small"
+                    android:textColor="@color/choose_device_button_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    style="@style/roboto_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/sleep_icon"
+                    android:text="@string/sleep_status_sleep"
+                    android:textAppearance="@style/AppFont.Small"
+                    android:textColor="@color/choose_device_button_color" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

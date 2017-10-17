@@ -1,0 +1,3585 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="Help_latest_files/filelist.xml">
+<link rel=Edit-Time-Data href="Help_latest_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>tcl</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>dji</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Zhe, LIU(ASD-SH-TCT)</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:LastPrinted>2005-03-16T09:28:00Z</o:LastPrinted>
+  <o:Created>2014-03-15T11:02:00Z</o:Created>
+  <o:LastSaved>2014-03-15T11:02:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>244</o:Words>
+  <o:Characters>1396</o:Characters>
+  <o:Company>Alcatel China Shanghai Office</o:Company>
+  <o:Lines>11</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>1637</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:_NewReviewCycle dt:dt="string"></o:_NewReviewCycle>
+ </o:CustomDocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:TargetScreenSize>800x600</o:TargetScreenSize>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="Help_latest_files/themedata.thmx">
+<link rel=colorSchemeMapping href="Help_latest_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>5 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>13.55 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:UsePrinterMetrics/>
+   <w:WW6BorderRules/>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+   <w:UseWord97LineBreakingRules/>
+   <w:SelectEntireFieldWithStartOrEnd/>
+   <w:UseWord2002TableStyleRules/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:FELineBreak11/>
+   <w:WW11IndentRules/>
+   <w:DontAutofitConstrainedTables/>
+   <w:AutofitLikeWW11/>
+   <w:HangulWidthLikeWW11/>
+   <w:UseNormalStyleForList/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Tms Rmn";
+	panose-1:2 2 6 3 4 5 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Helv;
+	panose-1:2 11 6 4 2 2 2 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Univers \(WN\)";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:Arial;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:楷体_GB2312;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:仿宋_GB2312;
+	mso-font-alt:仿宋;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"\@仿宋_GB2312";
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:"\@楷体_GB2312";
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:35.4pt;
+	margin-bottom:.0001pt;
+	text-indent:-35.4pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:15.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-font-kerning:0pt;
+	mso-ansi-language:FR;
+	mso-bidi-font-weight:normal;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:70.8pt;
+	text-indent:-35.4pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-ansi-language:FR;
+	mso-bidi-font-weight:normal;
+	text-decoration:underline;
+	text-underline:single;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:106.2pt;
+	text-indent:-35.4pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-ansi-language:FR;
+	mso-bidi-font-weight:normal;
+	text-decoration:underline;
+	text-underline:single;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:141.6pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-35.4pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-ansi-language:FR;
+	mso-bidi-font-weight:normal;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:177.0pt;
+	text-indent:-35.4pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-ansi-language:FR;
+	font-weight:normal;
+	text-decoration:underline;
+	text-underline:single;}
+h6
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"Heading 5";
+	mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:212.4pt;
+	text-indent:-35.4pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:6;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-ansi-language:FR;
+	font-weight:normal;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:"Normal Indent";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:247.8pt;
+	margin-bottom:.0001pt;
+	text-indent:-35.4pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:7;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:"Normal Indent";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:283.2pt;
+	margin-bottom:.0001pt;
+	text-indent:-35.4pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:8;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:"Normal Indent";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:318.6pt;
+	margin-bottom:.0001pt;
+	text-indent:-35.4pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:9;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoIndex1, li.MsoIndex1, div.MsoIndex1
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;}
+p.MsoIndex2, li.MsoIndex2, div.MsoIndex2
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:14.15pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;}
+p.MsoIndex3, li.MsoIndex3, div.MsoIndex3
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:28.3pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;}
+p.MsoIndex4, li.MsoIndex4, div.MsoIndex4
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.45pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;}
+p.MsoIndex5, li.MsoIndex5, div.MsoIndex5
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:56.6pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;}
+p.MsoIndex6, li.MsoIndex6, div.MsoIndex6
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:70.75pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;}
+p.MsoIndex7, li.MsoIndex7, div.MsoIndex7
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:84.9pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;}
+p.MsoIndex8, li.MsoIndex8, div.MsoIndex8
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:80.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-10.0pt;
+	mso-pagination:widow-orphan;
+	tab-stops:right dotted 198.0pt;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.MsoIndex9, li.MsoIndex9, div.MsoIndex9
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:90.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-10.0pt;
+	mso-pagination:widow-orphan;
+	tab-stops:right dotted 198.0pt;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:黑体;
+	text-transform:uppercase;
+	mso-ansi-language:EN-GB;
+	font-weight:bold;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:19.85pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:黑体;
+	font-variant:small-caps;
+	mso-ansi-language:EN-GB;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:1.0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:黑体;
+	mso-ansi-language:EN-GB;
+	mso-bidi-font-style:italic;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:30.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:黑体;
+	mso-ansi-language:EN-GB;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:40.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:9.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"TOC 5";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:50.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:9.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:9.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:70.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:9.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:80.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:9.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.MsoNormalIndent, li.MsoNormalIndent, div.MsoNormalIndent
+	{mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:35.4pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:22.7pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-22.7pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	tab-stops:center 212.6pt right 425.2pt;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	tab-stops:center 212.6pt right 425.2pt;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.MsoIndexHeading, li.MsoIndexHeading, div.MsoIndexHeading
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:"Index 1";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;}
+span.MsoFootnoteReference
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:8.0pt;
+	position:relative;
+	top:-3.0pt;
+	mso-text-raise:3.0pt;}
+span.MsoCommentReference
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:8.0pt;}
+p.MsoToaHeading, li.MsoToaHeading, div.MsoToaHeading
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	color:black;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{mso-style-unhide:no;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-indent:19.5pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:楷体_GB2312;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;}
+p.MsoDate, li.MsoDate, div.MsoDate
+	{mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:5.0pt;
+	margin-bottom:.0001pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:0cm;
+	mso-para-margin-left:25.0gd;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{mso-style-unhide:no;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:5.65pt;
+	margin-bottom:0cm;
+	margin-left:5.65pt;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	mso-style-parent:"";
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:navy;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"Comment Text";
+	mso-style-next:"Comment Text";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:9.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.APPROBATION, li.APPROBATION, div.APPROBATION
+	{mso-style-name:APPROBATION;
+	mso-style-unhide:no;
+	margin-top:1.2pt;
+	margin-right:0cm;
+	margin-bottom:1.2pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;}
+p.CNOMDOC, li.CNOMDOC, div.CNOMDOC
+	{mso-style-name:C_NOM_DOC;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:22.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	text-transform:uppercase;
+	mso-ansi-language:FR;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.CNOMPROGRAMMME, li.CNOMPROGRAMMME, div.CNOMPROGRAMMME
+	{mso-style-name:C_NOM_PROGRAMMME;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:16.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;}
+p.CONTENU, li.CONTENU, div.CONTENU
+	{mso-style-name:CONTENU;
+	mso-style-unhide:no;
+	margin-top:2.4pt;
+	margin-right:0cm;
+	margin-bottom:2.4pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;}
+p.DIFFUSION, li.DIFFUSION, div.DIFFUSION
+	{mso-style-name:DIFFUSION;
+	mso-style-unhide:no;
+	mso-style-parent:CONTENU;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;}
+p.MOTCLE, li.MOTCLE, div.MOTCLE
+	{mso-style-name:MOTCLE;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;}
+p.TNOMPROGRAMME, li.TNOMPROGRAMME, div.TNOMPROGRAMME
+	{mso-style-name:T_NOM_PROGRAMME;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.TTITRE, li.TTITRE, div.TTITRE
+	{mso-style-name:T_TITRE;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:13.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.TTYPEDOC, li.TTYPEDOC, div.TTYPEDOC
+	{mso-style-name:T_TYPE_DOC;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.a, li.a, div.a
+	{mso-style-name:a;
+	mso-style-unhide:no;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-22.7pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.abbreviations, li.abbreviations, div.abbreviations
+	{mso-style-name:abbreviations;
+	mso-style-unhide:no;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:68.05pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-51.05pt;
+	mso-pagination:widow-orphan;
+	tab-stops:70.9pt;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.ALINEANiveau1, li.ALINEANiveau1, div.ALINEANiveau1
+	{mso-style-name:"ALINEA Niveau 1";
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:1.0cm;
+	margin-bottom:0cm;
+	margin-left:2.0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-7.2pt;
+	line-height:15.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan lines-together;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.ALINEANiveau2, li.ALINEANiveau2, div.ALINEANiveau2
+	{mso-style-name:"ALINEA Niveau 2";
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:1.0cm;
+	margin-bottom:0cm;
+	margin-left:3.0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-7.1pt;
+	line-height:15.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan lines-together;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.BASDEPAGE, li.BASDEPAGE, div.BASDEPAGE
+	{mso-style-name:BASDEPAGE;
+	mso-style-unhide:no;
+	margin-top:1.2pt;
+	margin-right:0cm;
+	margin-bottom:1.2pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.bottomtitle, li.bottomtitle, div.bottomtitle
+	{mso-style-name:"bottom title";
+	mso-style-unhide:no;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	mso-element:frame;
+	mso-element-frame-hspace:7.1pt;
+	mso-element-wrap:auto;
+	mso-element-anchor-horizontal:column;
+	mso-element-top:bottom;
+	mso-height-rule:exactly;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.center0li, li.center0li, div.center0li
+	{mso-style-name:"center 0li";
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.center1li, li.center1li, div.center1li
+	{mso-style-name:"center 1li";
+	mso-style-unhide:no;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.centertitle, li.centertitle, div.centertitle
+	{mso-style-name:"center title";
+	mso-style-unhide:no;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	mso-element:frame;
+	mso-element-frame-hspace:7.1pt;
+	mso-element-wrap:auto;
+	mso-element-anchor-horizontal:column;
+	mso-element-top:middle;
+	mso-height-rule:exactly;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.CRQ, li.CRQ, div.CRQ
+	{mso-style-name:CRQ;
+	mso-style-unhide:no;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:20.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.drawingname, li.drawingname, div.drawingname
+	{mso-style-name:"drawing name";
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.figure, li.figure, div.figure
+	{mso-style-name:figure;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	mso-border-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.figuretitle, li.figuretitle, div.figuretitle
+	{mso-style-name:"figure title";
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.FINDOC, li.FINDOC, div.FINDOC
+	{mso-style-name:FIN_DOC;
+	mso-style-unhide:no;
+	margin-top:20.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	text-align:center;
+	text-indent:0cm;
+	line-height:72.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	text-transform:uppercase;
+	mso-ansi-language:FR;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.formulaire, li.formulaire, div.formulaire
+	{mso-style-name:formulaire;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.Graphique, li.Graphique, div.Graphique
+	{mso-style-name:Graphique;
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:1.0cm;
+	margin-bottom:0cm;
+	margin-left:1.0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan lines-together;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.Image, li.Image, div.Image
+	{mso-style-name:Image;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;}
+p.indentbullet, li.indentbullet, div.indentbullet
+	{mso-style-name:"indent bullet";
+	mso-style-unhide:no;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-14.0pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Tms Rmn","serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	color:black;}
+p.indentpara, li.indentpara, div.indentpara
+	{mso-style-name:"indent para";
+	mso-style-unhide:no;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Tms Rmn","serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	color:black;}
+p.legende, li.legende, div.legende
+	{mso-style-name:legende;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:FR;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.legendelegende, li.legendelegende, div.legendelegende
+	{mso-style-name:legendelegende;
+	mso-style-unhide:no;
+	mso-style-parent:legende;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	text-transform:uppercase;
+	mso-ansi-language:FR;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.list10li, li.list10li, div.list10li
+	{mso-style-name:"list 1 0li";
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:22.7pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-22.7pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.list11li, li.list11li, div.list11li
+	{mso-style-name:"list 1 1li";
+	mso-style-unhide:no;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:22.7pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-22.7pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.list20li, li.list20li, div.list20li
+	{mso-style-name:"list 2 0li";
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-22.7pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.list21li, li.list21li, div.list21li
+	{mso-style-name:"list 2 1li";
+	mso-style-unhide:no;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-22.7pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.list30li, li.list30li, div.list30li
+	{mso-style-name:"list 3 0li";
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:68.05pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-22.7pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.list31li, li.list31li, div.list31li
+	{mso-style-name:"list 3 1li";
+	mso-style-unhide:no;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:68.05pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-22.7pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.list40li, li.list40li, div.list40li
+	{mso-style-name:"list 4 0li";
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:90.7pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-22.7pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.list41li, li.list41li, div.list41li
+	{mso-style-name:"list 4 1li";
+	mso-style-unhide:no;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:90.7pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-22.7pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.list50li, li.list50li, div.list50li
+	{mso-style-name:"list 5 0li";
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:4.0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-22.7pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.list51li, li.list51li, div.list51li
+	{mso-style-name:"list 5 1li";
+	mso-style-unhide:no;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:4.0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-22.7pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.list60li, li.list60li, div.list60li
+	{mso-style-name:"list 6 0li";
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:136.1pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-22.7pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.list61li, li.list61li, div.list61li
+	{mso-style-name:"list 6 1li";
+	mso-style-unhide:no;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:136.1pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-22.7pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.Listeniveau1, li.Listeniveau1, div.Listeniveau1
+	{mso-style-name:"Liste niveau 1";
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:1.0cm;
+	margin-bottom:0cm;
+	margin-left:2.0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-2.0cm;
+	line-height:15.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan lines-together;
+	tab-stops:right 49.65pt left 56.75pt;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.Listeniveau2, li.Listeniveau2, div.Listeniveau2
+	{mso-style-name:"Liste niveau 2";
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:1.0cm;
+	margin-bottom:0cm;
+	margin-left:85.1pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-85.1pt;
+	line-height:15.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan lines-together;
+	tab-stops:right 78.0pt left 85.1pt;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.Listeniveau3, li.Listeniveau3, div.Listeniveau3
+	{mso-style-name:"Liste niveau 3";
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:1.0cm;
+	margin-bottom:0cm;
+	margin-left:4.0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-4.0cm;
+	line-height:15.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan lines-together;
+	tab-stops:right 106.35pt left 4.0cm;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;}
+p.LOGO, li.LOGO, div.LOGO
+	{mso-style-name:LOGO;
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.Nom, li.Nom, div.Nom
+	{mso-style-name:Nom;
+	mso-style-unhide:no;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:24.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:FR;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.Normal0li, li.Normal0li, div.Normal0li
+	{mso-style-name:"Normal 0li ";
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;}
+p.PageGraphique, li.PageGraphique, div.PageGraphique
+	{mso-style-name:"Page Graphique";
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:1.0cm;
+	margin-bottom:0cm;
+	margin-left:1.0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan lines-together;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.pagejump, li.pagejump, div.pagejump
+	{mso-style-name:"page jump";
+	mso-style-unhide:no;
+	mso-style-parent:"Normal 0li ";
+	mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	page-break-before:always;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;}
+p.paragraph, li.paragraph, div.paragraph
+	{mso-style-name:paragraph;
+	mso-style-unhide:no;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Tms Rmn","serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	color:black;}
+p.PARAGRAPHENiveau5, li.PARAGRAPHENiveau5, div.PARAGRAPHENiveau5
+	{mso-style-name:"PARAGRAPHE Niveau 5";
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:1.0cm;
+	margin-bottom:0cm;
+	margin-left:6.0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:15.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan lines-together;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;}
+p.Programme, li.Programme, div.Programme
+	{mso-style-name:Programme;
+	mso-style-unhide:no;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;}
+p.RefDoc, li.RefDoc, div.RefDoc
+	{mso-style-name:Ref_Doc;
+	mso-style-unhide:no;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:70.9pt;
+	margin-bottom:.0001pt;
+	text-indent:-42.5pt;
+	mso-pagination:widow-orphan;
+	tab-stops:70.9pt;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.REFUS, li.REFUS, div.REFUS
+	{mso-style-name:REFUS;
+	mso-style-unhide:no;
+	margin-top:1.2pt;
+	margin-right:0cm;
+	margin-bottom:1.2pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Univers (WN)","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;}
+p.remarque, li.remarque, div.remarque
+	{mso-style-name:remarque;
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:1.0cm;
+	margin-bottom:0cm;
+	margin-left:3.0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-2.0cm;
+	line-height:15.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan lines-together;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.Ret2, li.Ret2, div.Ret2
+	{mso-style-name:Ret_2;
+	mso-style-unhide:no;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:2.0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.Retrait2, li.Retrait2, div.Retrait2
+	{mso-style-name:"Retrait 2";
+	mso-style-unhide:no;
+	mso-style-parent:"Normal Indent";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:2.0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Helv","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;}
+p.SSTitre1, li.SSTitre1, div.SSTitre1
+	{mso-style-name:SSTitre1;
+	mso-style-unhide:no;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:1.0cm;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	text-decoration:underline;
+	text-underline:single;}
+p.tableau1, li.tableau1, div.tableau1
+	{mso-style-name:"tableau 1";
+	mso-style-unhide:no;
+	margin-top:6.0pt;
+	margin-right:8.5pt;
+	margin-bottom:6.0pt;
+	margin-left:8.5pt;
+	text-align:center;
+	mso-pagination:widow-orphan lines-together;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.tableau2, li.tableau2, div.tableau2
+	{mso-style-name:"tableau 2";
+	mso-style-unhide:no;
+	mso-style-parent:"tableau 1";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;}
+p.tableau3, li.tableau3, div.tableau3
+	{mso-style-name:"tableau 3";
+	mso-style-unhide:no;
+	mso-style-parent:"tableau 2";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;}
+p.tableau4, li.tableau4, div.tableau4
+	{mso-style-name:"tableau 4";
+	mso-style-unhide:no;
+	mso-style-parent:"tableau 2";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:1.0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;}
+p.tableau5, li.tableau5, div.tableau5
+	{mso-style-name:"tableau 5";
+	mso-style-unhide:no;
+	mso-style-parent:"tableau 4";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;}
+p.tableau6, li.tableau6, div.tableau6
+	{mso-style-name:"tableau 6";
+	mso-style-unhide:no;
+	mso-style-parent:"tableau 4";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:2.0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;}
+p.TableauG, li.TableauG, div.TableauG
+	{mso-style-name:Tableau_G;
+	mso-style-unhide:no;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:5.65pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.tampon, li.tampon, div.tampon
+	{mso-style-name:tampon;
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:1.0cm;
+	margin-bottom:0cm;
+	margin-left:1.0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:15.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan lines-together;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;}
+p.Termin, li.Termin, div.Termin
+	{mso-style-name:Termin;
+	mso-style-unhide:no;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:1.0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:EN-GB;}
+p.TiersGraphique, li.TiersGraphique, div.TiersGraphique
+	{mso-style-name:"Tiers Graphique";
+	mso-style-unhide:no;
+	mso-style-parent:"Page Graphique";
+	margin-top:0cm;
+	margin-right:1.0cm;
+	margin-bottom:0cm;
+	margin-left:1.0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:200.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan lines-together;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.a0, li.a0, div.a0
+	{mso-style-name:前言、引言标题;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-style-next:Normal;
+	margin-top:32.0pt;
+	margin-right:0cm;
+	margin-bottom:28.0pt;
+	margin-left:18.0pt;
+	text-align:center;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	tab-stops:list 18.0pt;
+	background:white;
+	font-size:16.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:黑体;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.a1, li.a1, div.a1
+	{mso-style-name:段;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:10.0pt;
+	mso-char-indent-count:2.0;
+	mso-pagination:widow-orphan;
+	text-autospace:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:宋体;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-no-proof:yes;}
+p.a2, li.a2, div.a2
+	{mso-style-name:章标题;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-style-next:段;
+	margin-top:2.5pt;
+	margin-right:0cm;
+	margin-bottom:2.5pt;
+	margin-left:18.0pt;
+	mso-para-margin-top:.5gd;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:.5gd;
+	mso-para-margin-left:18.0pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	mso-list:l1 level2 lfo1;
+	tab-stops:list 18.0pt;
+	font-size:10.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:黑体;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.a3, li.a3, div.a3
+	{mso-style-name:一级条标题;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-style-next:段;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-36.0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	mso-list:l1 level3 lfo1;
+	tab-stops:list 36.0pt;
+	font-size:10.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:黑体;}
+p.a4, li.a4, div.a4
+	{mso-style-name:二级条标题;
+	mso-style-unhide:no;
+	mso-style-parent:一级条标题;
+	mso-style-next:段;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:54.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-54.0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	tab-stops:list 18.0pt 54.0pt;
+	font-size:10.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:黑体;}
+p.a5, li.a5, div.a5
+	{mso-style-name:封面标准文稿编辑信息;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	margin-top:9.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:9.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:宋体;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.a6, li.a6, div.a6
+	{mso-style-name:三级条标题;
+	mso-style-unhide:no;
+	mso-style-parent:二级条标题;
+	mso-style-next:段;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	tab-stops:list 54.0pt;
+	font-size:10.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:黑体;}
+p.a7, li.a7, div.a7
+	{mso-style-name:实施日期;
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:54.0pt;
+	margin-bottom:.0001pt;
+	text-align:right;
+	text-indent:-54.0pt;
+	mso-pagination:widow-orphan;
+	tab-stops:list 18.0pt 54.0pt;
+	mso-element:frame;
+	mso-element-frame-width:200.0pt;
+	mso-element-frame-height:23.65pt;
+	mso-element-frame-vspace:9.0pt;
+	mso-element-wrap:around;
+	mso-element-anchor-horizontal:margin;
+	mso-element-left:right;
+	mso-element-top:675.55pt;
+	mso-height-rule:exactly;
+	mso-element-anchor-lock:locked;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:黑体;}
+p.a8, li.a8, div.a8
+	{mso-style-name:正文表标题;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-style-next:段;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:黑体;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.a9, li.a9, div.a9
+	{mso-style-name:注：;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-style-next:段;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	text-autospace:none;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:宋体;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.111, li.111, div.111
+	{mso-style-name:111;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:宋体;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.M3CharCharChar, li.M3CharCharChar, div.M3CharCharChar
+	{mso-style-name:"M3 Char Char Char";
+	mso-style-unhide:no;
+	mso-style-link:"M3 Char Char Char Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:150%;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	color:black;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.M3CharCharCharChar
+	{mso-style-name:"M3 Char Char Char Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"M3 Char Char Char";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:宋体;
+	mso-ascii-font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:宋体;
+	color:black;
+	mso-font-kerning:1.0pt;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.Char, li.Char, div.Char
+	{mso-style-name:"普通段落 Char";
+	mso-style-update:auto;
+	mso-style-unhide:no;
+	mso-style-link:"普通段落 Char Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.25pt;
+	margin-bottom:.0001pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:0cm;
+	mso-para-margin-left:1.77gd;
+	mso-para-margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:24.0pt;
+	mso-char-indent-count:2.0;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:仿宋_GB2312;}
+span.CharChar
+	{mso-style-name:"普通段落 Char Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"普通段落 Char";
+	mso-ansi-font-size:12.0pt;
+	font-family:仿宋_GB2312;
+	mso-fareast-font-family:仿宋_GB2312;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:AR-SA;}
+p.aa, li.aa, div.aa
+	{mso-style-name:表头;
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:.5gd;
+	mso-para-margin-left:0cm;
+	text-align:center;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:仿宋_GB2312;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-fareast-font-family:宋体;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("Help_latest_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("Help_latest_files/header.htm") fcs;
+	mso-endnote-separator:url("Help_latest_files/header.htm") es;
+	mso-endnote-continuation-separator:url("Help_latest_files/header.htm") ecs;}
+@page WordSection1
+	{size:21.0cm 842.0pt;
+	margin:72.0pt 70.35pt 72.0pt 60.0pt;
+	mso-header-margin:28.4pt;
+	mso-footer-margin:42.55pt;
+	mso-header:url("Help_latest_files/header.htm") h1;
+	mso-footer:url("Help_latest_files/header.htm") f1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:476070372;
+	mso-list-type:hybrid;
+	mso-list-template-ids:604543312 814226602 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-start-at:4;
+	mso-level-text:%1、;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:19.5pt;
+	text-indent:-19.5pt;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:63.0pt;
+	text-indent:-21.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:84.0pt;
+	text-indent:-21.0pt;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%5\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:105.0pt;
+	text-indent:-21.0pt;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:126.0pt;
+	text-indent:-21.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:147.0pt;
+	text-indent:-21.0pt;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%8\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-21.0pt;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:189.0pt;
+	text-indent:-21.0pt;}
+@list l1
+	{mso-list-id:888959509;
+	mso-list-template-ids:-649196142;}
+@list l1:level1
+	{mso-level-start-at:6;
+	mso-level-text:%1;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l1:level2
+	{mso-level-start-at:6;
+	mso-level-style-link:章标题;
+	mso-level-text:"%1\.%2";
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l1:level3
+	{mso-level-style-link:一级条标题;
+	mso-level-text:"%1\.%2\.%3";
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	margin-left:36.0pt;
+	text-indent:-36.0pt;}
+@list l1:level4
+	{mso-level-text:"%1\.%2\.%3\.%4";
+	mso-level-tab-stop:54.0pt;
+	mso-level-number-position:left;
+	margin-left:54.0pt;
+	text-indent:-54.0pt;}
+@list l1:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5";
+	mso-level-tab-stop:54.0pt;
+	mso-level-number-position:left;
+	margin-left:54.0pt;
+	text-indent:-54.0pt;}
+@list l1:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6";
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-72.0pt;}
+@list l1:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7";
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-72.0pt;}
+@list l1:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
+	mso-level-tab-stop:90.0pt;
+	mso-level-number-position:left;
+	margin-left:90.0pt;
+	text-indent:-90.0pt;}
+@list l1:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+	mso-level-tab-stop:90.0pt;
+	mso-level-number-position:left;
+	margin-left:90.0pt;
+	text-indent:-90.0pt;}
+@list l2
+	{mso-list-id:1092820949;
+	mso-list-type:hybrid;
+	mso-list-template-ids:665229056 -1949382612 -1052988808 1240081238 -553372184 1425703384 -546827136 -142561548 1311377096 -2130146936;}
+@list l2:level1
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%1;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level2
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%2;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level3
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%3;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level4
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%4;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level5
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%5;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level6
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%6;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level7
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level8
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%8;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level9
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%9;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l3
+	{mso-list-id:1868247694;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1557605782 -816562010 -1302059038 2085652498 -1993066674 912977762 972032612 -671170262 8132124 -1388162980;}
+@list l3:level1
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%1;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level2
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%2;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level3
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%3;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level4
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%4;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level5
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%5;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level6
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%6;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level7
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level8
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%8;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level9
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%9;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l4
+	{mso-list-id:2033070637;
+	mso-list-type:hybrid;
+	mso-list-template-ids:665229056 -1949382612 -1052988808 1240081238 -553372184 1425703384 -546827136 -142561548 1311377096 -2130146936;}
+@list l4:level1
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%1;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l4:level2
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%2;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l4:level3
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%3;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l4:level4
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%4;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l4:level5
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%5;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l4:level6
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%6;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l4:level7
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l4:level8
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%8;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l4:level9
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%9;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l5
+	{mso-list-id:2089112274;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1251931678 1640631820 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l5:level1
+	{mso-level-number-format:decimal-enclosed-circle;
+	mso-level-text:%1;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l5:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;}
+@list l5:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:63.0pt;
+	text-indent:-21.0pt;}
+@list l5:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:84.0pt;
+	text-indent:-21.0pt;}
+@list l5:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%5\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:105.0pt;
+	text-indent:-21.0pt;}
+@list l5:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:126.0pt;
+	text-indent:-21.0pt;}
+@list l5:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:147.0pt;
+	text-indent:-21.0pt;}
+@list l5:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%8\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-21.0pt;}
+@list l5:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:189.0pt;
+	text-indent:-21.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2049">
+  <v:stroke endarrow="block"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-CN link=blue vlink=purple style='tab-interval:36.0pt'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:宋体'>1</span></b><b><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>、 蓝牙连接不上怎么办？（连接<span
+lang=EN-GB>/</span>重连失败或连接<span lang=EN-GB>/</span>重连速度很慢）<span lang=EN-GB><o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>答：由于蓝牙无线连接存在信号干扰的问题，可能每次连接的时间会不等，如果长时间连接不上，可以尝试如下方法后再重连：<span
+lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;line-height:150%;mso-pagination:none;
+mso-list:l3 level1 lfo3;tab-stops:list 36.0pt;layout-grid-mode:char;punctuation-wrap:
+hanging;text-autospace:ideograph-numeric ideograph-other;mso-vertical-align-alt:
+auto'><![if !supportLists]><span lang=EN-GB style='font-size:12.0pt;line-height:
+150%;font-family:宋体;mso-bidi-font-family:宋体'><span style='mso-list:Ignore'>①<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>关闭蓝牙<span lang=EN-GB>15</span>秒后，再重启蓝牙；<span
+lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;line-height:150%;mso-pagination:none;
+mso-list:l3 level1 lfo3;tab-stops:list 36.0pt;layout-grid-mode:char;punctuation-wrap:
+hanging;text-autospace:ideograph-numeric ideograph-other;mso-vertical-align-alt:
+auto'><![if !supportLists]><span lang=EN-GB style='font-size:12.0pt;line-height:
+150%;font-family:宋体;mso-bidi-font-family:宋体'><span style='mso-list:Ignore'>②<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>重启手机；<span lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt;line-height:150%;mso-pagination:none;
+mso-list:l3 level1 lfo3;tab-stops:list 36.0pt;layout-grid-mode:char;punctuation-wrap:
+hanging;text-autospace:ideograph-numeric ideograph-other;mso-vertical-align-alt:
+auto'><![if !supportLists]><span lang=EN-GB style='font-size:12.0pt;line-height:
+150%;font-family:宋体;mso-bidi-font-family:宋体'><span style='mso-list:Ignore'>③<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>注销手环或注销账户后再登陆。<span
+lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-justify:
+inter-ideograph;line-height:150%;mso-pagination:none;layout-grid-mode:char;
+punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;
+mso-vertical-align-alt:auto'><span lang=EN-GB style='font-size:12.0pt;
+line-height:150%;font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:宋体'>2</span></b><b><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>、 配对时无法搜索到手环？<span
+lang=EN-GB><o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>答：因为手环蓝牙广播时没有被手机搜索到。请确保手环处于有电，并激活的状态，且手环没有被其它手机已经连接上。然后将手环靠近手机，如果仍然无效，请关闭蓝牙后，间隔一定时间再重启。<span
+lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:宋体'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:宋体'>3</span></b><b><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>、 蓝牙连接要一直开启吗？关了的话还有数据吗？<span
+lang=EN-GB><o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;mso-bidi-font-weight:
+bold'>答：没有上传数据前，运动与睡眠的数据会保留在手环主机上。<span style='color:black'>当</span>手机和手环的蓝牙连接成功时，手环数据会自动上传到手机端。但手环可存储大约<span
+lang=EN-GB>2</span>周的数据，空间存满后，系统会自动覆盖最早的数据。所以注意及时上传数据到<span lang=EN-GB>dulife</span>上。<span
+lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:150%;layout-grid-mode:char'><span style='font-size:12.0pt;
+line-height:150%;font-family:宋体;mso-bidi-font-weight:bold'>注意：如果是开启了来电提醒，防丢功能，则必须保持蓝牙处于连接状态。<span
+lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:宋体'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:宋体'>4</span></b><b><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>、 为何主机不能充电？<span
+lang=EN-GB><o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%;mso-pagination:none;mso-list:l4 level1 lfo2;tab-stops:list 36.0pt;
+layout-grid-mode:char;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;
+mso-vertical-align-alt:auto'><![if !supportLists]><span lang=EN-GB
+style='font-size:12.0pt;line-height:150%;font-family:宋体;mso-bidi-font-family:
+宋体'><span style='mso-list:Ignore'>①<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>请确认主机插入的方向是否正确。<span lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:150%;mso-pagination:
+none;layout-grid-mode:char;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;
+mso-vertical-align-alt:auto'><span style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>注意：主机须按下图箭头所示的方向插入充电器，主机上的模式图标要和充电器上的方向对上。<span lang=EN-GB><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><!--[if gte vml 1]><v:group
+ id="Group_x0020_3" o:spid="_x0000_s1558" style='position:absolute;
+ margin-left:17.9pt;margin-top:8.8pt;width:234.65pt;height:103.35pt;z-index:251657728'
+ coordsize="35623,15525">
+ <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75"
+  o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <v:stroke joinstyle="miter"/>
+  <v:formulas>
+   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+   <v:f eqn="sum @0 1 0"/>
+   <v:f eqn="sum 0 0 @1"/>
+   <v:f eqn="prod @2 1 2"/>
+   <v:f eqn="prod @3 21600 pixelWidth"/>
+   <v:f eqn="prod @3 21600 pixelHeight"/>
+   <v:f eqn="sum @0 0 1"/>
+   <v:f eqn="prod @6 1 2"/>
+   <v:f eqn="prod @7 21600 pixelWidth"/>
+   <v:f eqn="sum @8 21600 0"/>
+   <v:f eqn="prod @7 21600 pixelHeight"/>
+   <v:f eqn="sum @10 21600 0"/>
+  </v:formulas>
+  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+  <o:lock v:ext="edit" aspectratio="t"/>
+ </v:shapetype><v:shape id="Picture_x0020_2" o:spid="_x0000_s1559" type="#_x0000_t75"
+  style='position:absolute;width:35623;height:15525;visibility:visible'
+  fillcolor="#4f81bd">
+  <v:imagedata src="Help_latest_files/image001.png" o:title=""/>
+  <v:shadow color="#eeece1"/>
+ </v:shape><v:roundrect id="Rounded_x0020_Rectangle_x0020_3" o:spid="_x0000_s1560"
+  style='position:absolute;left:23971;top:8397;width:10811;height:2604;
+  visibility:visible;v-text-anchor:middle' arcsize="10923f" filled="f"
+  strokecolor="red" strokeweight="2pt">
+  <v:textbox style='mso-next-textbox:#Rounded_x0020_Rectangle_x0020_3'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:roundrect><v:roundrect id="Rounded_x0020_Rectangle_x0020_5" o:spid="_x0000_s1561"
+  style='position:absolute;left:23860;top:5080;width:10811;height:2381;
+  rotation:-871801fd;visibility:visible;v-text-anchor:middle' arcsize="10923f"
+  filled="f" strokecolor="red" strokeweight="2pt">
+  <v:textbox style='mso-next-textbox:#Rounded_x0020_Rectangle_x0020_5'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:roundrect></v:group><![endif]--><![if !vml]><span style='mso-ignore:vglayout;
+position:absolute;z-index:251657728;margin-left:24px;margin-top:12px;
+width:313px;height:138px'><img width=313 height=138
+src="Help_latest_files/image002.gif" v:shapes="Group_x0020_3 Picture_x0020_2 Rounded_x0020_Rectangle_x0020_3 Rounded_x0020_Rectangle_x0020_5"></span><![endif]><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:宋体'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:150%;layout-grid-mode:
+char'><span lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:宋体'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:宋体'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:150%;mso-pagination:
+none;layout-grid-mode:char;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;
+mso-vertical-align-alt:auto'><span lang=EN-GB style='font-size:12.0pt;
+line-height:150%;font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:150%;mso-pagination:
+none;layout-grid-mode:char;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;
+mso-vertical-align-alt:auto'><span lang=EN-GB style='font-size:12.0pt;
+line-height:150%;font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:150%;mso-pagination:
+none;layout-grid-mode:char;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;
+mso-vertical-align-alt:auto'><span lang=EN-GB style='font-size:12.0pt;
+line-height:150%;font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%;mso-pagination:none;mso-list:l4 level1 lfo2;tab-stops:list 36.0pt;
+layout-grid-mode:char;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;
+mso-vertical-align-alt:auto'><![if !supportLists]><span lang=EN-GB
+style='font-size:12.0pt;line-height:150%;font-family:宋体;mso-bidi-font-family:
+宋体'><span style='mso-list:Ignore'>②<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>当主机电量低于<span lang=EN-GB>3.6v</span>时，会有一段时间的电池预充时间。<span
+lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;line-height:150%;mso-pagination:
+none;layout-grid-mode:char;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;
+mso-vertical-align-alt:auto'><span style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>注意：一般插上充电器充电<span lang=EN-GB>3~5</span>分钟后，可以进入正常的充电状态（充电指示灯开始正常指示）。<span
+lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-size:12.0pt;
+line-height:150%;font-family:宋体'>5</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>、 充电时<span
+lang=EN-GB>LED</span>灯如何显示？<span lang=EN-GB><o:p></o:p></span></span></b></p>
+
+<p class=a1 style='text-indent:8.7pt;mso-char-indent-count:.83;line-height:
+150%;layout-grid-mode:char;mso-layout-grid-align:none'><span lang=EN-US><!--[if gte vml 1]><v:shape
+ id="图片_x0020_1" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:297.75pt;
+ height:224.25pt;visibility:visible'>
+ <v:imagedata src="Help_latest_files/image003.png" o:title="" cropbottom="18590f"/>
+</v:shape><![endif]--><![if !vml]><img width=397 height=299
+src="Help_latest_files/image004.jpg" v:shapes="图片_x0020_1"><![endif]></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%;mso-pagination:none;mso-list:l2 level1 lfo6;tab-stops:list 36.0pt;
+layout-grid-mode:char;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;
+mso-vertical-align-alt:auto'><![if !supportLists]><span lang=EN-GB
+style='font-size:12.0pt;line-height:150%;font-family:宋体;mso-bidi-font-family:
+宋体'><span style='mso-list:Ignore'>①<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>预充电：当<span lang=EN-GB>Boom Band</span>电池完全没电时，充电后，主机需要几分钟才会有反应（<span
+lang=EN-GB>LED</span>灯指示）。<span lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%;mso-pagination:none;mso-list:l2 level1 lfo6;tab-stops:list 36.0pt;
+layout-grid-mode:char;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;
+mso-vertical-align-alt:auto'><![if !supportLists]><span lang=EN-GB
+style='font-size:12.0pt;line-height:150%;font-family:宋体;mso-bidi-font-family:
+宋体'><span style='mso-list:Ignore'>②<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>充电中：按充满进度（取整原则）闪灯，以<span lang=EN-GB>400ms</span>间隔闪烁。<span
+lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%;mso-pagination:none;mso-list:l2 level1 lfo6;tab-stops:list 36.0pt;
+layout-grid-mode:char;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;
+mso-vertical-align-alt:auto'><![if !supportLists]><span lang=EN-GB
+style='font-size:12.0pt;line-height:150%;font-family:宋体;mso-bidi-font-family:
+宋体'><span style='mso-list:Ignore'>③<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:150%;
+font-family:宋体'>充满电：<span lang=EN-GB>5</span>灯常亮。 <span lang=EN-GB><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-size:12.0pt;
+line-height:150%;font-family:宋体;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:宋体;color:black'>6</span></b><b><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;color:black'>、 手环一直戴着，蓝牙辐射会不会对人体造成伤害？<span
+lang=EN-GB><o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;mso-bidi-font-weight:
+bold'>答：<span lang=EN-GB>BB</span>环的蓝牙辐射值远小于美国<span lang=EN-GB>FCC</span>标准，基本可以忽略不计，长期佩戴不会对人体造成辐射伤害。相反，腕带特有的法藤“水溶钛硅”材料长期佩戴可以有效的缓解运动疲劳，促进血液循环。<span
+lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-size:12.0pt;
+line-height:150%;font-family:宋体;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:宋体'>7</span></b><b><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>、 怎么手环会自动切换运动和睡眠模式吗？为什么有时会自己进入睡眠模式？<span
+lang=EN-GB><o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;mso-bidi-font-weight:
+bold'>答：</span><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>不会，目前<span
+lang=EN-GB>BB</span>环只能手动切换模式。自己进入睡眠模式可能因为某些动作被错误识别为敲击命令而进入了睡眠模式（例如洗手，鼓掌，刷牙等），用户手动敲击切回运动模式即可。<span
+lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-size:12.0pt;
+line-height:150%;font-family:宋体;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:宋体'>8</span></b><b><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>、 如果一天内睡眠状态有多次，<span
+lang=EN-GB>dulife</span>会累积记录么？</span></b><span lang=EN-GB style='font-size:
+12.0pt;line-height:150%;font-family:宋体'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>答：不会，<span lang=EN-GB>dulife</span>只会记录当天<span
+lang=EN-GB>(24</span>小时内<span lang=EN-GB>)</span>睡眠时间最长的一次。<span lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-size:12.0pt;
+line-height:150%;font-family:宋体;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=a1 style='text-indent:0cm;mso-char-indent-count:0;line-height:150%;
+layout-grid-mode:char;mso-layout-grid-align:none'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:12.0pt;line-height:150%;mso-hansi-font-family:
+宋体;mso-ansi-language:EN-GB'>9</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;line-height:150%;mso-hansi-font-family:宋体'>、 设置了来电提醒，来电时手环没反应？<span
+lang=EN-US><o:p></o:p></span></span></b></p>
+
+<p class=a1 style='text-indent:0cm;mso-char-indent-count:0;line-height:150%;
+layout-grid-mode:char;mso-layout-grid-align:none'><span style='font-size:12.0pt;
+line-height:150%;mso-hansi-font-family:宋体'>答：打开设置里的“来电提醒”开关后，需要点击进入“来电提醒”，添加来电提醒名单，最多只能添加<span
+lang=EN-US>5</span>个联系人。<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:宋体;mso-ansi-language:EN-US;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:宋体'>10</span></b><b><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>、 异常振动或闪灯？</span></b><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:宋体'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>答：该现象可能是由于开启了“手机防丢”，误触发导致。由于无线蓝牙连接信号会受各种干扰，蓝牙信号弱或断开连接时，手环便会振动。所以建议不需要时关闭该功能。如果长时间异常振动或闪灯，请考虑通过硬件<span
+lang=EN-GB>Reset</span>来进行恢复出厂设置。<span lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>（温馨提示：恢复出厂设置后，主机上的数据将会全部擦除，不可恢复。恢复出厂设置前，请先同步完数据）<span
+lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-size:12.0pt;
+line-height:150%;font-family:宋体;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=a1 style='text-indent:0cm;mso-char-indent-count:0;line-height:150%;
+layout-grid-mode:char;mso-layout-grid-align:none'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:12.0pt;line-height:150%;mso-hansi-font-family:
+宋体;mso-ansi-language:EN-GB'>11</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;line-height:150%;mso-hansi-font-family:宋体'>、 如何恢复出厂设置？<span
+lang=EN-US><o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体;mso-ascii-font-family:
+"Times New Roman"'>答：</span><span lang=EN-GB style='font-size:12.0pt;
+line-height:150%;font-family:宋体'>Reset</span><span style='font-size:12.0pt;
+line-height:150%;font-family:宋体'>时须把主机按正确的方向装到充电器上，然后通过顶针或尖细的物品插入<span
+lang=EN-GB>Reset</span>小孔，轻轻顶下，会有<span lang=EN-GB>“</span>咚<span lang=EN-GB>”</span>的轻声反馈，主机会<span
+lang=EN-GB>5</span>灯齐闪，然后第<span lang=EN-GB>1</span>颗灯闪。<span lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>（温馨提示：恢复出厂设置后，主机上的数据将会全部擦除，不可恢复。恢复出厂设置前，请先同步完数据）<span
+lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-size:12.0pt;
+line-height:150%;font-family:宋体;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:宋体;mso-ansi-language:EN-US;mso-no-proof:yes'>12</span></b><b><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>、手环是否防水？</span></b><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:宋体'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><span
+style='font-size:12.0pt;line-height:150%;font-family:宋体'>答：手环采用密封防水设计，防水级别达到<span
+lang=EN-GB>IP67, </span>可防水溅，通常在洗脸洗手时都可正常使用<span lang=EN-GB>,</span>但不建议在游泳时佩戴。<span
+lang=EN-GB><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><span
+lang=EN-GB style='font-size:12.0pt;line-height:150%;font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:150%;layout-grid-mode:char'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-size:12.0pt;
+line-height:150%;font-family:宋体'>13</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;line-height:150%;font-family:宋体'>、<span
+lang=EN-GB>iOS</span>版本有没有来电和防丢提醒功能？<span lang=EN-GB><o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='margin-left:24.0pt;text-indent:-24.0pt;mso-char-indent-count:
+-2.0;line-height:150%;layout-grid-mode:char'><span style='font-size:12.0pt;
+line-height:150%;font-family:宋体'>答：由于<span lang=EN-GB>iOS</span>平台以及芯片的限制，所以<span
+lang=EN-GB>iOS</span>版本目前不支持来电和防丢提醒功能，后续会增加进去。<span lang=EN-GB>Android</span>版本能正常使用这些功能。<span
+lang=EN-GB><o:p></o:p></span></span></p>
+
+</div>
+
+</body>
+
+</html>

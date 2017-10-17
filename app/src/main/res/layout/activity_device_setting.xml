@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_height="48dp"
+        android:layout_width="match_parent">
+        <ImageButton
+            android:id="@+id/back"
+            android:onClick="backPressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_bg"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_previous"/>
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="@string/my_devices"
+            android:textColor="#404040"
+            style="@style/roboto_light"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <!-- Divider -->
+    <ImageView
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line"/>
+
+    <LinearLayout android:id="@+id/device_info_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="52dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/list_bg_top">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            <TextView android:id="@+id/device_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="@string/boom_band"
+                style="@style/roboto_light"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/unbind_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                style="@style/roboto_light"
+                android:text="@string/str_remove_devices"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/device_upgrade_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="52dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:animateLayoutChanges="true"
+        android:divider="?android:dividerHorizontal"
+        android:showDividers="middle"
+        android:orientation="vertical"
+        android:background="@drawable/list_bg_bottom">
+        <LinearLayout
+            android:layout_height="52dp"
+            android:layout_width="match_parent">
+            <TextView android:id="@+id/upgrade_status"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                style="@style/roboto_light"
+                android:layout_gravity="center_vertical"/>
+            <ImageView android:id="@+id/upgrade_action"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/upgrade_update"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/upgrade_progress_area"
+            android:layout_height="52dp"
+            android:layout_width="match_parent">
+            <ProgressBar android:id="@+id/upgrade_progress"
+                android:layout_height="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:max="100"/>
+            <TextView android:id="@+id/upgrade_progress_text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:minWidth="40dp"
+                style="@style/roboto_light"
+                android:gravity="right"/>
+        </LinearLayout>
+    </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/add_device_area"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@drawable/list_bg_single">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="@string/add_new_device"
+            style="@style/roboto_light"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_next_nomal" />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/debug_layout"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:onClick="debugClick"
+            android:background="@drawable/list_bg_single">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="Debug log"
+                style="@style/roboto_light"
+                android:textSize="16sp" />
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_next_nomal" />
+    </LinearLayout>
+</LinearLayout>

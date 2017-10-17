@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="insert new test sport data"
+            android:onClick="insertDataClick"
+            android:background="@drawable/btn_signin_bg_selector"
+            android:textColor="@android:color/white"
+            android:id="@+id/button2"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="clear log"
+            android:visibility="invisible"
+            android:onClick="debugClearClick"
+            android:background="@drawable/btn_signin_bg_selector"
+            android:textColor="@android:color/white"
+            android:id="@+id/button"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="refresh"
+            android:visibility="invisible"
+            android:onClick="refreshClick"
+            android:background="@drawable/btn_signin_bg_selector"
+            android:textColor="@android:color/white"
+            android:id="@+id/button"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:id="@+id/scrollView" android:layout_gravity="center_horizontal">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:textSize="10dp"
+                android:id="@+id/log_text_iew"/>
+    </ScrollView>
+</LinearLayout>

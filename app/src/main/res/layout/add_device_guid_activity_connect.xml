@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"          >
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/switch_layout">
+
+    <ImageButton
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:onClick="onBackClick"
+            android:background="@drawable/icon_bg"
+            android:src="@drawable/icon_previous" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_device_bluetooth"
+            android:layout_marginLeft="14dp"
+            android:textSize="16dp"
+            style="@style/roboto_light"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_centerVertical="true"
+            android:id="@+id/textView"/>
+    <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:track="@drawable/switch_track_holo_dark_jrd"
+            android:thumb="@drawable/switch_inner_holo_dark_jrd"
+            android:textOn="@string/switch_a_space"
+            android:textOff="@string/switch_a_space"
+            android:thumbTextPadding="12dp"
+            android:switchMinWidth="60dp"
+            android:switchPadding="16dp"
+            android:id="@+id/bluetooth_switch"/>
+
+</RelativeLayout>
+    <ImageView
+            android:id="@+id/title_divide_line"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_below="@id/switch_layout"
+            android:src="@drawable/divide_line"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_divide_line"
+            android:id="@+id/info_layout">
+
+
+    <TextView
+            android:id="@+id/device_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/add_device_guid_button_color"
+            style="@style/roboto_light"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:id="@+id/device_name_info_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/device_name_text_view"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="#e5e5e5"
+            android:text="@string/string_device_bluetooth_visible"
+            style="@style/roboto_light"
+            android:textSize="16sp"/>
+
+
+    <ImageView
+            android:id="@+id/device_name_divide_line"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@id/device_name_info_text_view"
+            android:scaleType="fitXY"
+            android:src="@drawable/divide_line"/>
+
+    <TextView
+            android:id="@+id/pair_device_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/device_name_divide_line"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/add_device_guid_button_color"
+            android:text="@string/string_device_bluetooth_paired_devices"
+            android:visibility="gone"
+            style="@style/roboto_light"
+            android:textSize="20sp"/>
+
+
+    <ImageView
+            android:id="@+id/pair_device_divide_line"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@id/pair_device_tip"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@drawable/divide_line"/>
+
+
+    <ListView
+            android:id="@+id/pair_device_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pair_device_divide_line"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:visibility="gone"
+            >
+    </ListView>
+
+    <TextView
+        android:id="@+id/available_device_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pair_device_list_view"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/add_device_guid_button_color"
+        android:text="@string/device_bind_available_devices"
+        style="@style/roboto_light"
+        android:textSize="16sp"/>
+
+
+
+    <ImageView
+            android:id="@+id/add_device_connect_tip_divide_line"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@id/available_device_tip"
+            android:scaleType="fitXY"
+            android:src="@drawable/divide_line"/>
+
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textSize="14sp"
+            android:layout_alignParentBottom = "true"
+            android:background="@color/bluetooth_search_button_bg"
+            android:textColor="@color/bluetooth_search_button_text"
+            android:id="@+id/scan_button"
+            />
+
+    <ProgressBar
+            android:id="@+id/add_device_connect_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_above="@id/scan_button"
+            android:layout_marginBottom="90dp"
+            android:layout_centerHorizontal="true">
+
+    </ProgressBar>
+
+        <ListView
+                android:id="@+id/device_info_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_device_connect_tip_divide_line"
+                android:layout_above="@id/scan_button"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@null"
+                >
+        </ListView>
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/open_bluetooth_tip_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/add_device_guid_button_color"
+            android:text="@string/string_device_bluetooth_tips"
+            android:visibility="invisible"
+            style="@style/roboto_light"
+            android:textSize="20sp"/>
+
+</RelativeLayout>

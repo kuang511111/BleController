@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    
+    <RelativeLayout
+        android:layout_height="42dp"
+        android:layout_width="match_parent">
+        
+        <ImageButton
+            android:id="@+id/reminder_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_bg"
+            android:src="@drawable/icon_previous" />
+        
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#656565"
+            android:text="@string/settings_reminders"
+            style="@style/roboto_light"
+            android:textSize="20sp"
+            android:textAppearance="@style/DrawerReminder.Head"/>
+    </RelativeLayout>
+    
+    <!-- My reminder sync information -->
+    <RelativeLayout
+        android:id="@+id/reminder_sync_waiting_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_sync_waiting"
+        android:visibility="gone" >
+        <TextView android:id="@+id/reminder_sync_waiting_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/str_sync_waiting_notify"
+            style="@style/roboto_light"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/reminder_sync_waiting_text"
+            android:background="@drawable/ic_sync_notify_help" />
+    </RelativeLayout>
+
+     <!-- Settings: divider -->
+    <ImageView
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_line"/>
+    
+    <LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" 
+		android:layout_margin="16dp" >
+  
+	    <!-- Alarm -->
+	    <LinearLayout android:id="@+id/flip_drawer_reminders_shake_alarm_item"
+	        android:layout_height="48dp"
+	        android:layout_width="match_parent"
+	        android:layout_gravity="center_vertical"
+	        android:background="@drawable/list_bg_top"
+	      	android:fontFamily="sans-serif-light"
+	        android:clickable="true">
+	        <LinearLayout
+	            android:layout_height="match_parent"
+	            android:layout_width="match_parent"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+	            android:orientation="horizontal" >
+	            <LinearLayout
+	                android:layout_height="wrap_content"
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:orientation="vertical"
+	                android:layout_gravity="center_vertical">
+	                <TextView android:layout_height="wrap_content"
+	                    android:layout_width="wrap_content"
+	                    android:text="@string/reminders_shake_alarm"
+	                    style="@style/roboto_light"
+	                    android:textColor="#656565"
+	                    android:textSize="18sp"/>
+	                <TextView
+	                    android:layout_height="wrap_content"
+	                    android:layout_width="wrap_content"
+	                    android:text="@string/setting_my_clock_tips"
+	                    style="@style/roboto_light"
+	                    android:textSize="10sp"/>
+	            </LinearLayout>
+	
+	            <Switch android:id="@+id/flip_drawer_reminders_shake_alarm_switch"
+	                    android:layout_height="wrap_content"
+	                    android:layout_width="wrap_content"
+	                    android:layout_gravity="center_vertical"
+	                    android:track="@drawable/switch_track_holo_dark_jrd"
+	                    android:thumb="@drawable/switch_inner_holo_dark_jrd"
+	                    android:textOn="@string/switch_a_space"
+	                    android:textOff="@string/switch_a_space"
+	                    android:thumbTextPadding="12dp"
+	                    android:switchMinWidth="60dp"
+	                    android:switchPadding="16dp"/>
+	        </LinearLayout>
+	    </LinearLayout>
+
+    	<!-- Incoming call changed by yashuang.mu@tcl.com  begin -->
+		<LinearLayout
+			android:id="@+id/flip_drawer_reminders_shake_call_reminder_item"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/list_bg_middle"
+			android:clickable="true" >
+
+			<LinearLayout
+			    android:id="@+id/reminder_incoming_call_area"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"			    
+			    android:orientation="horizontal" >
+			
+			    <LinearLayout
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center_vertical"
+			        android:layout_weight="1"
+			        android:orientation="vertical" >
+			
+			        <TextView
+			            style="@style/roboto_light"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/reminders_shake_call_reminder"
+			            android:textColor="#656565"
+			            android:textSize="18sp" />
+			
+			        <TextView
+			            style="@style/roboto_light"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/setting_calling_alarm_tip"
+			            android:textSize="10sp" />
+			    </LinearLayout>
+			
+			    <Switch
+			        android:id="@+id/flip_drawer_reminders_shake_call_reminder_switch"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center_vertical"
+			        android:switchMinWidth="60dp"
+			        android:switchPadding="16dp"
+			        android:textOff="@string/switch_a_space"
+			        android:textOn="@string/switch_a_space"
+			        android:thumb="@drawable/switch_inner_holo_dark_jrd"
+			        android:thumbTextPadding="12dp"
+			        android:track="@drawable/switch_track_holo_dark_jrd" />
+			</LinearLayout>
+		</LinearLayout>
+
+	    <!-- Anti lost -->
+	    <LinearLayout android:id="@+id/flip_drawer_reminders_shake_antilost_item"
+	        android:layout_height="48dp"
+	        android:layout_width="match_parent"
+	        android:layout_gravity="center_vertical"
+	        android:background="@drawable/list_bg_middle"
+	        android:clickable="true">
+	
+	        <LinearLayout android:id="@+id/reminder_anti_lost_area"
+	            android:layout_height="match_parent"
+	            android:layout_width="match_parent"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"	        
+	            android:orientation="horizontal" >
+	            <LinearLayout
+	                android:layout_height="wrap_content"
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:orientation="vertical"
+	                android:layout_gravity="center_vertical">
+	                <TextView android:layout_height="wrap_content"
+	                    android:layout_width="wrap_content"
+	                    android:text="@string/reminders_shake_anti_lost"
+	                    style="@style/roboto_light"
+	                    android:textColor="#656565"
+	                    android:textSize="18sp"/>
+	                <TextView
+	                    android:layout_height="wrap_content"
+	                    android:layout_width="wrap_content"
+	                    android:text="@string/setting_anti_lost_tip"
+	                    style="@style/roboto_light"
+	                    android:textSize="10sp"/>
+	            </LinearLayout>
+	            <Switch android:id="@+id/flip_drawer_reminders_shake_anti_lost_switch"
+	                android:layout_height="wrap_content"
+	                android:layout_width="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:track="@drawable/switch_track_holo_dark_jrd"
+	                android:thumb="@drawable/switch_inner_holo_dark_jrd"
+	                android:textOn="@string/switch_a_space"
+	                android:textOff="@string/switch_a_space"
+	                android:thumbTextPadding="12dp"
+	                android:switchMinWidth="60dp"
+	                android:switchPadding="16dp"/>
+	        </LinearLayout>
+	    </LinearLayout>
+    
+	    <!-- Sleep mode sync -->
+	    <LinearLayout android:id="@+id/flip_drawer_reminders_phone_client_sync_reminder_item"
+	        android:layout_height="48dp"
+	        android:layout_width="match_parent"
+	        android:layout_gravity="center_vertical"
+			android:background="@drawable/list_bg_middle" >
+	
+	        <LinearLayout android:id="@+id/reminder_client_sync_sleep_area"
+	            android:layout_height="match_parent"
+	            android:layout_width="match_parent"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"	            
+	            android:orientation="horizontal"
+	            android:clickable="true">
+	            <LinearLayout
+	                android:layout_height="wrap_content"
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:orientation="vertical"
+	                android:layout_gravity="center_vertical">
+	                <TextView
+	                    android:layout_height="wrap_content"
+	                    android:layout_width="wrap_content"
+	                    android:text="@string/reminders_phone_client_sync_reminder"
+	                    style="@style/roboto_light"
+	                    android:textColor="#656565"
+	                    android:textSize="18sp"/>
+	                <TextView
+	                    android:layout_height="wrap_content"
+	                    android:layout_width="wrap_content"
+	                    android:text="@string/str_silent_sleep_explain"
+	                    style="@style/roboto_light"
+	                    android:textSize="10sp"/>
+	            </LinearLayout>
+	            <Switch android:id="@+id/flip_drawer_reminders_phone_client_sync_reminder_switch"
+	                android:layout_height="wrap_content"
+	                android:layout_width="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:track="@drawable/switch_track_holo_dark_jrd"
+	                android:thumb="@drawable/switch_inner_holo_dark_jrd"
+	                android:textOn="@string/switch_a_space"
+	                android:textOff="@string/switch_a_space"
+	                android:thumbTextPadding="12dp"
+	                android:switchMinWidth="60dp"
+	                android:switchPadding="16dp"/>
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	    <!-- Sedentary reminder -->
+	    <LinearLayout android:id="@+id/flip_drawer_reminders_sedentary_reminder_item"
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:layout_gravity="center_vertical"
+	        android:background="@drawable/list_bg_middle" >
+	
+	        <LinearLayout android:id="@+id/reminder_sedentary_reminder_area"
+	            android:layout_height="match_parent"
+	            android:layout_width="match_parent"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"	            
+	            android:orientation="horizontal"
+	            android:clickable="true">
+	            <LinearLayout
+	                android:layout_height="wrap_content"
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:orientation="vertical"
+	                android:layout_gravity="center_vertical">
+	                <TextView
+	                    android:layout_height="wrap_content"
+	                    android:layout_width="wrap_content"
+	                    android:text="@string/reminders_sedentar_reminder"
+	                    style="@style/roboto_light"
+	                    android:textColor="#656565"
+	                    android:textSize="18sp"/>
+	                <TextView
+	                    android:layout_height="wrap_content"
+	                    android:layout_width="wrap_content"
+	                    android:text="@string/reminders_sedentar_reminder_tips"
+	                    style="@style/roboto_light"
+	                    android:textSize="10sp"/>
+	            </LinearLayout>
+	            <Switch android:id="@+id/flip_drawer_reminders_sedentary_reminder_switch"
+	                android:layout_height="wrap_content"
+	                android:layout_width="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:track="@drawable/switch_track_holo_dark_jrd"
+	                android:thumb="@drawable/switch_inner_holo_dark_jrd"
+	                android:textOn="@string/switch_a_space"
+	                android:textOff="@string/switch_a_space"
+	                android:thumbTextPadding="12dp"
+	                android:switchMinWidth="60dp"
+	                android:switchPadding="16dp"/>
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+		<!-- NFC -->
+		<LinearLayout android:id="@+id/flip_drawer_reminders_nfc_switch_item"
+		    android:layout_height="48dp"
+	        android:layout_width="match_parent"
+	        android:layout_gravity="center_vertical"
+	        android:background="@drawable/list_bg_middle"
+	        android:clickable="true">
+	
+		    <LinearLayout
+	            android:layout_height="match_parent"
+	            android:layout_width="match_parent"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"	            
+	            android:orientation="horizontal" >
+		        <LinearLayout
+		            android:layout_height="wrap_content"
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:orientation="vertical"
+	                android:layout_gravity="center_vertical">
+		            <TextView 
+		            	android:layout_height="wrap_content"
+	                    android:layout_width="wrap_content"
+	                    android:text="@string/settings_nfc_menu"
+	                    style="@style/roboto_light"
+	                    android:textColor="#656565"
+	                    android:textSize="18sp"/>
+		            <TextView
+		            	android:layout_height="wrap_content"
+	                    android:layout_width="wrap_content"
+	                    android:text="@string/settings_nfc_tip"
+	                    style="@style/roboto_light"
+	                    android:textSize="10sp"/>
+		        </LinearLayout>
+		        <Switch android:id="@+id/flip_drawer_reminders_nfc_switch"
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:track="@drawable/switch_track_holo_dark_jrd"
+		            android:thumb="@drawable/switch_inner_holo_dark_jrd"
+		            android:textOn="@string/switch_a_space"
+		            android:textOff="@string/switch_a_space"
+		            android:thumbTextPadding="12dp"
+		            android:switchMinWidth="60dp"
+		            android:switchPadding="16dp"/>
+		    </LinearLayout>
+		</LinearLayout>
+    
+	    <!-- Find Me reminder -->
+	    <LinearLayout android:id="@+id/flip_drawer_reminders_find_me_reminder_item"
+	        android:layout_height="48dp"
+	        android:layout_width="match_parent"
+	        android:layout_gravity="center_vertical"
+	        android:background="@drawable/list_bg_middle" >
+	
+	        <LinearLayout android:id="@+id/reminder_find_me_reminder_area"
+	            android:layout_height="match_parent"
+	            android:layout_width="match_parent"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"	            
+	            android:orientation="horizontal"
+	        	android:clickable="true" >
+	            <LinearLayout
+	                android:layout_height="wrap_content"
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:orientation="vertical"
+	                android:layout_gravity="center_vertical">
+	                <TextView
+	                    android:layout_height="wrap_content"
+	                    android:layout_width="wrap_content"
+	                    android:text="@string/reminders_find_me_reminder"
+	                    style="@style/roboto_light"
+	                    android:textColor="#656565"
+	                    android:textSize="18sp"/>
+	                <TextView
+	                    android:layout_height="wrap_content"
+	                    android:layout_width="wrap_content"
+	                    android:text="@string/reminders_find_me_reminder_tips"
+	                    style="@style/roboto_light"
+	                    android:textSize="10sp"/>
+	            </LinearLayout>
+	            <Switch android:id="@+id/flip_drawer_reminders_find_me_reminder_switch"
+	                android:layout_height="wrap_content"
+	                android:layout_width="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:track="@drawable/switch_track_holo_dark_jrd"
+	                android:thumb="@drawable/switch_inner_holo_dark_jrd"
+	                android:textOn="@string/switch_a_space"
+	                android:textOff="@string/switch_a_space"
+	                android:thumbTextPadding="12dp"
+	                android:switchMinWidth="60dp"
+	                android:switchPadding="16dp"/>
+	        </LinearLayout>
+	    </LinearLayout>
+    
+	    <!-- SOS reminder -->
+	    <LinearLayout android:id="@+id/flip_drawer_reminders_sos_reminder_item"
+	        android:layout_height="48dp"
+	        android:layout_width="match_parent"
+	        android:layout_gravity="center_vertical"
+	        android:background="@drawable/list_bg_middle"
+	        android:clickable="true" >
+	
+	        <LinearLayout android:id="@+id/reminder_sos_reminder_area"
+	            android:layout_height="match_parent"
+	            android:layout_width="match_parent"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"	            
+	            android:orientation="horizontal" >
+	            <LinearLayout
+	                android:layout_height="wrap_content"
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:orientation="vertical"
+	                android:layout_gravity="center_vertical">
+	                <TextView
+	                    android:layout_height="wrap_content"
+	                    android:layout_width="wrap_content"
+	                    android:text="@string/reminders_sos_reminder"
+	                    style="@style/roboto_light"
+	                    android:textColor="#656565"
+	                    android:textSize="18sp"/>
+	                <TextView
+	                    android:layout_height="wrap_content"
+	                    android:layout_width="wrap_content"
+	                    android:text="@string/reminders_sos_reminder_tips"
+	                    style="@style/roboto_light"
+	                    android:textSize="10sp"/>
+	            </LinearLayout>
+	            <Switch android:id="@+id/flip_drawer_reminders_sos_reminder_switch"
+	                android:layout_height="wrap_content"
+	                android:layout_width="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:track="@drawable/switch_track_holo_dark_jrd"
+	                android:thumb="@drawable/switch_inner_holo_dark_jrd"
+	                android:textOn="@string/switch_a_space"
+	                android:textOff="@string/switch_a_space"
+	                android:thumbTextPadding="12dp"
+	                android:switchMinWidth="60dp"
+	                android:switchPadding="16dp"/>
+	        </LinearLayout>
+	    </LinearLayout>
+
+	    <!-- Calender Reminder -->
+	    <LinearLayout android:id="@+id/flip_drawer_reminders_calender_notification_reminder_item"
+	        android:layout_height="48dp"
+	        android:layout_width="match_parent"
+	        android:layout_gravity="center_vertical"
+	        android:background="@drawable/list_bg_bottom"
+	        android:clickable="true">
+	
+	        <LinearLayout android:id="@+id/reminder_calender_notification_reminnder_area"
+	            android:layout_height="match_parent"
+	            android:layout_width="match_parent"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"	            
+	            android:orientation="horizontal" >
+	          	<LinearLayout
+	                android:layout_height="wrap_content"
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:orientation="vertical"
+	                android:layout_gravity="center_vertical">
+	                
+		            <TextView android:layout_height="wrap_content"
+		                android:layout_width="wrap_content"
+		                android:text="@string/reminders_calender_notification_reminder"
+		                style="@style/roboto_light"
+		                android:textColor="#656565"
+		                android:textSize="18sp"/>
+	   			</LinearLayout>
+	            <Switch android:id="@+id/flip_drawer_reminders_calender_notification_reminder_switch"
+	                android:layout_height="wrap_content"
+	                android:layout_width="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:track="@drawable/switch_track_holo_dark_jrd"
+	                android:thumb="@drawable/switch_inner_holo_dark_jrd"
+	                android:textOn="@string/switch_a_space"
+	                android:textOff="@string/switch_a_space"
+	                android:thumbTextPadding="12dp"
+	                android:switchMinWidth="60dp"
+	                android:switchPadding="16dp"/>
+	        </LinearLayout>
+	    </LinearLayout>
+  	</LinearLayout>
+    
+</LinearLayout>

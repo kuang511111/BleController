@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="history_record_bg">#f5edeb</color>
+    <color name="chart_bg">#f4fcf7</color>
+    <color name="chart_date">#ff9600</color>
+    <color name="profile_font">#404040</color>
+    <color name="bg">#f5edeb</color>
+    <color name="transparent">#00000000</color>
+    <color name="setting_person_value">#9b9a98</color>
+    <color name="bluetooth_setting_color">#ff7200</color>
+    <color name="bluetooth_setting_disable_color">#b9b2b0</color>
+    <color name="choose_device_info_color">#838383</color>
+    <color name="choose_device_button_color">#404040</color>
+    <color name="add_device_guid_button_color">#404040</color>
+    <color name="binding_device_tips_color">#989493</color>
+    <color name="main_small_cirle_font_color">#ff7200</color>
+    <color name="list_text_color_gray">#acaaa9</color>
+    <color name="bluetooth_search_button_bg">#25c7ed</color>
+    <color name="bluetooth_search_button_text">#ffffff</color>
+
+    <color name="colorPrimary">#303030</color>
+    <color name="colorPrimaryDark">#404040</color>
+    <color name="colorAccent">#25c7ed</color>
+    <color name="windowBackground">#80ffffff</color>
+
+    <!-- 图表页使用color -->
+    <color name="tab_title_green_selected">#18a195</color>
+    <color name="chart_orange_selected">#e5e5e7</color>
+    <color name="title_orange_selected">#ea6700</color>
+
+    <color name="app_bg">#f1f1f1</color>
+    <color name="dashboard_bg">#f3f3f3</color>
+    <color name="txt_color_font_color">#656565</color>
+    <color name="text_color_sub_color">#a9a9a9</color>
+
+    <color name="connect_bg">#efefef</color>
+    <color name="chart_view_bg">#dedfe0</color>
+
+    <!-- Clock Alarm -->
+    <color name="clock_gray">#80ffffff</color>
+    
+    <color name="tips_bg">#fff0f0f0</color>
+    <color name="text_color_orange">#ffec7711</color>
+
+    <!-- Findme nitice  -->
+	<color name="background_foreground_light">#80ffffff</color>
+	<color name="charts_trends_rectangle_select_color">#ffe1e2e3</color>
+    <color name="background_dark">#c0000000</color>
+	
+	<color name="blue">#33b5e5</color>
+    <color name="darkblue">#0099cc</color>
+    <color name="red">#ff4444</color>
+    <color name="grayStart">#adadad</color>
+    <color name="grayEnd">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="bg_handle_pressed">#a0a0a0</color>
+    
+    <!-- charts&trend interface color  add by dingmao.sun-->
+    <color name="color_steps_run">#26c7ed</color>
+    <color name="color_steps_walk">#6bdefb</color>
+    <!-- <color name="color_steps_hike">#b5e5f1</color> -->
+    
+    <color name="color_calories_run">#f46313</color>
+    <color name="color_calories_walk">#f8a77a</color>
+    <!-- <color name="color_calories_hike">#f3c8af</color> -->
+    
+    <color name="color_distances_run">#7fbe25</color>
+    <color name="color_distances_walk">#c1dc93</color>
+    <!-- <color name="color_distances_hike">#d0e3b5</color> -->
+    
+    <color name="color_duartion_run">#f6ab00</color>
+    <color name="color_duartion_walk">#fcca58</color>
+    <!-- <color name="color_duartion_hike">#f4ddaa</color> -->
+    
+    <color name="color_sleep_deep">#0076a8</color>
+    <color name="color_sleep_light">#058fc9</color>
+    <color name="color_sleep_awake">#66cccc</color>
+    
+    <color name="color_heart_rate">#ea3b7d</color>
+    
+    <color name="rectangle_bg_color">#e0e0e0</color>
+    <color name="rectangle_text_bg_color">#d7dce0</color>
+    <color name="text_color_sport_unit_and_type">#333333</color>
+	<color name="rectangle_select_bg_color">#bebebe</color>
+	<color name="rectangle_divider_color">#f3f3f3</color>
+	
+	<color name="color_dashboard_tips">#23bbe8</color>
+	<color name="color_dashboard_tips_unit">#5c5c5c</color>
+	<color name="color_findme_btn">#545454</color>
+	<color name="color_findme_btn_pressed">#a0545454</color>
+
+</resources>
